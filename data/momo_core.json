@@ -1,6 +1,6 @@
 {
  "month": "2026-07",
- "rebalanced_today": true,
+ "rebalanced_today": false,
  "exposure": 0.5,
  "holdings": [
   {
@@ -9,7 +9,7 @@
    "close": 212.24,
    "chg_pct": 1.06,
    "mom_pct": 618.8,
-   "status": "ADD"
+   "status": "HOLD"
   },
   {
    "sym": "SIGMAADV",
@@ -17,7 +17,7 @@
    "close": 582.65,
    "chg_pct": 4.41,
    "mom_pct": 367.5,
-   "status": "ADD"
+   "status": "HOLD"
   },
   {
    "sym": "ATHERENERG",
@@ -25,7 +25,7 @@
    "close": 1225.8,
    "chg_pct": 0.61,
    "mom_pct": 212.7,
-   "status": "ADD"
+   "status": "HOLD"
   },
   {
    "sym": "THANGAMAYL",
@@ -33,7 +33,7 @@
    "close": 6540.5,
    "chg_pct": -0.88,
    "mom_pct": 183.1,
-   "status": "ADD"
+   "status": "HOLD"
   },
   {
    "sym": "ACUTAAS",
@@ -41,7 +41,7 @@
    "close": 3400.8,
    "chg_pct": -1.68,
    "mom_pct": 177.9,
-   "status": "ADD"
+   "status": "HOLD"
   },
   {
    "sym": "GVPIL",
@@ -49,7 +49,7 @@
    "close": 820.35,
    "chg_pct": -4.69,
    "mom_pct": 171.7,
-   "status": "ADD"
+   "status": "HOLD"
   },
   {
    "sym": "SBC",
@@ -57,7 +57,7 @@
    "close": 42.38,
    "chg_pct": 0.64,
    "mom_pct": 140.1,
-   "status": "ADD"
+   "status": "HOLD"
   },
   {
    "sym": "KMEW",
@@ -65,7 +65,7 @@
    "close": 2412.7,
    "chg_pct": 6.35,
    "mom_pct": 136.6,
-   "status": "ADD"
+   "status": "HOLD"
   },
   {
    "sym": "BAJAJCON",
@@ -73,7 +73,7 @@
    "close": 670.25,
    "chg_pct": 4.15,
    "mom_pct": 135.3,
-   "status": "ADD"
+   "status": "HOLD"
   },
   {
    "sym": "NETWEB",
@@ -81,7 +81,7 @@
    "close": 4305.0,
    "chg_pct": 0.43,
    "mom_pct": 132.3,
-   "status": "ADD"
+   "status": "HOLD"
   },
   {
    "sym": "SAKAR",
@@ -89,7 +89,7 @@
    "close": 824.5,
    "chg_pct": 3.02,
    "mom_pct": 128.5,
-   "status": "ADD"
+   "status": "HOLD"
   },
   {
    "sym": "TDPOWERSYS",
@@ -97,7 +97,7 @@
    "close": 1150.2,
    "chg_pct": 5.52,
    "mom_pct": 127.8,
-   "status": "ADD"
+   "status": "HOLD"
   },
   {
    "sym": "IZMO",
@@ -105,7 +105,7 @@
    "close": 1009.9,
    "chg_pct": 4.99,
    "mom_pct": 127.0,
-   "status": "ADD"
+   "status": "HOLD"
   },
   {
    "sym": "JAYNECOIND",
@@ -113,7 +113,7 @@
    "close": 91.48,
    "chg_pct": 3.41,
    "mom_pct": 126.8,
-   "status": "ADD"
+   "status": "HOLD"
   },
   {
    "sym": "KIRLOSENG",
@@ -121,7 +121,7 @@
    "close": 2491.9,
    "chg_pct": 2.77,
    "mom_pct": 116.9,
-   "status": "ADD"
+   "status": "HOLD"
   }
  ],
  "exits": []
