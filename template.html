@@ -191,6 +191,13 @@
   <div class="sectors" id="sectors"></div>
 </section>
 
+<section id="rrgSec" style="display:none">
+  <div class="sec-h"><h2>Sector Rotation</h2>
+    <span class="hint">x: 63-day relative strength vs Nifty · y: 21-day RS momentum ·
+    dot size = members · click a sector to drill down</span></div>
+  <div class="card" style="padding:10px 14px"><canvas id="rrg"></canvas></div>
+</section>
+
 <section>
   <div class="sec-h"><h2>Focus List</h2>
     <span class="hint" id="focusHint">A-grade setups: D55 breakout · RS ≥ 80 · Vol ≥ 1.5× · RSI &lt; 78</span></div>
@@ -304,7 +311,9 @@ function drawChart(canvas, r, opts = {}) {
   const ctx = canvas.getContext("2d"); ctx.scale(dpr, dpr);
   const padL = 6, padR = mini ? 6 : 58, padT = 6;
   const volH = mini ? 0 : Math.round(H * 0.15);
-  const priceH = H - volH - padT - 8;
+  const nspark = (!mini && DATA.regime && DATA.regime.spark) ? DATA.regime.spark : null;
+  const rsH = nspark && nspark.length >= candles.length ? Math.round(H * 0.13) : 0;
+  const priceH = H - volH - rsH - padT - 8;
   const n = candles.length, cw = (W - padL - padR) / n;
   const levels = mini ? [] : [["CMP", r.entry, "#3d8bfd"], ["SL", r.stop, "#ea3943"],
     ["T1", r.tgt1, "#16c784"], ["T2", r.tgt2, "#0e9f6e"]];
@@ -338,6 +347,27 @@ function drawChart(canvas, r, opts = {}) {
     ctx.beginPath(); ctx.moveTo(x, y(h2)); ctx.lineTo(x, y(l2)); ctx.stroke();
     const bw = Math.max(cw * 0.62, 1.4), yo = y(o), yc = y(c2);
     ctx.fillRect(x - bw / 2, Math.min(yo, yc), bw, Math.max(Math.abs(yc - yo), 1));
+  }
+  if (rsH > 0) {
+    const off = nspark.length - n;
+    const rsv = cs.map((v, i) => v / nspark[off + i]);
+    const rmin = Math.min(...rsv), rmax = Math.max(...rsv), rrng = rmax - rmin || 1;
+    const top = padT + priceH + 5, hgt = rsH - 10;
+    ctx.beginPath(); ctx.strokeStyle = "#3d8bfd"; ctx.lineWidth = 1.2;
+    rsv.forEach((v, i) => {
+      const px = padL + i * cw + cw / 2, py = top + (rmax - v) / rrng * hgt;
+      i ? ctx.lineTo(px, py) : ctx.moveTo(px, py);
+    });
+    ctx.stroke();
+    ctx.font = "9px Segoe UI"; ctx.fillStyle = "#5b6577";
+    const nh = rsv[n - 1] >= rmax - 1e-12;
+    ctx.fillText("RS vs NIFTY" + (nh ? "  · NEW HIGH ▲" : ""), padL + 2, top + 8);
+    if (nh) {
+      ctx.fillStyle = "#16c784";
+      ctx.beginPath();
+      ctx.arc(padL + (n - 1) * cw + cw / 2, top + (rmax - rsv[n - 1]) / rrng * hgt, 2.5, 0, 7);
+      ctx.fill();
+    }
   }
   if (volH > 0) {
     const vmax = Math.max(...candles.map(k => k[4])) || 1;
@@ -414,10 +444,18 @@ function topbar() {
   const b = DATA.breadth;
   if (b && b.total) {
     const pct = x => Math.round(100 * x / b.total);
-    document.getElementById("breadth").innerHTML = [
-      [pct(b.above200) + "%", "> 200 ema"], [pct(b.above50) + "%", "> 50 ema"],
-      [pct(b.adv) + "%", "advancers"], [b.hi52, "52w highs"],
-    ].map(([v, l]) => `<div class="mini"><b>${v}</b><span>${l}</span></div>`).join("");
+    const net = b.lo52 == null ? null : b.hi52 - b.lo52;
+    const cells = [
+      [pct(b.above200) + "%", "> 200 ema", ""], [pct(b.above50) + "%", "> 50 ema", ""],
+      [pct(b.adv) + "%", "advancers", ""],
+    ];
+    if (net != null) cells.push([(net >= 0 ? "+" : "") + net, "net 52w NH−NL",
+                                 net >= 0 ? "var(--green)" : "var(--red)"]);
+    else cells.push([b.hi52, "52w highs", ""]);
+    if (b.dist25 != null) cells.push([b.dist25, "dist. days 25d",
+                                      b.dist25 >= 6 ? "var(--red)" : b.dist25 >= 4 ? "var(--amber)" : ""]);
+    document.getElementById("breadth").innerHTML = cells.map(([v, l, col]) =>
+      `<div class="mini"><b${col ? ` style="color:${col}"` : ""}>${v}</b><span>${l}</span></div>`).join("");
   }
 }
 function kpis() {
@@ -431,6 +469,68 @@ function kpis() {
     [p("VCP") + p("BULL_FLAG") + p("FLAT_BASE"), "patterns", ""],
     [rows.filter(r => r.fo).length, "f&o names", ""], [DATA.scanned, "scanned", ""],
   ].map(([v, l, c]) => `<div class="kpi ${c}"><b>${v}</b><span>${l}</span></div>`).join("");
+}
+
+/* ---------------- RRG quadrant ---------------- */
+let rrgDots = [];
+function drawRRG() {
+  const data = DATA.rrg;
+  if (!data || data.length < 3) return;
+  document.getElementById("rrgSec").style.display = "";
+  const cv = document.getElementById("rrg");
+  const dpr = window.devicePixelRatio || 1;
+  const W = Math.min(940, innerWidth - 80), H = 350;
+  cv.width = W * dpr; cv.height = H * dpr;
+  cv.style.width = W + "px"; cv.style.height = H + "px";
+  const ctx = cv.getContext("2d"); ctx.scale(dpr, dpr);
+  const pad = 34;
+  const xs = data.map(d => d.x), ys = data.map(d => d.y);
+  const xm = Math.max(4, ...xs.map(Math.abs)) * 1.15;
+  const ym = Math.max(2, ...ys.map(Math.abs)) * 1.25;
+  const X = v => pad + (v + xm) / (2 * xm) * (W - 2 * pad);
+  const Y = v => H - pad + (v - (-ym)) / (2 * ym) * (2 * pad - H);
+  // quadrant tints
+  const q = [["rgba(22,199,132,.05)", X(0), 0, W - pad - X(0), Y(0)],
+             ["rgba(240,185,11,.05)", X(0), Y(0), W - pad - X(0), H - pad - Y(0)],
+             ["rgba(234,57,67,.05)", pad, Y(0), X(0) - pad, H - pad - Y(0)],
+             ["rgba(61,139,253,.05)", pad, 0, X(0) - pad, Y(0)]];
+  for (const [col, x, y, w, h] of q) { ctx.fillStyle = col; ctx.fillRect(x, y, w, h); }
+  ctx.font = "9.5px Segoe UI"; ctx.fillStyle = "#5b6577";
+  ctx.fillText("LEADING", W - pad - 52, 14); ctx.fillText("WEAKENING", W - pad - 64, H - pad + 12);
+  ctx.fillText("LAGGING", pad + 2, H - pad + 12); ctx.fillText("IMPROVING", pad + 2, 14);
+  // axes
+  ctx.strokeStyle = "#232d3d"; ctx.lineWidth = 1;
+  ctx.beginPath(); ctx.moveTo(pad, Y(0)); ctx.lineTo(W - pad, Y(0)); ctx.stroke();
+  ctx.beginPath(); ctx.moveTo(X(0), 0); ctx.lineTo(X(0), H - pad); ctx.stroke();
+  // dots
+  rrgDots = [];
+  ctx.font = "10.5px Segoe UI";
+  for (const d of data) {
+    const col = d.x >= 0 && d.y >= 0 ? "#16c784" : d.x >= 0 ? "#f0b90b" :
+                d.y >= 0 ? "#3d8bfd" : "#ea3943";
+    const r = Math.max(4, Math.min(11, Math.sqrt(d.n) * 1.4));
+    const x = X(d.x), y = Y(d.y);
+    ctx.fillStyle = col; ctx.globalAlpha = .9;
+    ctx.beginPath(); ctx.arc(x, y, r, 0, 7); ctx.fill(); ctx.globalAlpha = 1;
+    ctx.strokeStyle = "#0a0d13"; ctx.lineWidth = 2; ctx.stroke();
+    ctx.fillStyle = "#c6cfdd";
+    const name = d.sector.length > 22 ? d.sector.slice(0, 21) + "…" : d.sector;
+    ctx.fillText(name, x + r + 4, y + 3.5);
+    rrgDots.push({ x, y, r: r + 6, sector: d.sector });
+  }
+  cv.onclick = e => {
+    const rect = cv.getBoundingClientRect();
+    const mx = e.clientX - rect.left, my = e.clientY - rect.top;
+    for (const d of rrgDots) {
+      if ((mx - d.x) ** 2 + (my - d.y) ** 2 <= d.r ** 2) {
+        sector = sector === d.sector ? null : d.sector;
+        sectors(); focus(); renderTable();
+        document.getElementById("focusHint").textContent = sector
+          ? `strongest setups in ${sector}` : "A-grade setups";
+        break;
+      }
+    }
+  };
 }
 
 /* ---------------- sector pulse ---------------- */
@@ -643,7 +743,7 @@ document.querySelectorAll("#tbl th[data-k]").forEach(th => th.onclick = () => {
 });
 
 document.getElementById("asof").textContent = DATA.asOf;
-topbar(); kpis(); sectors(); focus(); renderTable();
+topbar(); kpis(); drawRRG(); sectors(); focus(); renderTable();
 </script>
 </body>
 </html>

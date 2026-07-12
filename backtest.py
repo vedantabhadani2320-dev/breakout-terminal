@@ -174,13 +174,16 @@ def simulate(hist, rs_mat, exit_mode="fixed"):
     return pd.DataFrame(trades)
 
 
-def portfolio_sim(df, label, slots=10, prefer=None):
-    """10-slot, 10%-of-equity-per-trade chronological simulation."""
+def portfolio_sim(df, label, slots=10, prefer=None, cost_pct=0.35, sector_cap=3):
+    """10-slot, 10%-of-equity, net of round-trip costs, max 3 open per sector."""
     if df.empty:
         return {"strategy": label, "taken": 0, "return_pct": 0.0}
     df = df.copy()
     df["entry_date"] = pd.to_datetime(df["entry_date"])
     df["exit_date"] = pd.to_datetime(df["exit_date"])
+    if "sector" not in df.columns:
+        df["sector"] = "—"
+    df["ret_net"] = df["ret_pct"] - cost_pct
     df = df.sort_values(["entry_date"] + ([prefer] if prefer else []),
                         ascending=[True, False] if prefer else [True])
     equity, open_pos, taken = 100.0, [], 0
@@ -188,14 +191,16 @@ def portfolio_sim(df, label, slots=10, prefer=None):
     for d in sorted(set(df["entry_date"]) | set(df["exit_date"])):
         open_pos, done = [p for p in open_pos if p[0] > d], \
                          [p for p in open_pos if p[0] <= d]
-        for (_, alloc, ret) in done:
+        for (_, alloc, ret, _) in done:
             equity += alloc * ret / 100.0
         for r in by_entry.get(d, pd.DataFrame()).itertuples():
             if len(open_pos) >= slots:
                 break
-            open_pos.append((r.exit_date, equity / slots, r.ret_pct))
+            if sum(1 for p in open_pos if p[3] == r.sector) >= sector_cap:
+                continue
+            open_pos.append((r.exit_date, equity / slots, r.ret_net, r.sector))
             taken += 1
-    for (_, alloc, ret) in open_pos:
+    for (_, alloc, ret, _) in open_pos:
         equity += alloc * ret / 100.0
     return {"strategy": label, "taken": taken, "return_pct": round(equity - 100, 2)}
 
@@ -329,6 +334,8 @@ def main():
         trades = simulate(hist, rs_mat, mode)
         if trades.empty:
             print("No trades generated."); return
+        trades["sector"] = trades["symbol"].map(
+            lambda s: universe.get(s, {}).get("industry", "—"))
         csv_path = TRADES_CSV if mode == "fixed" else \
             TRADES_CSV.with_name("backtest_trades_trail.csv")
         trades.to_csv(csv_path, index=False)

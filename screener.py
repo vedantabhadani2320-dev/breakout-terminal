@@ -450,9 +450,9 @@ def market_regime(retries=3):
 
 def compute_breadth(hist):
     """Market internals across the whole scanned universe."""
-    b = {"above200": 0, "above50": 0, "adv": 0, "hi52": 0, "total": 0}
+    b = {"above200": 0, "above50": 0, "adv": 0, "hi52": 0, "lo52": 0, "total": 0}
     for df in hist.values():
-        c, h = df["Close"], df["High"]
+        c, h, l = df["Close"], df["High"], df["Low"]
         if len(c) < 120:
             continue
         b["total"] += 1
@@ -465,12 +465,62 @@ def compute_breadth(hist):
             b["adv"] += 1
         if float(h.iloc[-1]) >= float(h.rolling(250, min_periods=120).max().iloc[-1]):
             b["hi52"] += 1
+        if float(l.iloc[-1]) <= float(l.rolling(250, min_periods=120).min().iloc[-1]):
+            b["lo52"] += 1
+
+    # distribution days: universe average down >0.2% on higher aggregate volume,
+    # counted over the last 25 sessions
+    closes = pd.DataFrame({s: df["Close"] for s, df in hist.items()})
+    vols = pd.DataFrame({s: df["Volume"] for s, df in hist.items()})
+    avg_ret = closes.pct_change().mean(axis=1)
+    aggvol = vols.sum(axis=1)
+    dist = (avg_ret < -0.002) & (aggvol > aggvol.shift(1))
+    b["dist25"] = int(dist.iloc[-25:].sum())
     return b
 
 
-def build_dashboard(results, scanned, as_of, regime=None, breadth=None):
+def compute_rrg(hist, universe):
+    """Sector rotation: x = 63d return vs Nifty, y = 21d momentum vs Nifty."""
+    try:
+        nifty = yf.download("^NSEI", period="1y", interval="1d",
+                            auto_adjust=True, progress=False)["Close"].dropna()
+        if hasattr(nifty, "columns"):
+            nifty = nifty.iloc[:, 0]
+        n63 = float(nifty.iloc[-1] / nifty.iloc[-64] - 1)
+        n21 = float(nifty.iloc[-1] / nifty.iloc[-22] - 1)
+    except Exception as e:
+        print(f"  ! rrg nifty fetch failed: {e}")
+        return None
+
+    sectors = {}
+    for sym, df in hist.items():
+        ind = universe.get(sym, {}).get("industry", "—")
+        if not ind or ind == "—":
+            continue
+        c = df["Close"]
+        if len(c) < 70:
+            continue
+        r63 = float(c.iloc[-1] / c.iloc[-64] - 1)
+        r21 = float(c.iloc[-1] / c.iloc[-22] - 1)
+        sectors.setdefault(ind, []).append((r63, r21))
+
+    out = []
+    for ind, vals in sectors.items():
+        if len(vals) < 5:
+            continue
+        r63s = sorted(v[0] for v in vals)
+        r21s = sorted(v[1] for v in vals)
+        med63 = r63s[len(r63s) // 2]
+        med21 = r21s[len(r21s) // 2]
+        out.append({"sector": ind, "n": len(vals),
+                    "x": round((med63 - n63) * 100, 2),
+                    "y": round((med21 - n21) * 100, 2)})
+    return sorted(out, key=lambda s: -s["x"])
+
+
+def build_dashboard(results, scanned, as_of, regime=None, breadth=None, rrg=None):
     payload = json.dumps({"asOf": as_of, "scanned": scanned, "rows": results,
-                          "regime": regime, "breadth": breadth})
+                          "regime": regime, "breadth": breadth, "rrg": rrg})
     template = (HERE / "template.html").read_text(encoding="utf-8")
     DASHBOARD.write_text(template.replace("/*__DATA__*/null", payload), encoding="utf-8")
 
@@ -512,11 +562,13 @@ def main():
     as_of = max((r["date"] for r in rows), default=str(datetime.now().date()))
 
     breadth = compute_breadth(hist)
+    rrg = compute_rrg(hist, universe)
     RESULTS_JSON.write_text(json.dumps({"asOf": as_of, "rows": rows,
-                                        "regime": regime, "breadth": breadth},
+                                        "regime": regime, "breadth": breadth,
+                                        "rrg": rrg},
                                        indent=1),
                             encoding="utf-8")
-    build_dashboard(rows, len(hist), as_of, regime, breadth)
+    build_dashboard(rows, len(hist), as_of, regime, breadth, rrg)
 
     fresh = [r for r in rows
              if any(s in r["signals"] for s in ("D20_BREAKOUT", "D55_BREAKOUT",
