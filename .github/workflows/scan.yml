@@ -1,0 +1,39 @@
+name: daily-scan
+
+on:
+  schedule:
+    - cron: "0 13 * * 1-5"   # 18:30 IST, Mon-Fri
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: scan
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install --quiet yfinance pandas numpy requests
+
+      - name: Run scan
+        run: python daily_update.py
+
+      - name: Publish dashboard
+        run: |
+          cp dashboard.html docs/index.html
+          git config user.name "screener-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add docs/index.html data/bhavcopy.csv data/fo_symbols.txt data/etf_list.csv
+          git commit -m "scan $(date -u '+%Y-%m-%d %H:%M') UTC" || echo "nothing to commit"
+          git push

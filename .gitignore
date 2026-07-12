@@ -1,0 +1,8 @@
+__pycache__/
+data/results.json
+data/hist_cache_*.pkl
+data/backtest_trades*.csv
+data/update_log.txt
+data/cbsl_calls.json
+dashboard.html
+backtest.html
