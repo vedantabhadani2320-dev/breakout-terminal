@@ -185,6 +185,12 @@
 
 <div class="kpis" id="kpis"></div>
 
+<section id="momoSec" style="display:none">
+  <div class="sec-h"><h2>Momentum Core</h2>
+    <span class="hint" id="momoHint"></span></div>
+  <div class="focus" id="momoTiles"></div>
+</section>
+
 <section>
   <div class="sec-h"><h2>Sector Pulse</h2>
     <span class="hint">where breakouts are clustering — click a sector to drill down</span></div>
@@ -471,6 +477,30 @@ function kpis() {
   ].map(([v, l, c]) => `<div class="kpi ${c}"><b>${v}</b><span>${l}</span></div>`).join("");
 }
 
+/* ---------------- momentum core ---------------- */
+function momoCore() {
+  const m = DATA.momo;
+  if (!m || !m.holdings || !m.holdings.length) return;
+  document.getElementById("momoSec").style.display = "";
+  const expo = Math.round(m.exposure * 100);
+  document.getElementById("momoHint").innerHTML =
+    `core portfolio: top ${m.holdings.length} by 12-1 momentum · monthly rebalance · ` +
+    `equal weight · <b style="color:${expo === 100 ? "var(--green)" : "var(--amber)"}">` +
+    `${expo}% exposure</b> (${expo === 100 ? "risk-on" : "defensive half-size"})` +
+    (m.rebalanced_today ? ' · <b style="color:var(--blue)">rebalanced today</b>' : "") +
+    (m.exits && m.exits.length ? ` · exits: ${m.exits.join(", ")}` : "");
+  document.getElementById("momoTiles").innerHTML = m.holdings.map(h => `
+    <div class="fcard" style="min-width:150px;cursor:default">
+      <div class="fs"><span class="fsym" style="font-size:13px">${h.sym}</span>
+        <span class="fchg ${h.chg_pct >= 0 ? "pos" : "neg"}" style="font-size:11px">${h.chg_pct >= 0 ? "+" : ""}${h.chg_pct.toFixed(1)}%</span></div>
+      <div class="find">${h.industry}</div>
+      <div class="flv"><span>₹<b>${fmt(h.close)}</b></span>
+        <span>12-1 <b class="pos">+${h.mom_pct.toFixed(0)}%</b></span></div>
+      <div class="fbadges">${h.status === "ADD" ? '<span class="tag t-str">NEW</span>'
+                                                : '<span class="tag t-mut">HOLD</span>'}</div>
+    </div>`).join("");
+}
+
 /* ---------------- RRG quadrant ---------------- */
 let rrgDots = [];
 function drawRRG() {
@@ -743,7 +773,7 @@ document.querySelectorAll("#tbl th[data-k]").forEach(th => th.onclick = () => {
 });
 
 document.getElementById("asof").textContent = DATA.asOf;
-topbar(); kpis(); drawRRG(); sectors(); focus(); renderTable();
+topbar(); kpis(); momoCore(); drawRRG(); sectors(); focus(); renderTable();
 </script>
 </body>
 </html>

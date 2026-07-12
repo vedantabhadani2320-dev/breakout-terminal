@@ -1,0 +1,128 @@
+{
+ "month": "2026-07",
+ "rebalanced_today": true,
+ "exposure": 0.5,
+ "holdings": [
+  {
+   "sym": "CUPID",
+   "industry": "Fast Moving Consumer Goods",
+   "close": 212.24,
+   "chg_pct": 1.06,
+   "mom_pct": 618.8,
+   "status": "ADD"
+  },
+  {
+   "sym": "SIGMAADV",
+   "industry": "\u2014",
+   "close": 582.65,
+   "chg_pct": 4.41,
+   "mom_pct": 367.5,
+   "status": "ADD"
+  },
+  {
+   "sym": "ATHERENERG",
+   "industry": "Automobile and Auto Components",
+   "close": 1225.8,
+   "chg_pct": 0.61,
+   "mom_pct": 212.7,
+   "status": "ADD"
+  },
+  {
+   "sym": "THANGAMAYL",
+   "industry": "Consumer Durables",
+   "close": 6540.5,
+   "chg_pct": -0.88,
+   "mom_pct": 183.1,
+   "status": "ADD"
+  },
+  {
+   "sym": "ACUTAAS",
+   "industry": "Healthcare",
+   "close": 3400.8,
+   "chg_pct": -1.68,
+   "mom_pct": 177.9,
+   "status": "ADD"
+  },
+  {
+   "sym": "GVPIL",
+   "industry": "\u2014",
+   "close": 820.35,
+   "chg_pct": -4.69,
+   "mom_pct": 171.7,
+   "status": "ADD"
+  },
+  {
+   "sym": "SBC",
+   "industry": "\u2014",
+   "close": 42.38,
+   "chg_pct": 0.64,
+   "mom_pct": 140.1,
+   "status": "ADD"
+  },
+  {
+   "sym": "KMEW",
+   "industry": "\u2014",
+   "close": 2412.7,
+   "chg_pct": 6.35,
+   "mom_pct": 136.6,
+   "status": "ADD"
+  },
+  {
+   "sym": "BAJAJCON",
+   "industry": "\u2014",
+   "close": 670.25,
+   "chg_pct": 4.15,
+   "mom_pct": 135.3,
+   "status": "ADD"
+  },
+  {
+   "sym": "NETWEB",
+   "industry": "Information Technology",
+   "close": 4305.0,
+   "chg_pct": 0.43,
+   "mom_pct": 132.3,
+   "status": "ADD"
+  },
+  {
+   "sym": "SAKAR",
+   "industry": "\u2014",
+   "close": 824.5,
+   "chg_pct": 3.02,
+   "mom_pct": 128.5,
+   "status": "ADD"
+  },
+  {
+   "sym": "TDPOWERSYS",
+   "industry": "Capital Goods",
+   "close": 1150.2,
+   "chg_pct": 5.52,
+   "mom_pct": 127.8,
+   "status": "ADD"
+  },
+  {
+   "sym": "IZMO",
+   "industry": "\u2014",
+   "close": 1009.9,
+   "chg_pct": 4.99,
+   "mom_pct": 127.0,
+   "status": "ADD"
+  },
+  {
+   "sym": "JAYNECOIND",
+   "industry": "Capital Goods",
+   "close": 91.48,
+   "chg_pct": 3.41,
+   "mom_pct": 126.8,
+   "status": "ADD"
+  },
+  {
+   "sym": "KIRLOSENG",
+   "industry": "Capital Goods",
+   "close": 2491.9,
+   "chg_pct": 2.77,
+   "mom_pct": 116.9,
+   "status": "ADD"
+  }
+ ],
+ "exits": []
+}

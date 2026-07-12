@@ -518,9 +518,70 @@ def compute_rrg(hist, universe):
     return sorted(out, key=lambda s: -s["x"])
 
 
-def build_dashboard(results, scanned, as_of, regime=None, breadth=None, rrg=None):
+MOMO_JSON = DATA_DIR / "momo_core.json"
+MOMO_N = 15
+
+
+def compute_momo_core(hist, universe, regime, as_of):
+    """Momentum Core: top-15 by 12-1 momentum, rebalanced on month change.
+    Holdings persist in data/momo_core.json between runs."""
+    prev = json.loads(MOMO_JSON.read_text(encoding="utf-8")) \
+        if MOMO_JSON.exists() else None
+    month = str(as_of)[:7]
+
+    # score every eligible stock: 12m return skipping the most recent month
+    scores = {}
+    for sym, df in hist.items():
+        c, v = df["Close"], df["Volume"]
+        if len(c) < 260:
+            continue
+        close = float(c.iloc[-1])
+        vol20 = float(v.rolling(20).mean().iloc[-1])
+        if close * vol20 / 1e7 < MIN_TURNOVER_CR:
+            continue
+        if close <= float(ema(c, 200).iloc[-1]):
+            continue
+        mom = float(c.iloc[-22] / c.iloc[-251] - 1)
+        scores[sym] = mom
+    ranked = sorted(scores, key=scores.get, reverse=True)[:MOMO_N]
+
+    if prev and prev.get("month") == month:
+        holdings = [h["sym"] for h in prev["holdings"]]
+        rebalanced = False
+    else:
+        holdings = ranked
+        rebalanced = True
+    prev_syms = {h["sym"] for h in (prev or {}).get("holdings", [])}
+
+    out = {
+        "month": month,
+        "rebalanced_today": rebalanced,
+        "exposure": 1.0 if (regime and regime.get("label") == "RISK-ON") else 0.5,
+        "holdings": [],
+        "exits": sorted(prev_syms - set(holdings)) if rebalanced else [],
+    }
+    for sym in holdings:
+        df = hist.get(sym)
+        if df is None:
+            continue
+        c = df["Close"]
+        out["holdings"].append({
+            "sym": sym,
+            "industry": universe.get(sym, {}).get("industry", "—"),
+            "close": round(float(c.iloc[-1]), 2),
+            "chg_pct": round(float(c.iloc[-1] / c.iloc[-2] - 1) * 100, 2),
+            "mom_pct": round(scores.get(sym, 0) * 100, 1),
+            "status": ("ADD" if rebalanced and sym not in prev_syms else "HOLD"),
+        })
+    MOMO_JSON.write_text(json.dumps(out, indent=1), encoding="utf-8")
+    return out
+
+
+def build_dashboard(results, scanned, as_of, regime=None, breadth=None, rrg=None,
+                    momo=None):
     payload = json.dumps({"asOf": as_of, "scanned": scanned, "rows": results,
-                          "regime": regime, "breadth": breadth, "rrg": rrg})
+                          "regime": regime, "breadth": breadth, "rrg": rrg,
+                          "momo": momo})
     template = (HERE / "template.html").read_text(encoding="utf-8")
     DASHBOARD.write_text(template.replace("/*__DATA__*/null", payload), encoding="utf-8")
 
@@ -563,12 +624,13 @@ def main():
 
     breadth = compute_breadth(hist)
     rrg = compute_rrg(hist, universe)
+    momo = compute_momo_core(hist, universe, regime, as_of)
     RESULTS_JSON.write_text(json.dumps({"asOf": as_of, "rows": rows,
                                         "regime": regime, "breadth": breadth,
-                                        "rrg": rrg},
+                                        "rrg": rrg, "momo": momo},
                                        indent=1),
                             encoding="utf-8")
-    build_dashboard(rows, len(hist), as_of, regime, breadth, rrg)
+    build_dashboard(rows, len(hist), as_of, regime, breadth, rrg, momo)
 
     fresh = [r for r in rows
              if any(s in r["signals"] for s in ("D20_BREAKOUT", "D55_BREAKOUT",

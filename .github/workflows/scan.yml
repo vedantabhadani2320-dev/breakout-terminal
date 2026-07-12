@@ -1,4 +1,4 @@
-name: daily-scan
+﻿name: daily-scan
 
 on:
   schedule:
@@ -34,6 +34,6 @@ jobs:
           cp dashboard.html docs/index.html
           git config user.name "screener-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add docs/index.html data/bhavcopy.csv data/fo_symbols.txt data/etf_list.csv
+          git add docs/index.html data/bhavcopy.csv data/fo_symbols.txt data/etf_list.csv data/momo_core.json
           git commit -m "scan $(date -u '+%Y-%m-%d %H:%M') UTC" || echo "nothing to commit"
           git push
