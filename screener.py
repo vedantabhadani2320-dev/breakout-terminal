@@ -289,8 +289,13 @@ def scan_symbol(sym, meta, df):
         signals.append("MACD_CROSS")
 
     breakout = any(s in signals for s in ("D20_BREAKOUT", "D55_BREAKOUT", "W52_BREAKOUT"))
+    # stocks holding above ALL DMAs get a wider pre-breakout net: these are the
+    # coiled setups worth a buy-stop order at the trigger
+    above_all_dmas = all(close > float(s.iloc[-1])
+                         for s in (ema20_s, ema50, ema100_s, ema200))
+    near_band = 3.0 if above_all_dmas else NEAR_PCT
     if not breakout and close <= last["don20"] and \
-            (last["don20"] - close) / close * 100 <= NEAR_PCT:
+            (last["don20"] - close) / close * 100 <= near_band:
         signals.append("NEAR_BREAKOUT")
 
     patterns = detect_patterns(df, close, don20, hi52)

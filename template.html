@@ -206,7 +206,9 @@
 
 <section>
   <div class="sec-h"><h2>Focus List</h2>
-    <span class="hint" id="focusHint">A-grade setups: D55 breakout · RS ≥ 80 · Vol ≥ 1.5× · RSI &lt; 78</span></div>
+    <button class="chip on" id="modeSetup">🎯 Loaded setups</button>
+    <button class="chip" id="modeBreak">⚡ Fresh breakouts</button>
+    <span class="hint" id="focusHint"></span></div>
   <div class="focus" id="focus"></div>
 </section>
 
@@ -288,6 +290,21 @@ const isAgrade = r => r.signals.includes("D55_BREAKOUT") && r.rs >= 80
                       && r.vol_ratio >= 1.5 && r.rsi < 78;
 const isFresh = r => ["D20_BREAKOUT", "D55_BREAKOUT", "W52_BREAKOUT"]
                      .some(s => r.signals.includes(s));
+// loaded setup: NOT broken out yet — above all DMAs, leader RS, coiled within
+// 3% below the D20 trigger. Trade it with a buy-stop at the trigger.
+const isSetup = r => !isFresh(r) && r.rs >= 80 && r.rsi < 78
+                     && r.dema && r.dema.every(Boolean)
+                     && (r.don20 - r.close) / r.close <= 0.03;
+// already >3% past the trigger — chasing territory
+const isExtended = r => isFresh(r) && r.close > r.don20 * 1.03;
+// buy-stop trade plan anchored at the trigger, not CMP
+function stopPlan(r) {
+  const atr = r.atr_pct / 100 * r.close;
+  const entry = +(r.don20 * 1.002).toFixed(2);
+  const stop = +(entry - 2 * atr).toFixed(2);
+  return { entry, stop, t1: +(entry + 1.5 * (entry - stop)).toFixed(2),
+           t2: +(entry + 2.5 * (entry - stop)).toFixed(2) };
+}
 const closes = r => r.candles ? r.candles.map(k => k[3]) : (r.spark || []);
 const qty = r => { const rk = r.entry - r.stop;
                    return rk > 0 ? Math.floor(capital * riskPct / 100 / rk) : 0; };
@@ -427,9 +444,14 @@ function notes(r) {
   return out;
 }
 function planText(r) {
-  return [`${r.symbol} — breakout trade plan (${DATA.asOf})`,
-    `Entry ₹${r.entry} · Stop ₹${r.stop} (−${(100 * (r.entry - r.stop) / r.entry).toFixed(1)}%) · T1 ₹${r.tgt1} · T2 ₹${r.tgt2}`,
-    `Qty ${qty(r)} (₹${fmt(capital)} capital @ ${riskPct}% risk) ≈ ₹${fmt(Math.round(qty(r) * r.entry))}`,
+  const fresh = isFresh(r);
+  const p = fresh ? { entry: r.entry, stop: r.stop, t1: r.tgt1, t2: r.tgt2 }
+                  : stopPlan(r);
+  const q = p.entry - p.stop > 0
+    ? Math.floor(capital * riskPct / 100 / (p.entry - p.stop)) : 0;
+  return [`${r.symbol} — ${fresh ? "breakout trade plan" : "SETUP: buy-stop order plan (not triggered yet)"} (${DATA.asOf})`,
+    `${fresh ? "Entry" : "Buy-stop"} ₹${p.entry} · Stop ₹${p.stop} (−${(100 * (p.entry - p.stop) / p.entry).toFixed(1)}%) · T1 ₹${p.t1} · T2 ₹${p.t2}`,
+    `Qty ${q} (₹${fmt(capital)} capital @ ${riskPct}% risk) ≈ ₹${fmt(Math.round(q * p.entry))}`,
     `RS ${r.rs} · RSI ${r.rsi} · ADX ${r.adx} · Vol ${r.vol_ratio}× · Dlv ${r.deliv_per ?? "—"}% · A/D ${r.ad || "—"}`,
     ``, ...notes(r).map(b => `• ${b}`)].join("\n");
 }
@@ -606,33 +628,47 @@ function sectors() {
 }
 
 /* ---------------- focus ---------------- */
+let focusMode = "setup";
 function focusRows() {
-  let rows = DATA.rows.filter(isFresh);
+  let rows = DATA.rows.filter(focusMode === "setup" ? isSetup : isFresh);
   if (sector) rows = rows.filter(r => (r.industry === sector) ||
     (sector === "Other / Unmapped" && (!r.industry || r.industry === "—")));
+  if (focusMode === "setup")
+    return rows.sort((a, b) =>
+      (a.don20 - a.close) / a.close - (b.don20 - b.close) / b.close).slice(0, 12);
   const ag = rows.filter(isAgrade);
   rows = (sector ? rows : (ag.length ? ag : rows));
   return rows.sort((a, b) => b.score - a.score).slice(0, 12);
 }
 function focus() {
   const rows = focusRows();
-  document.getElementById("focus").innerHTML = rows.map((r, i) => `
+  document.getElementById("focusHint").textContent = focusMode === "setup"
+    ? "not broken out YET — above all DMAs · RS ≥ 80 · coiled ≤3% under trigger — place buy-stop at the trigger tonight"
+    : "already triggered — A-grade first · EXT = >3% past trigger, prefer retest";
+  document.getElementById("focus").innerHTML = rows.map((r, i) => {
+    const setup = focusMode === "setup";
+    const p = setup ? stopPlan(r) : { entry: r.entry, stop: r.stop, t1: r.tgt1 };
+    const dist = ((r.don20 - r.close) / r.close * 100);
+    return `
     <div class="fcard" data-sym="${r.symbol}">
       <div class="fs"><span class="fsym">${r.symbol}</span>
         <span class="fchg ${r.chg_pct >= 0 ? "pos" : "neg"}">${r.chg_pct >= 0 ? "+" : ""}${r.chg_pct.toFixed(1)}%</span></div>
       <div class="find">${r.industry || "—"}</div>
       <canvas id="fc${i}"></canvas>
-      <div class="flv"><span>E <b>${fmt(r.entry)}</b></span>
-        <span>SL <b class="neg">${fmt(r.stop)}</b></span>
-        <span>T1 <b class="pos">${fmt(r.tgt1)}</b></span></div>
+      <div class="flv"><span>${setup ? "BUY-STOP" : "E"} <b>${fmt(p.entry)}</b></span>
+        <span>SL <b class="neg">${fmt(p.stop)}</b></span>
+        <span>T1 <b class="pos">${fmt(p.t1)}</b></span></div>
       <div class="fbadges">
-        ${isAgrade(r) ? '<span class="tag t-str">★ A</span>' : ""}
+        ${setup ? `<span class="tag t-sig">${dist.toFixed(1)}% to trigger</span>`
+                : isAgrade(r) ? '<span class="tag t-str">★ A</span>' : ""}
+        ${isExtended(r) ? '<span class="tag t-fo">EXT</span>' : ""}
         <span class="tag t-sig">RS ${r.rs}</span>
         <span class="tag ${r.vol_ratio >= 2 ? "t-str" : "t-mut"}">${r.vol_ratio.toFixed(1)}×</span>
         <span class="tag ${"AB".includes(r.ad) ? "t-str" : "t-mut"}">A/D ${r.ad || "—"}</span>
         ${r.fo ? '<span class="tag t-fo">F&O</span>' : ""}</div>
-    </div>`).join("") ||
-    `<span class="hint" style="color:var(--faint)">No fresh breakouts${sector ? " in " + sector : ""} today.</span>`;
+    </div>`;
+  }).join("") ||
+    `<span class="hint" style="color:var(--faint)">No ${focusMode === "setup" ? "loaded setups" : "fresh breakouts"}${sector ? " in " + sector : ""} today.</span>`;
   rows.forEach((r, i) => {
     const cv = document.getElementById("fc" + i);
     if (r.candles) drawChart(cv, r, { w: 191, h: 54, mini: true }); else cv.remove();
@@ -664,14 +700,18 @@ function visible() {
   });
 }
 function detailHtml(r) {
-  const rk = r.entry - r.stop, q = qty(r);
+  const fresh = isFresh(r);
+  const p = fresh ? { entry: r.entry, stop: r.stop, t1: r.tgt1, t2: r.tgt2 }
+                  : stopPlan(r);
+  const rk = p.entry - p.stop;
+  const q = rk > 0 ? Math.floor(capital * riskPct / 100 / rk) : 0;
   return `<td colspan="20"><div class="detail">
     <div class="dchart"><canvas id="dchart"></canvas></div>
     <div class="dside">
       <div class="dgrid">
-        <div class="dc"><b>${fmt(r.entry)}</b><span>entry</span></div>
-        <div class="dc"><b class="neg">${fmt(r.stop)}</b><span>stop −${(100 * rk / r.entry).toFixed(1)}%</span></div>
-        <div class="dc"><b class="pos">${fmt(r.tgt1)} / ${fmt(r.tgt2)}</b><span>t1 / t2</span></div>
+        <div class="dc"><b>${fmt(p.entry)}</b><span>${fresh ? "entry" : "buy-stop @ trigger"}</span></div>
+        <div class="dc"><b class="neg">${fmt(p.stop)}</b><span>stop −${(100 * rk / p.entry).toFixed(1)}%</span></div>
+        <div class="dc"><b class="pos">${fmt(p.t1)} / ${fmt(p.t2)}</b><span>t1 / t2</span></div>
         <div class="dc"><b>${r.rs}${r.rs_up == null ? "" : r.rs_up ? " ↑" : " ↓"}</b><span>rs rating</span></div>
         <div class="dc"><b>${r.rsi.toFixed(1)}</b><span>rsi 14</span></div>
         <div class="dc"><b>${r.adx.toFixed(1)}${r.di_bull ? "" : " ↓"}</b><span>adx 14</span></div>
@@ -682,8 +722,10 @@ function detailHtml(r) {
         <div class="dc"><b>${r.wk && r.wk.rsi != null ? r.wk.rsi.toFixed(0) : "—"}</b><span>weekly rsi</span></div>
         <div class="dc"><b>${r.resistance ? fmt(r.resistance) : "ATH"}</b><span>next resist</span></div>
       </div>
-      <div class="plan"><b>${fmt(q)} shares</b> ≈ ₹${fmt(Math.round(q * r.entry))}
-        — risking ₹${fmt(Math.round(capital * riskPct / 100))} (${riskPct}% of ₹${fmt(capital)})</div>
+      <div class="plan"><b>${fmt(q)} shares</b> ≈ ₹${fmt(Math.round(q * p.entry))}
+        — risking ₹${fmt(Math.round(capital * riskPct / 100))} (${riskPct}% of ₹${fmt(capital)})
+        ${!fresh ? '<div class="sub2" style="color:var(--dim);font-size:11px;margin-top:3px">Not triggered yet — place a stop-loss BUY order at the trigger; it fills only if the breakout fires.</div>' : ""}
+        ${isExtended(r) ? '<div class="sub2" style="color:var(--amber);font-size:11px;margin-top:3px">EXTENDED: already >3% past the trigger — prefer a retest toward ₹' + fmt(r.don20) + ' over chasing.</div>' : ""}</div>
       <button class="btn" id="copyPlan">⧉ Copy trade plan</button>
     </div>
     <div class="notes"><h4>Setup notes</h4>
@@ -696,7 +738,7 @@ function renderTable() {
     `${rows.length} rows${sector ? " · " + sector : ""} · click a row for chart & trade plan`;
   document.querySelector("#tbl tbody").innerHTML = rows.map(r => {
     const main = `<tr class="mrow${r.symbol === openSym ? " open" : ""}" data-sym="${r.symbol}">
-    <td class="l"><span class="sym">${r.symbol}</span>${isAgrade(r) ? ' <span class="tag t-str">★</span>' : ""}${r.fo ? ' <span class="tag t-fo">F&O</span>' : ""}</td>
+    <td class="l"><span class="sym">${r.symbol}</span>${isAgrade(r) ? ' <span class="tag t-str">★</span>' : ""}${isSetup(r) ? ' <span class="tag t-sig">🎯</span>' : ""}${isExtended(r) ? ' <span class="tag t-fo">EXT</span>' : ""}${r.fo ? ' <span class="tag t-fo">F&O</span>' : ""}</td>
     <td class="l ind">${r.industry || "—"}</td>
     <td>${fmt(r.close)}</td>
     <td class="${r.chg_pct >= 0 ? "pos" : "neg"}">${r.chg_pct.toFixed(2)}</td>
@@ -736,6 +778,14 @@ function renderTable() {
 /* ---------------- wiring ---------------- */
 document.getElementById("agrade").onclick = e => {
   agOnly = !agOnly; e.target.classList.toggle("on", agOnly); renderTable(); };
+document.getElementById("modeSetup").onclick = () => {
+  focusMode = "setup";
+  document.getElementById("modeSetup").classList.add("on");
+  document.getElementById("modeBreak").classList.remove("on"); focus(); };
+document.getElementById("modeBreak").onclick = () => {
+  focusMode = "break";
+  document.getElementById("modeBreak").classList.add("on");
+  document.getElementById("modeSetup").classList.remove("on"); focus(); };
 document.querySelectorAll(".chip.sig").forEach(c => c.onclick = () => {
   document.querySelectorAll(".chip.sig").forEach(x => x.classList.remove("on"));
   c.classList.add("on"); sigF = c.dataset.f; renderTable(); });
