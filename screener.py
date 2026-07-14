@@ -523,6 +523,108 @@ def compute_rrg(hist, universe):
     return sorted(out, key=lambda s: -s["x"])
 
 
+PORTFOLIO_JSON = DATA_DIR / "paper_portfolio.json"
+FRESH_SIGNALS = ("D20_BREAKOUT", "D55_BREAKOUT", "W52_BREAKOUT")
+
+
+def is_agrade(r):
+    """Same rule the backtest validated: D55 breakout + RS>=80 + Vol>=1.5x + RSI<78."""
+    return ("D55_BREAKOUT" in r["signals"] and r["rs"] >= 80
+            and r["vol_ratio"] >= 1.5 and r["rsi"] < 78)
+
+
+def trade_reason(r):
+    if "W52_BREAKOUT" in r["signals"]:
+        headline = "fresh 52-week high"
+    elif "D55_BREAKOUT" in r["signals"]:
+        headline = "55-day channel breakout"
+    else:
+        headline = "20-day high breakout"
+    grade_tag = "A-grade (RS>=80, Vol>=1.5x, RSI<78)" if is_agrade(r) else "raw signal"
+    dlv = f"{r['deliv_per']:.0f}" if r["deliv_per"] is not None else "—"
+    return (f"{headline} — RS {r['rs']}, Vol {r['vol_ratio']}x, RSI {r['rsi']}, "
+            f"Dlv {dlv}% — {grade_tag}")
+
+
+def compute_nav_row(trades, as_of, nifty_close, nifty_base):
+    """Equal-weight average-return index (rebased to 100) per grade bucket,
+    plus a blended total across both buckets pooled together."""
+    def avg_return(pred):
+        vals = []
+        for t in trades:
+            if not pred(t) or t["entry_date"] > as_of:
+                continue
+            r = t["return_pct"] if t["status"] != "OPEN" else \
+                (t["last_price"] / t["entry_price"] - 1) * 100
+            vals.append(r)
+        idx = round(100 * (1 + (sum(vals) / len(vals)) / 100), 3) if vals else 100.0
+        return idx, len(vals)
+
+    a_nav, a_n = avg_return(lambda t: t["grade"] == "A")
+    raw_nav, raw_n = avg_return(lambda t: t["grade"] == "RAW")
+    tot_nav, tot_n = avg_return(lambda t: True)
+    nifty_idx = round(100 * nifty_close / nifty_base, 3) if nifty_base else None
+    return {"date": as_of, "a_nav": a_nav, "a_trades": a_n,
+            "raw_nav": raw_nav, "raw_trades": raw_n,
+            "tot_nav": tot_nav, "tot_trades": tot_n, "nifty_idx": nifty_idx}
+
+
+def update_paper_portfolio(rows, hist, regime, as_of):
+    """Forward-tracked virtual portfolio: 1 position per fresh breakout signal,
+    entered at the close it fired, held to the existing fixed stop / 2R target.
+    Persists in data/paper_portfolio.json across daily runs."""
+    data = json.loads(PORTFOLIO_JSON.read_text(encoding="utf-8")) \
+        if PORTFOLIO_JSON.exists() else {"trades": [], "nav_history": [], "nifty_base": None}
+    trades = data["trades"]
+    open_syms = {t["symbol"] for t in trades if t["status"] == "OPEN"}
+
+    for r in rows:
+        if r["symbol"] in open_syms:
+            continue
+        fired = [s for s in FRESH_SIGNALS if s in r["signals"]]
+        if not fired:
+            continue
+        trades.append({
+            "symbol": r["symbol"], "grade": "A" if is_agrade(r) else "RAW",
+            "signal": fired[0], "reason": trade_reason(r),
+            "entry_date": as_of, "entry_price": r["close"],
+            "stop": r["stop"], "target": r["target"],
+            "status": "OPEN", "exit_date": None, "exit_price": None,
+            "return_pct": None, "last_price": r["close"], "last_date": as_of,
+        })
+
+    for t in trades:
+        if t["status"] != "OPEN" or t["entry_date"] == as_of:
+            continue          # monitoring starts the session after entry
+        df = hist.get(t["symbol"])
+        if df is None or str(df.index[-1].date()) != as_of:
+            continue          # stock fell out of today's universe — leave stale
+        hi = float(df["High"].iloc[-1])
+        lo = float(df["Low"].iloc[-1])
+        cl = float(df["Close"].iloc[-1])
+        if lo <= t["stop"]:                 # conservative: stop wins a same-day overlap
+            t["status"], t["exit_date"], t["exit_price"] = "STOP", as_of, t["stop"]
+            t["return_pct"] = round((t["stop"] / t["entry_price"] - 1) * 100, 2)
+        elif hi >= t["target"]:
+            t["status"], t["exit_date"], t["exit_price"] = "TARGET", as_of, t["target"]
+            t["return_pct"] = round((t["target"] / t["entry_price"] - 1) * 100, 2)
+        else:
+            t["last_price"], t["last_date"] = round(cl, 2), as_of
+
+    nifty_close = regime.get("nifty") if regime else None
+    if nifty_close is not None:
+        if data["nifty_base"] is None:
+            data["nifty_base"] = nifty_close
+        row = compute_nav_row(trades, as_of, nifty_close, data["nifty_base"])
+        if data["nav_history"] and data["nav_history"][-1]["date"] == as_of:
+            data["nav_history"][-1] = row
+        else:
+            data["nav_history"].append(row)
+
+    PORTFOLIO_JSON.write_text(json.dumps(data, indent=1), encoding="utf-8")
+    return data
+
+
 MOMO_JSON = DATA_DIR / "momo_core.json"
 MOMO_N = 15
 
@@ -583,10 +685,10 @@ def compute_momo_core(hist, universe, regime, as_of):
 
 
 def build_dashboard(results, scanned, as_of, regime=None, breadth=None, rrg=None,
-                    momo=None):
+                    momo=None, portfolio=None):
     payload = json.dumps({"asOf": as_of, "scanned": scanned, "rows": results,
                           "regime": regime, "breadth": breadth, "rrg": rrg,
-                          "momo": momo})
+                          "momo": momo, "portfolio": portfolio})
     template = (HERE / "template.html").read_text(encoding="utf-8")
     DASHBOARD.write_text(template.replace("/*__DATA__*/null", payload), encoding="utf-8")
 
@@ -630,18 +732,23 @@ def main():
     breadth = compute_breadth(hist)
     rrg = compute_rrg(hist, universe)
     momo = compute_momo_core(hist, universe, regime, as_of)
+    portfolio = update_paper_portfolio(rows, hist, regime, as_of)
     RESULTS_JSON.write_text(json.dumps({"asOf": as_of, "rows": rows,
                                         "regime": regime, "breadth": breadth,
-                                        "rrg": rrg, "momo": momo},
+                                        "rrg": rrg, "momo": momo,
+                                        "portfolio": portfolio},
                                        indent=1),
                             encoding="utf-8")
-    build_dashboard(rows, len(hist), as_of, regime, breadth, rrg, momo)
+    build_dashboard(rows, len(hist), as_of, regime, breadth, rrg, momo, portfolio)
 
     fresh = [r for r in rows
              if any(s in r["signals"] for s in ("D20_BREAKOUT", "D55_BREAKOUT",
                                                 "W52_BREAKOUT"))]
+    open_trades = [t for t in portfolio["trades"] if t["status"] == "OPEN"]
     print(f"\nDone. {len(fresh)} breakouts, {len(rows) - len(fresh)} watchlist "
           f"(data as of {as_of})")
+    print(f"Virtual portfolio: {len(portfolio['trades'])} trades total, "
+          f"{len(open_trades)} open")
     print(f"Dashboard: {DASHBOARD}")
 
 

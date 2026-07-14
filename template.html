@@ -120,6 +120,9 @@
   .wrap { overflow: auto; max-height: 82vh; border: 1px solid var(--border);
           border-radius: 12px; background: var(--panel); }
   table { border-collapse: collapse; width: 100%; min-width: 1430px; }
+  #perfTbl { min-width: 620px; }
+  #portTbl { min-width: 1250px; }
+  #portTbl td.reason { white-space: normal; max-width: 340px; text-align: left; }
   th, td { padding: 7px 9px; text-align: right; white-space: nowrap;
            border-bottom: 1px solid #161d29; font-size: 12px; }
   th { color: var(--faint); font-weight: 700; cursor: pointer; user-select: none;
@@ -210,6 +213,45 @@
     <button class="chip" id="modeBreak">⚡ Fresh breakouts</button>
     <span class="hint" id="focusHint"></span></div>
   <div class="focus" id="focus"></div>
+</section>
+
+<section id="portSec" style="display:none">
+  <div class="sec-h"><h2>Virtual Portfolio</h2>
+    <span class="hint">1 virtual position per fresh breakout signal, entered at the close it fired &middot;
+    exits at the fixed stop / 2R target already shown in the screener &middot; vs Nifty 50</span></div>
+  <div class="kpis" id="portKpis"></div>
+  <div style="padding:10px 14px;background:var(--panel);border:1px solid var(--border);
+              border-radius:12px;margin:12px 0">
+    <canvas id="navChart"></canvas>
+    <div id="navLegend" style="display:flex;gap:16px;margin-top:6px;font-size:11px;color:var(--dim)"></div>
+  </div>
+  <div class="wrap" style="max-height:none;margin-bottom:14px">
+    <table id="perfTbl">
+      <thead><tr>
+        <th class="l">Period</th>
+        <th>A-Grade</th><th>Raw</th><th>Total</th><th>Nifty 50</th>
+        <th>A-Grade vs Nifty</th><th>Raw vs Nifty</th><th>Total vs Nifty</th>
+      </tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <div class="controls">
+    <button class="chip on" id="portAll">All</button>
+    <button class="chip" id="portA">&#9733; A-grade</button>
+    <button class="chip" id="portRaw">Raw</button>
+    <button class="chip" id="portOpen">Open only</button>
+  </div>
+  <div class="wrap">
+    <table id="portTbl">
+      <thead><tr>
+        <th class="l">Symbol</th><th class="l">Grade</th><th class="l">Signal</th>
+        <th class="l">Reason</th>
+        <th>Entry Date</th><th>Entry &#8377;</th><th>Stop</th><th>Target</th>
+        <th>Now / Exit &#8377;</th><th>Return %</th><th>Status</th><th>Days</th>
+      </tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
 </section>
 
 <section>
@@ -775,6 +817,158 @@ function renderTable() {
   });
 }
 
+/* ---------------- virtual portfolio ---------------- */
+const GBADGE = { A: '<span class="tag t-str">&#9733; A</span>', RAW: '<span class="tag t-mut">RAW</span>' };
+const STBADGE = {
+  OPEN: '<span class="tag t-sig">OPEN</span>',
+  TARGET: '<span class="tag t-str">TARGET &#10003;</span>',
+  STOP: '<span class="tag" style="background:rgba(234,57,67,.13);color:var(--red)">STOP &#10007;</span>',
+};
+let portGrade = "ALL", portOpenOnly = false, pData = null;
+const NOTIONAL = 100000;   // equal virtual notional per trade, for the ₹ total only
+
+function daysBetween(a, b) { return Math.round((new Date(b) - new Date(a)) / 86400000); }
+function tradeReturn(t) {
+  return t.status === "OPEN" ? (t.last_price / t.entry_price - 1) * 100 : t.return_pct;
+}
+function periodReturn(hist, days) {
+  if (!hist.length) return null;
+  const last = hist[hist.length - 1];
+  const cutoff = new Date(last.date); cutoff.setDate(cutoff.getDate() - days);
+  let base = hist[0];
+  for (const h of hist) { if (new Date(h.date) <= cutoff) base = h; else break; }
+  return { a: last.a_nav / base.a_nav - 1, raw: last.raw_nav / base.raw_nav - 1,
+           tot: last.tot_nav / base.tot_nav - 1,
+           nifty: (last.nifty_idx != null && base.nifty_idx != null)
+                  ? last.nifty_idx / base.nifty_idx - 1 : null };
+}
+function portfolioKpis(p) {
+  const closed = p.trades.filter(t => t.status !== "OPEN");
+  const wins = closed.filter(t => t.return_pct > 0);
+  const open = p.trades.filter(t => t.status === "OPEN");
+  const avg = closed.length ? closed.reduce((s, t) => s + t.return_pct, 0) / closed.length : 0;
+  const last = p.nav_history[p.nav_history.length - 1] || {};
+  const idxStr = v => v == null ? "—" : (v - 100 >= 0 ? "+" : "") + (v - 100).toFixed(1) + "%";
+  let totStr = "—";
+  if (last.tot_nav != null && last.tot_trades) {
+    const pct = last.tot_nav - 100;
+    const pnl = NOTIONAL * last.tot_trades * (last.tot_nav / 100 - 1);
+    totStr = `${pnl >= 0 ? "+" : ""}₹${fmt(Math.round(pnl))} (${pct >= 0 ? "+" : ""}${pct.toFixed(1)}%)`;
+  }
+  document.getElementById("portKpis").innerHTML = [
+    [p.trades.length, "total trades", ""],
+    [open.length, "open now", ""],
+    [closed.length ? Math.round(100 * wins.length / closed.length) + "%" : "—", "win rate (closed)", ""],
+    [closed.length ? avg.toFixed(1) + "%" : "—", "avg return (closed)", ""],
+    [totStr, "total portfolio mtm", "hl"],
+    [idxStr(last.a_nav), "★ a-grade index", ""],
+    [idxStr(last.raw_nav), "raw index", ""],
+    [idxStr(last.nifty_idx), "nifty 50", ""],
+  ].map(([v, l, c]) => `<div class="kpi ${c}"><b>${v}</b><span>${l}</span></div>`).join("");
+}
+function perfTable(p) {
+  const h = p.nav_history;
+  const periods = [["1D", 1], ["1W", 7], ["1M", 30], ["1Y", 365]];
+  const pct = x => x == null ? "—" : (x >= 0 ? "+" : "") + (x * 100).toFixed(2) + "%";
+  const cls = x => x == null ? "" : x >= 0 ? "pos" : "neg";
+  document.querySelector("#perfTbl tbody").innerHTML = periods.map(([label, days]) => {
+    const r = periodReturn(h, days);
+    if (!r) return `<tr><td class="l">${label}</td><td colspan="7">—</td></tr>`;
+    const da = r.nifty == null ? null : r.a - r.nifty, draw = r.nifty == null ? null : r.raw - r.nifty,
+          dtot = r.nifty == null ? null : r.tot - r.nifty;
+    return `<tr><td class="l">${label}</td>
+      <td class="${cls(r.a)}">${pct(r.a)}</td>
+      <td class="${cls(r.raw)}">${pct(r.raw)}</td>
+      <td class="${cls(r.tot)}">${pct(r.tot)}</td>
+      <td class="${cls(r.nifty)}">${pct(r.nifty)}</td>
+      <td class="${cls(da)}">${pct(da)}</td>
+      <td class="${cls(draw)}">${pct(draw)}</td>
+      <td class="${cls(dtot)}">${pct(dtot)}</td>
+    </tr>`;
+  }).join("");
+}
+function drawNav(p) {
+  const h = p.nav_history;
+  const cv = document.getElementById("navChart");
+  if (h.length < 2) { cv.style.display = "none"; return; }
+  cv.style.display = "";
+  const dpr = window.devicePixelRatio || 1;
+  const W = Math.min(1200, innerWidth - 80), H = 220;
+  cv.width = W * dpr; cv.height = H * dpr;
+  cv.style.width = W + "px"; cv.style.height = H + "px";
+  const ctx = cv.getContext("2d"); ctx.scale(dpr, dpr);
+  const pad = 8;
+  const series = [["a_nav", "#16c784", "A-grade"], ["raw_nav", "#8b96a8", "Raw"],
+                  ["tot_nav", "#f0b90b", "Total"], ["nifty_idx", "#3d8bfd", "Nifty 50"]];
+  const all = h.flatMap(d => series.map(([k]) => d[k]).filter(v => v != null)).concat([100]);
+  const lo = Math.min(...all), hi = Math.max(...all);
+  const rng = (hi - lo) || 1;
+  const X = i => pad + i / (h.length - 1) * (W - 2 * pad);
+  const Y = v => H - pad - (v - lo) / rng * (H - 2 * pad);
+  ctx.clearRect(0, 0, W, H);
+  ctx.strokeStyle = "#232d3d"; ctx.setLineDash([4, 4]); ctx.lineWidth = 1;
+  ctx.beginPath(); ctx.moveTo(pad, Y(100)); ctx.lineTo(W - pad, Y(100)); ctx.stroke();
+  ctx.setLineDash([]);
+  for (const [key, col] of series) {
+    ctx.beginPath(); ctx.strokeStyle = col; ctx.lineWidth = 1.6;
+    let started = false;
+    h.forEach((d, i) => {
+      if (d[key] == null) return;
+      const x = X(i), y = Y(d[key]);
+      started ? ctx.lineTo(x, y) : ctx.moveTo(x, y); started = true;
+    });
+    ctx.stroke();
+  }
+  document.getElementById("navLegend").innerHTML = series.map(([k, col, label]) =>
+    `<span><i style="display:inline-block;width:9px;height:9px;background:${col};
+     border-radius:2px;margin-right:4px"></i>${label}</span>`).join("");
+}
+function portRows() {
+  let rows = pData.trades;
+  if (portGrade !== "ALL") rows = rows.filter(t => t.grade === portGrade);
+  if (portOpenOnly) rows = rows.filter(t => t.status === "OPEN");
+  return [...rows].sort((a, b) => b.entry_date.localeCompare(a.entry_date));
+}
+function renderPortTable() {
+  const rows = portRows();
+  document.querySelector("#portTbl tbody").innerHTML = rows.map(t => {
+    const ret = tradeReturn(t);
+    const nowPx = t.status === "OPEN" ? t.last_price : t.exit_price;
+    const days = daysBetween(t.entry_date, t.status === "OPEN" ? t.last_date : t.exit_date);
+    return `<tr>
+      <td class="l"><span class="sym">${t.symbol}</span></td>
+      <td class="l">${GBADGE[t.grade]}</td>
+      <td class="l">${SIGT[t.signal] ? `<span class="tag ${SIGT[t.signal][1]}">${SIGT[t.signal][0]}</span>` : t.signal}</td>
+      <td class="l reason">${t.reason}</td>
+      <td>${t.entry_date}</td>
+      <td>${fmt(t.entry_price)}</td>
+      <td class="neg">${fmt(t.stop)}</td>
+      <td class="pos">${fmt(t.target)}</td>
+      <td>${fmt(nowPx)}</td>
+      <td class="${ret >= 0 ? "pos" : "neg"}">${ret >= 0 ? "+" : ""}${ret.toFixed(1)}%</td>
+      <td>${STBADGE[t.status]}</td>
+      <td>${days}</td>
+    </tr>`;
+  }).join("") || `<tr><td colspan="12" class="l" style="color:var(--faint)">No trades yet.</td></tr>`;
+}
+function setPortChip(el) {
+  document.querySelectorAll("#portAll,#portA,#portRaw").forEach(x => x.classList.remove("on"));
+  el.classList.add("on"); renderPortTable();
+}
+document.getElementById("portAll").onclick = e => { portGrade = "ALL"; setPortChip(e.target); };
+document.getElementById("portA").onclick = e => { portGrade = "A"; setPortChip(e.target); };
+document.getElementById("portRaw").onclick = e => { portGrade = "RAW"; setPortChip(e.target); };
+document.getElementById("portOpen").onclick = e => {
+  portOpenOnly = !portOpenOnly; e.target.classList.toggle("on", portOpenOnly); renderPortTable();
+};
+function virtualPortfolio() {
+  const p = DATA.portfolio;
+  if (!p || !p.trades || !p.trades.length) return;
+  pData = p;
+  document.getElementById("portSec").style.display = "";
+  portfolioKpis(p); perfTable(p); drawNav(p); renderPortTable();
+}
+
 /* ---------------- wiring ---------------- */
 document.getElementById("agrade").onclick = e => {
   agOnly = !agOnly; e.target.classList.toggle("on", agOnly); renderTable(); };
@@ -823,7 +1017,7 @@ document.querySelectorAll("#tbl th[data-k]").forEach(th => th.onclick = () => {
 });
 
 document.getElementById("asof").textContent = DATA.asOf;
-topbar(); kpis(); momoCore(); drawRRG(); sectors(); focus(); renderTable();
+topbar(); kpis(); momoCore(); drawRRG(); sectors(); focus(); renderTable(); virtualPortfolio();
 </script>
 </body>
 </html>
