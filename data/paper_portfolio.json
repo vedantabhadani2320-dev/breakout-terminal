@@ -13,7 +13,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 342.55,
+   "last_price": 343.2,
    "last_date": "2026-07-16"
   },
   {
@@ -29,7 +29,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 200.79,
+   "last_price": 198.51,
    "last_date": "2026-07-16"
   },
   {
@@ -45,7 +45,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 925.05,
+   "last_price": 896.95,
    "last_date": "2026-07-16"
   },
   {
@@ -61,7 +61,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 6694.5,
+   "last_price": 6782.0,
    "last_date": "2026-07-16"
   },
   {
@@ -77,7 +77,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1456.0,
+   "last_price": 1419.0,
    "last_date": "2026-07-16"
   },
   {
@@ -93,7 +93,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 251.3,
+   "last_price": 241.19,
    "last_date": "2026-07-16"
   },
   {
@@ -125,7 +125,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1561.3,
+   "last_price": 1543.7,
    "last_date": "2026-07-16"
   },
   {
@@ -141,7 +141,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1678.1,
+   "last_price": 1684.0,
    "last_date": "2026-07-16"
   },
   {
@@ -157,7 +157,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 7341.0,
+   "last_price": 7316.0,
    "last_date": "2026-07-16"
   },
   {
@@ -173,7 +173,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 253.76,
+   "last_price": 256.03,
    "last_date": "2026-07-16"
   },
   {
@@ -189,7 +189,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 502.95,
+   "last_price": 499.7,
    "last_date": "2026-07-16"
   },
   {
@@ -201,10 +201,10 @@
    "entry_price": 2487.7,
    "stop": 2387.71,
    "target": 2687.68,
-   "status": "OPEN",
-   "exit_date": null,
-   "exit_price": null,
-   "return_pct": null,
+   "status": "STOP",
+   "exit_date": "2026-07-16",
+   "exit_price": 2387.71,
+   "return_pct": -4.02,
    "last_price": 2469.2,
    "last_date": "2026-07-16"
   },
@@ -221,7 +221,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 81.9,
+   "last_price": 81.48,
    "last_date": "2026-07-16"
   },
   {
@@ -237,7 +237,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 396.85,
+   "last_price": 400.1,
    "last_date": "2026-07-16"
   },
   {
@@ -253,7 +253,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 2822.9,
+   "last_price": 2812.6,
    "last_date": "2026-07-16"
   },
   {
@@ -269,7 +269,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 442.2,
+   "last_price": 440.7,
    "last_date": "2026-07-16"
   },
   {
@@ -285,7 +285,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 590.9,
+   "last_price": 595.65,
    "last_date": "2026-07-16"
   },
   {
@@ -301,7 +301,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 616.2,
+   "last_price": 611.1,
    "last_date": "2026-07-16"
   },
   {
@@ -317,7 +317,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1889.6,
+   "last_price": 1890.2,
    "last_date": "2026-07-16"
   },
   {
@@ -349,7 +349,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 95.58,
+   "last_price": 96.29,
    "last_date": "2026-07-16"
   },
   {
@@ -365,7 +365,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 776.5,
+   "last_price": 793.35,
    "last_date": "2026-07-16"
   },
   {
@@ -381,7 +381,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 558.05,
+   "last_price": 592.0,
    "last_date": "2026-07-16"
   },
   {
@@ -397,7 +397,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 423.1,
+   "last_price": 419.9,
    "last_date": "2026-07-16"
   },
   {
@@ -413,7 +413,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 870.1,
+   "last_price": 871.95,
    "last_date": "2026-07-16"
   },
   {
@@ -445,7 +445,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 613.95,
+   "last_price": 605.2,
    "last_date": "2026-07-16"
   },
   {
@@ -461,7 +461,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 380.5,
+   "last_price": 393.3,
    "last_date": "2026-07-16"
   },
   {
@@ -477,7 +477,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 822.5,
+   "last_price": 820.75,
    "last_date": "2026-07-16"
   },
   {
@@ -493,7 +493,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1745.1,
+   "last_price": 1759.7,
    "last_date": "2026-07-16"
   },
   {
@@ -525,7 +525,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1405.2,
+   "last_price": 1418.2,
    "last_date": "2026-07-16"
   },
   {
@@ -541,7 +541,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1057.65,
+   "last_price": 1068.55,
    "last_date": "2026-07-16"
   },
   {
@@ -557,7 +557,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1630.5,
+   "last_price": 1627.8,
    "last_date": "2026-07-16"
   },
   {
@@ -573,7 +573,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 372.8,
+   "last_price": 368.75,
    "last_date": "2026-07-16"
   },
   {
@@ -589,7 +589,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 4979.0,
+   "last_price": 4987.6,
    "last_date": "2026-07-16"
   },
   {
@@ -621,7 +621,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1553.2,
+   "last_price": 1554.0,
    "last_date": "2026-07-16"
   },
   {
@@ -637,7 +637,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 447.3,
+   "last_price": 437.15,
    "last_date": "2026-07-16"
   },
   {
@@ -653,7 +653,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 545.8,
+   "last_price": 540.55,
    "last_date": "2026-07-16"
   },
   {
@@ -685,7 +685,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1390.0,
+   "last_price": 1352.8,
    "last_date": "2026-07-16"
   },
   {
@@ -701,7 +701,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 4120.0,
+   "last_price": 4124.1,
    "last_date": "2026-07-16"
   },
   {
@@ -717,7 +717,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1330.4,
+   "last_price": 1363.2,
    "last_date": "2026-07-16"
   },
   {
@@ -733,7 +733,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1299.0,
+   "last_price": 1288.3,
    "last_date": "2026-07-16"
   },
   {
@@ -749,7 +749,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 266.5,
+   "last_price": 265.44,
    "last_date": "2026-07-16"
   },
   {
@@ -765,7 +765,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 972.1,
+   "last_price": 971.8,
    "last_date": "2026-07-16"
   },
   {
@@ -781,7 +781,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 68.76,
+   "last_price": 73.1,
    "last_date": "2026-07-16"
   },
   {
@@ -797,7 +797,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 763.35,
+   "last_price": 755.25,
    "last_date": "2026-07-16"
   },
   {
@@ -813,7 +813,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 152.05,
+   "last_price": 155.51,
    "last_date": "2026-07-16"
   },
   {
@@ -825,10 +825,10 @@
    "entry_price": 545.95,
    "stop": 485.52,
    "target": 666.81,
-   "status": "OPEN",
-   "exit_date": null,
-   "exit_price": null,
-   "return_pct": null,
+   "status": "STOP",
+   "exit_date": "2026-07-16",
+   "exit_price": 485.52,
+   "return_pct": -11.07,
    "last_price": 515.0,
    "last_date": "2026-07-16"
   },
@@ -845,7 +845,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1270.9,
+   "last_price": 1267.1,
    "last_date": "2026-07-16"
   },
   {
@@ -861,7 +861,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 2325.3,
+   "last_price": 2321.4,
    "last_date": "2026-07-16"
   },
   {
@@ -877,7 +877,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 812.6,
+   "last_price": 797.5,
    "last_date": "2026-07-16"
   },
   {
@@ -893,7 +893,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 2965.0,
+   "last_price": 2921.9,
    "last_date": "2026-07-16"
   },
   {
@@ -909,7 +909,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 992.6,
+   "last_price": 986.35,
    "last_date": "2026-07-16"
   },
   {
@@ -925,7 +925,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1621.0,
+   "last_price": 1608.9,
    "last_date": "2026-07-16"
   },
   {
@@ -941,7 +941,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 3281.8,
+   "last_price": 3265.3,
    "last_date": "2026-07-16"
   },
   {
@@ -957,7 +957,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 212.8,
+   "last_price": 205.64,
    "last_date": "2026-07-16"
   },
   {
@@ -973,7 +973,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 408.0,
+   "last_price": 401.35,
    "last_date": "2026-07-16"
   },
   {
@@ -989,7 +989,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 490.7,
+   "last_price": 490.05,
    "last_date": "2026-07-16"
   },
   {
@@ -1005,7 +1005,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 250.84,
+   "last_price": 247.61,
    "last_date": "2026-07-16"
   },
   {
@@ -1021,7 +1021,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 846.05,
+   "last_price": 839.75,
    "last_date": "2026-07-16"
   },
   {
@@ -1037,7 +1037,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1294.9,
+   "last_price": 1328.15,
    "last_date": "2026-07-16"
   },
   {
@@ -1053,7 +1053,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1033.0,
+   "last_price": 1020.7,
    "last_date": "2026-07-16"
   },
   {
@@ -1069,7 +1069,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1830.0,
+   "last_price": 1843.5,
    "last_date": "2026-07-16"
   },
   {
@@ -1085,7 +1085,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1181.05,
+   "last_price": 1188.3,
    "last_date": "2026-07-16"
   },
   {
@@ -1101,7 +1101,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 85.33,
+   "last_price": 83.76,
    "last_date": "2026-07-16"
   },
   {
@@ -1117,7 +1117,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 535.75,
+   "last_price": 546.6,
    "last_date": "2026-07-16"
   },
   {
@@ -1133,7 +1133,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 813.45,
+   "last_price": 812.1,
    "last_date": "2026-07-16"
   },
   {
@@ -1149,7 +1149,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1142.3,
+   "last_price": 1156.55,
    "last_date": "2026-07-16"
   },
   {
@@ -1165,7 +1165,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 311.65,
+   "last_price": 298.55,
    "last_date": "2026-07-16"
   },
   {
@@ -1181,7 +1181,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 11831.0,
+   "last_price": 11771.0,
    "last_date": "2026-07-16"
   },
   {
@@ -1197,7 +1197,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 196.54,
+   "last_price": 199.4,
    "last_date": "2026-07-16"
   },
   {
@@ -1213,7 +1213,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 583.25,
+   "last_price": 608.45,
    "last_date": "2026-07-16"
   },
   {
@@ -1229,7 +1229,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 375.95,
+   "last_price": 369.7,
    "last_date": "2026-07-16"
   },
   {
@@ -1245,7 +1245,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1737.4,
+   "last_price": 1741.7,
    "last_date": "2026-07-16"
   },
   {
@@ -1261,7 +1261,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1824.5,
+   "last_price": 1822.1,
    "last_date": "2026-07-16"
   },
   {
@@ -1277,7 +1277,7 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 27635.0,
+   "last_price": 27870.0,
    "last_date": "2026-07-16"
   },
   {
@@ -1636,6 +1636,363 @@
    "return_pct": null,
    "last_price": 1529.1,
    "last_date": "2026-07-16"
+  },
+  {
+   "symbol": "UNIMECH",
+   "grade": "A",
+   "signal": "D20_BREAKOUT",
+   "reason": "fresh 52-week high \u2014 RS 86, Vol 4.28x, RSI 67.4, Dlv 32% \u2014 A-grade (RS>=80, Vol>=1.5x, RSI<78)",
+   "industry": "\u2014",
+   "entry_date": "2026-07-16",
+   "entry_price": 1296.9,
+   "stop": 1178.71,
+   "target": 1533.28,
+   "status": "OPEN",
+   "exit_date": null,
+   "exit_price": null,
+   "return_pct": null,
+   "last_price": 1296.9,
+   "last_date": "2026-07-16"
+  },
+  {
+   "symbol": "SAILIFE",
+   "grade": "RAW",
+   "signal": "D20_BREAKOUT",
+   "reason": "fresh 52-week high \u2014 RS 84, Vol 1.31x, RSI 66.7, Dlv 57% \u2014 raw signal",
+   "industry": "Healthcare",
+   "entry_date": "2026-07-16",
+   "entry_price": 1294.9,
+   "stop": 1218.39,
+   "target": 1447.92,
+   "status": "OPEN",
+   "exit_date": null,
+   "exit_price": null,
+   "return_pct": null,
+   "last_price": 1294.9,
+   "last_date": "2026-07-16"
+  },
+  {
+   "symbol": "GRINDWELL",
+   "grade": "A",
+   "signal": "D20_BREAKOUT",
+   "reason": "fresh 52-week high \u2014 RS 92, Vol 2.95x, RSI 73.7, Dlv 48% \u2014 A-grade (RS>=80, Vol>=1.5x, RSI<78)",
+   "industry": "\u2014",
+   "entry_date": "2026-07-16",
+   "entry_price": 2382.3,
+   "stop": 2188.15,
+   "target": 2770.6,
+   "status": "OPEN",
+   "exit_date": null,
+   "exit_price": null,
+   "return_pct": null,
+   "last_price": 2382.3,
+   "last_date": "2026-07-16"
+  },
+  {
+   "symbol": "CYIENTDLM",
+   "grade": "A",
+   "signal": "D20_BREAKOUT",
+   "reason": "fresh 52-week high \u2014 RS 94, Vol 4.45x, RSI 75.4, Dlv 18% \u2014 A-grade (RS>=80, Vol>=1.5x, RSI<78)",
+   "industry": "\u2014",
+   "entry_date": "2026-07-16",
+   "entry_price": 586.9,
+   "stop": 533.98,
+   "target": 692.74,
+   "status": "OPEN",
+   "exit_date": null,
+   "exit_price": null,
+   "return_pct": null,
+   "last_price": 586.9,
+   "last_date": "2026-07-16"
+  },
+  {
+   "symbol": "BHEL",
+   "grade": "A",
+   "signal": "D20_BREAKOUT",
+   "reason": "fresh 52-week high \u2014 RS 89, Vol 3.25x, RSI 66.3, Dlv 22% \u2014 A-grade (RS>=80, Vol>=1.5x, RSI<78)",
+   "industry": "Capital Goods",
+   "entry_date": "2026-07-16",
+   "entry_price": 435.4,
+   "stop": 404.68,
+   "target": 496.84,
+   "status": "OPEN",
+   "exit_date": null,
+   "exit_price": null,
+   "return_pct": null,
+   "last_price": 435.4,
+   "last_date": "2026-07-16"
+  },
+  {
+   "symbol": "HSCL",
+   "grade": "A",
+   "signal": "D20_BREAKOUT",
+   "reason": "fresh 52-week high \u2014 RS 90, Vol 2.38x, RSI 65.8, Dlv 21% \u2014 A-grade (RS>=80, Vol>=1.5x, RSI<78)",
+   "industry": "Chemicals",
+   "entry_date": "2026-07-16",
+   "entry_price": 722.35,
+   "stop": 668.01,
+   "target": 831.03,
+   "status": "OPEN",
+   "exit_date": null,
+   "exit_price": null,
+   "return_pct": null,
+   "last_price": 722.35,
+   "last_date": "2026-07-16"
+  },
+  {
+   "symbol": "IRISDOREME",
+   "grade": "A",
+   "signal": "D20_BREAKOUT",
+   "reason": "fresh 52-week high \u2014 RS 84, Vol 2.34x, RSI 73.4, Dlv 22% \u2014 A-grade (RS>=80, Vol>=1.5x, RSI<78)",
+   "industry": "\u2014",
+   "entry_date": "2026-07-16",
+   "entry_price": 46.82,
+   "stop": 42.25,
+   "target": 55.96,
+   "status": "OPEN",
+   "exit_date": null,
+   "exit_price": null,
+   "return_pct": null,
+   "last_price": 46.82,
+   "last_date": "2026-07-16"
+  },
+  {
+   "symbol": "SONACOMS",
+   "grade": "RAW",
+   "signal": "D20_BREAKOUT",
+   "reason": "fresh 52-week high \u2014 RS 81, Vol 1.26x, RSI 74.4, Dlv 48% \u2014 raw signal",
+   "industry": "Automobile and Auto Components",
+   "entry_date": "2026-07-16",
+   "entry_price": 683.4,
+   "stop": 649.62,
+   "target": 750.96,
+   "status": "OPEN",
+   "exit_date": null,
+   "exit_price": null,
+   "return_pct": null,
+   "last_price": 683.4,
+   "last_date": "2026-07-16"
+  },
+  {
+   "symbol": "APTUS",
+   "grade": "RAW",
+   "signal": "D20_BREAKOUT",
+   "reason": "55-day channel breakout \u2014 RS 68, Vol 1.26x, RSI 71.9, Dlv 60% \u2014 raw signal",
+   "industry": "Financial Services",
+   "entry_date": "2026-07-16",
+   "entry_price": 299.95,
+   "stop": 282.87,
+   "target": 334.11,
+   "status": "OPEN",
+   "exit_date": null,
+   "exit_price": null,
+   "return_pct": null,
+   "last_price": 299.95,
+   "last_date": "2026-07-16"
+  },
+  {
+   "symbol": "ALGOQUANT",
+   "grade": "RAW",
+   "signal": "D20_BREAKOUT",
+   "reason": "55-day channel breakout \u2014 RS 57, Vol 3.87x, RSI 74.2, Dlv 12% \u2014 raw signal",
+   "industry": "\u2014",
+   "entry_date": "2026-07-16",
+   "entry_price": 65.14,
+   "stop": 60.01,
+   "target": 75.4,
+   "status": "OPEN",
+   "exit_date": null,
+   "exit_price": null,
+   "return_pct": null,
+   "last_price": 65.14,
+   "last_date": "2026-07-16"
+  },
+  {
+   "symbol": "RAJRATAN",
+   "grade": "RAW",
+   "signal": "D20_BREAKOUT",
+   "reason": "55-day channel breakout \u2014 RS 57, Vol 3.94x, RSI 69.2, Dlv 32% \u2014 raw signal",
+   "industry": "\u2014",
+   "entry_date": "2026-07-16",
+   "entry_price": 495.9,
+   "stop": 456.14,
+   "target": 575.42,
+   "status": "OPEN",
+   "exit_date": null,
+   "exit_price": null,
+   "return_pct": null,
+   "last_price": 495.9,
+   "last_date": "2026-07-16"
+  },
+  {
+   "symbol": "TTKPRESTIG",
+   "grade": "RAW",
+   "signal": "D20_BREAKOUT",
+   "reason": "55-day channel breakout \u2014 RS 82, Vol 0.35x, RSI 73.8, Dlv 65% \u2014 raw signal",
+   "industry": "\u2014",
+   "entry_date": "2026-07-16",
+   "entry_price": 677.7,
+   "stop": 629.25,
+   "target": 774.6,
+   "status": "OPEN",
+   "exit_date": null,
+   "exit_price": null,
+   "return_pct": null,
+   "last_price": 677.7,
+   "last_date": "2026-07-16"
+  },
+  {
+   "symbol": "IIFL",
+   "grade": "RAW",
+   "signal": "D20_BREAKOUT",
+   "reason": "55-day channel breakout \u2014 RS 53, Vol 2.27x, RSI 65.0, Dlv 49% \u2014 raw signal",
+   "industry": "Financial Services",
+   "entry_date": "2026-07-16",
+   "entry_price": 567.1,
+   "stop": 528.98,
+   "target": 643.34,
+   "status": "OPEN",
+   "exit_date": null,
+   "exit_price": null,
+   "return_pct": null,
+   "last_price": 567.1,
+   "last_date": "2026-07-16"
+  },
+  {
+   "symbol": "SUNDRMFAST",
+   "grade": "RAW",
+   "signal": "D20_BREAKOUT",
+   "reason": "55-day channel breakout \u2014 RS 62, Vol 0.7x, RSI 76.2, Dlv 61% \u2014 raw signal",
+   "industry": "\u2014",
+   "entry_date": "2026-07-16",
+   "entry_price": 970.35,
+   "stop": 929.31,
+   "target": 1052.43,
+   "status": "OPEN",
+   "exit_date": null,
+   "exit_price": null,
+   "return_pct": null,
+   "last_price": 970.35,
+   "last_date": "2026-07-16"
+  },
+  {
+   "symbol": "PGEL",
+   "grade": "RAW",
+   "signal": "D20_BREAKOUT",
+   "reason": "55-day channel breakout \u2014 RS 55, Vol 2.2x, RSI 73.7, Dlv 28% \u2014 raw signal",
+   "industry": "Consumer Durables",
+   "entry_date": "2026-07-16",
+   "entry_price": 620.95,
+   "stop": 580.71,
+   "target": 701.43,
+   "status": "OPEN",
+   "exit_date": null,
+   "exit_price": null,
+   "return_pct": null,
+   "last_price": 620.95,
+   "last_date": "2026-07-16"
+  },
+  {
+   "symbol": "RHETAN",
+   "grade": "RAW",
+   "signal": "D20_BREAKOUT",
+   "reason": "20-day high breakout \u2014 RS 71, Vol 2.69x, RSI 68.5, Dlv 9% \u2014 raw signal",
+   "industry": "\u2014",
+   "entry_date": "2026-07-16",
+   "entry_price": 30.88,
+   "stop": 28.14,
+   "target": 36.36,
+   "status": "OPEN",
+   "exit_date": null,
+   "exit_price": null,
+   "return_pct": null,
+   "last_price": 30.88,
+   "last_date": "2026-07-16"
+  },
+  {
+   "symbol": "TANLA",
+   "grade": "RAW",
+   "signal": "D20_BREAKOUT",
+   "reason": "20-day high breakout \u2014 RS 73, Vol 3.96x, RSI 66.9, Dlv 31% \u2014 raw signal",
+   "industry": "Information Technology",
+   "entry_date": "2026-07-16",
+   "entry_price": 588.3,
+   "stop": 547.03,
+   "target": 670.84,
+   "status": "OPEN",
+   "exit_date": null,
+   "exit_price": null,
+   "return_pct": null,
+   "last_price": 588.3,
+   "last_date": "2026-07-16"
+  },
+  {
+   "symbol": "ERIS",
+   "grade": "RAW",
+   "signal": "D20_BREAKOUT",
+   "reason": "20-day high breakout \u2014 RS 40, Vol 2.09x, RSI 63.7, Dlv 58% \u2014 raw signal",
+   "industry": "Healthcare",
+   "entry_date": "2026-07-16",
+   "entry_price": 1488.4,
+   "stop": 1408.19,
+   "target": 1648.82,
+   "status": "OPEN",
+   "exit_date": null,
+   "exit_price": null,
+   "return_pct": null,
+   "last_price": 1488.4,
+   "last_date": "2026-07-16"
+  },
+  {
+   "symbol": "PFOCUS",
+   "grade": "RAW",
+   "signal": "D20_BREAKOUT",
+   "reason": "20-day high breakout \u2014 RS 43, Vol 4.06x, RSI 70.4, Dlv 48% \u2014 raw signal",
+   "industry": "Media Entertainment & Publication",
+   "entry_date": "2026-07-16",
+   "entry_price": 290.84,
+   "stop": 263.33,
+   "target": 345.86,
+   "status": "OPEN",
+   "exit_date": null,
+   "exit_price": null,
+   "return_pct": null,
+   "last_price": 290.84,
+   "last_date": "2026-07-16"
+  },
+  {
+   "symbol": "INDIACEM",
+   "grade": "RAW",
+   "signal": "D20_BREAKOUT",
+   "reason": "20-day high breakout \u2014 RS 18, Vol 2.46x, RSI 61.3, Dlv 50% \u2014 raw signal",
+   "industry": "Construction Materials",
+   "entry_date": "2026-07-16",
+   "entry_price": 397.85,
+   "stop": 377.7,
+   "target": 438.15,
+   "status": "OPEN",
+   "exit_date": null,
+   "exit_price": null,
+   "return_pct": null,
+   "last_price": 397.85,
+   "last_date": "2026-07-16"
+  },
+  {
+   "symbol": "JSL",
+   "grade": "RAW",
+   "signal": "D20_BREAKOUT",
+   "reason": "20-day high breakout \u2014 RS 22, Vol 1.21x, RSI 62.5, Dlv 60% \u2014 raw signal",
+   "industry": "Metals & Mining",
+   "entry_date": "2026-07-16",
+   "entry_price": 737.5,
+   "stop": 700.74,
+   "target": 811.02,
+   "status": "OPEN",
+   "exit_date": null,
+   "exit_price": null,
+   "return_pct": null,
+   "last_price": 737.5,
+   "last_date": "2026-07-16"
   }
  ],
  "nav_history": [
@@ -1661,13 +2018,13 @@
   },
   {
    "date": "2026-07-16",
-   "a_nav": 99.169,
-   "a_trades": 21,
-   "raw_nav": 100.041,
-   "raw_trades": 80,
-   "tot_nav": 99.86,
-   "tot_trades": 101,
-   "nifty_idx": 100.212
+   "a_nav": 98.595,
+   "a_trades": 27,
+   "raw_nav": 100.11,
+   "raw_trades": 95,
+   "tot_nav": 99.775,
+   "tot_trades": 122,
+   "nifty_idx": 100.017
   }
  ],
  "nifty_base": 24068.6
