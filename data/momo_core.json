@@ -6,120 +6,120 @@
   {
    "sym": "CUPID",
    "industry": "Fast Moving Consumer Goods",
-   "close": 219.66,
-   "chg_pct": 1.33,
-   "mom_pct": 552.3,
+   "close": 216.97,
+   "chg_pct": -1.22,
+   "mom_pct": 522.8,
    "status": "HOLD"
   },
   {
    "sym": "SIGMAADV",
    "industry": "\u2014",
-   "close": 559.85,
-   "chg_pct": -2.41,
-   "mom_pct": 387.4,
+   "close": 568.65,
+   "chg_pct": 1.57,
+   "mom_pct": 379.0,
    "status": "HOLD"
   },
   {
    "sym": "ATHERENERG",
    "industry": "Automobile and Auto Components",
-   "close": 1296.4,
-   "chg_pct": 7.87,
-   "mom_pct": 190.1,
+   "close": 1270.9,
+   "chg_pct": -1.97,
+   "mom_pct": 188.5,
    "status": "HOLD"
   },
   {
    "sym": "THANGAMAYL",
    "industry": "Consumer Durables",
-   "close": 6617.0,
-   "chg_pct": 2.45,
+   "close": 6434.0,
+   "chg_pct": -0.39,
    "mom_pct": 186.3,
    "status": "HOLD"
   },
   {
    "sym": "ACUTAAS",
    "industry": "Healthcare",
-   "close": 3546.9,
-   "chg_pct": 2.52,
+   "close": 3538.0,
+   "chg_pct": 2.26,
    "mom_pct": 161.2,
    "status": "HOLD"
   },
   {
    "sym": "GVPIL",
    "industry": "\u2014",
-   "close": 829.6,
-   "chg_pct": 5.0,
+   "close": 831.5,
+   "chg_pct": 5.24,
    "mom_pct": 234.1,
    "status": "HOLD"
   },
   {
    "sym": "SBC",
    "industry": "\u2014",
-   "close": 42.16,
-   "chg_pct": -0.31,
+   "close": 42.29,
+   "chg_pct": 0.0,
    "mom_pct": 131.0,
    "status": "HOLD"
   },
   {
    "sym": "KMEW",
    "industry": "\u2014",
-   "close": 2448.5,
-   "chg_pct": 4.55,
+   "close": 2421.9,
+   "chg_pct": 3.42,
    "mom_pct": 138.1,
    "status": "HOLD"
   },
   {
    "sym": "BAJAJCON",
    "industry": "\u2014",
-   "close": 568.45,
-   "chg_pct": -3.73,
+   "close": 565.8,
+   "chg_pct": -4.18,
    "mom_pct": 154.6,
    "status": "HOLD"
   },
   {
    "sym": "NETWEB",
    "industry": "Information Technology",
-   "close": 4371.4,
-   "chg_pct": -0.61,
+   "close": 4308.0,
+   "chg_pct": -2.05,
    "mom_pct": 146.9,
    "status": "HOLD"
   },
   {
    "sym": "SAKAR",
    "industry": "\u2014",
-   "close": 916.95,
-   "chg_pct": 1.38,
+   "close": 925.05,
+   "chg_pct": 2.28,
    "mom_pct": 140.6,
    "status": "HOLD"
   },
   {
    "sym": "TDPOWERSYS",
    "industry": "Capital Goods",
-   "close": 1174.2,
-   "chg_pct": 4.37,
-   "mom_pct": 137.2,
+   "close": 1151.9,
+   "chg_pct": -1.9,
+   "mom_pct": 148.4,
    "status": "HOLD"
   },
   {
    "sym": "IZMO",
    "industry": "\u2014",
-   "close": 1066.2,
-   "chg_pct": -0.57,
+   "close": 1076.5,
+   "chg_pct": 0.39,
    "mom_pct": 157.9,
    "status": "HOLD"
   },
   {
    "sym": "JAYNECOIND",
    "industry": "Capital Goods",
-   "close": 91.67,
-   "chg_pct": 1.37,
-   "mom_pct": 110.6,
+   "close": 93.4,
+   "chg_pct": 1.89,
+   "mom_pct": 89.3,
    "status": "HOLD"
   },
   {
    "sym": "KIRLOSENG",
    "industry": "Capital Goods",
-   "close": 2414.2,
-   "chg_pct": 2.2,
+   "close": 2392.8,
+   "chg_pct": 1.29,
    "mom_pct": 111.0,
    "status": "HOLD"
   }
