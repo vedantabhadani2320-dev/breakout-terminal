@@ -64,6 +64,7 @@
   .kpi span { color: var(--faint); font-size: 10.5px; text-transform: uppercase;
               letter-spacing: .5px; }
   .kpi.hl b { color: var(--green); }
+  .kpi.warn2 b { color: var(--red); }
 
   /* ================= sector pulse ================= */
   .sectors { display: grid; grid-template-columns: repeat(auto-fill, minmax(178px, 1fr));
@@ -111,6 +112,11 @@
   input[type=search] { background: var(--panel); border: 1px solid var(--border);
       color: var(--text); border-radius: 7px; padding: 5px 11px; min-width: 190px;
       font: inherit; }
+  select { background: var(--panel); border: 1px solid var(--border); color: var(--text);
+      border-radius: 7px; padding: 5px 11px; font: inherit; cursor: pointer; }
+  select:focus { outline: 1px solid var(--blue); }
+  #portFilterStats b { font-size: 13px; }
+  #portFilterStats .hint { margin-left: 4px; }
   .btn { border: 1px solid var(--border); background: var(--panel); color: var(--blue);
          border-radius: 7px; padding: 4px 11px; cursor: pointer; font-size: 11.5px;
          font-weight: 700; }
@@ -123,6 +129,29 @@
   #perfTbl { min-width: 620px; }
   #portTbl { min-width: 1250px; }
   #portTbl td.reason { white-space: normal; max-width: 340px; text-align: left; }
+  .panel-h { font-size: 10.5px; letter-spacing: 1.2px; color: var(--dim); text-transform: uppercase;
+             font-weight: 800; margin-bottom: 8px; }
+  .panel-h .hint { text-transform: none; letter-spacing: 0; color: var(--faint); font-weight: 600;
+                   font-size: 11px; margin-left: 6px; }
+  .sectorbar { display: flex; justify-content: space-between; align-items: center; gap: 8px;
+               padding: 4px 0; font-size: 11.5px; }
+  .sectorbar .sblabel { color: var(--text); white-space: nowrap; overflow: hidden;
+                         text-overflow: ellipsis; max-width: 108px; }
+  .sectorbar .sbtrack { flex: 1; height: 6px; background: #1c2431; border-radius: 3px; overflow: hidden; }
+  .sectorbar .sbtrack i { display: block; height: 100%; background: var(--blue); }
+  .sectorbar .sbval { color: var(--dim); font-size: 10.5px; min-width: 34px; text-align: right; }
+  .pf-hero { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+             gap: 12px; margin-bottom: 16px; }
+  .pf-card { background: var(--panel); border: 1px solid var(--border); border-radius: 12px;
+             padding: 16px 20px; }
+  .pf-card > span { display: block; color: var(--faint); font-size: 10.5px; text-transform: uppercase;
+             letter-spacing: .6px; font-weight: 700; margin-bottom: 8px; }
+  .pf-card b { display: block; font-size: 25px; font-weight: 800; line-height: 1.15;
+               font-variant-numeric: tabular-nums; }
+  .pf-card .sub { color: var(--dim); font-size: 11.5px; font-weight: 600; margin-top: 5px; }
+  .warnbanner { background: rgba(240,185,11,.08); border: 1px solid rgba(240,185,11,.3);
+                border-radius: 10px; padding: 9px 14px; color: var(--amber); font-size: 11.5px;
+                font-weight: 600; margin-bottom: 14px; }
   th, td { padding: 7px 9px; text-align: right; white-space: nowrap;
            border-bottom: 1px solid #161d29; font-size: 12px; }
   th { color: var(--faint); font-weight: 700; cursor: pointer; user-select: none;
@@ -219,12 +248,27 @@
   <div class="sec-h"><h2>Virtual Portfolio</h2>
     <span class="hint">1 virtual position per fresh breakout signal, entered at the close it fired &middot;
     exits at the fixed stop / 2R target already shown in the screener &middot; vs Nifty 50</span></div>
+  <div id="portSampleWarn" style="display:none"></div>
+  <div class="pf-hero" id="portHero"></div>
   <div class="kpis" id="portKpis"></div>
-  <div style="padding:10px 14px;background:var(--panel);border:1px solid var(--border);
-              border-radius:12px;margin:12px 0">
-    <canvas id="navChart"></canvas>
-    <div id="navLegend" style="display:flex;gap:16px;margin-top:6px;font-size:11px;color:var(--dim)"></div>
+
+  <div style="display:flex;gap:14px;flex-wrap:wrap;margin:12px 0">
+    <div style="flex:2 1 480px;padding:10px 14px;background:var(--panel);border:1px solid var(--border);border-radius:12px">
+      <div class="panel-h">Equity Curve <span class="hint">rebased to 100 at inception</span></div>
+      <canvas id="navChart"></canvas>
+      <div id="navLegend" style="display:flex;gap:16px;margin-top:6px;font-size:11px;color:var(--dim)"></div>
+    </div>
+    <div style="flex:2 1 480px;padding:10px 14px;background:var(--panel);border:1px solid var(--border);border-radius:12px">
+      <div class="panel-h">Daily MTM Change <span class="hint">total portfolio vs Nifty, day over day</span></div>
+      <canvas id="dailyPnlChart"></canvas>
+      <div id="dailyPnlLegend" style="display:flex;gap:16px;margin-top:6px;font-size:11px;color:var(--dim)"></div>
+    </div>
+    <div style="flex:1 1 220px;padding:10px 14px;background:var(--panel);border:1px solid var(--border);border-radius:12px">
+      <div class="panel-h">Sector Exposure <span class="hint">open positions</span></div>
+      <div id="portSectors"></div>
+    </div>
   </div>
+
   <div class="wrap" style="max-height:none;margin-bottom:14px">
     <table id="perfTbl">
       <thead><tr>
@@ -236,10 +280,14 @@
     </table>
   </div>
   <div class="controls">
-    <button class="chip on" id="portAll">All</button>
-    <button class="chip" id="portA">&#9733; A-grade</button>
-    <button class="chip" id="portRaw">Raw</button>
-    <button class="chip" id="portOpen">Open only</button>
+    <select id="portFilter">
+      <option value="ALL">All Trades</option>
+      <option value="A">&#9733; A-Grade</option>
+      <option value="RAW">Raw</option>
+      <option value="OPEN">Open Only</option>
+    </select>
+    <span id="portFilterStats"></span>
+    <button class="btn" id="portCsv" style="margin-left:auto">⤓ CSV</button>
   </div>
   <div class="wrap">
     <table id="portTbl">
@@ -247,7 +295,8 @@
         <th class="l">Symbol</th><th class="l">Grade</th><th class="l">Signal</th>
         <th class="l">Reason</th>
         <th>Entry Date</th><th>Entry &#8377;</th><th>Stop</th><th>Target</th>
-        <th>Now / Exit &#8377;</th><th>Return %</th><th>Status</th><th>Days</th>
+        <th>Now / Exit &#8377;</th><th>Return %</th><th>P&amp;L &#8377;</th>
+        <th>Status</th><th>Days</th>
       </tr></thead>
       <tbody></tbody>
     </table>
@@ -824,7 +873,7 @@ const STBADGE = {
   TARGET: '<span class="tag t-str">TARGET &#10003;</span>',
   STOP: '<span class="tag" style="background:rgba(234,57,67,.13);color:var(--red)">STOP &#10007;</span>',
 };
-let portGrade = "ALL", portOpenOnly = false, pData = null;
+let portFilter = "ALL", pData = null;
 const NOTIONAL = 100000;   // equal virtual notional per trade, for the ₹ total only
 
 function daysBetween(a, b) { return Math.round((new Date(b) - new Date(a)) / 86400000); }
@@ -842,25 +891,111 @@ function periodReturn(hist, days) {
            nifty: (last.nifty_idx != null && base.nifty_idx != null)
                   ? last.nifty_idx / base.nifty_idx - 1 : null };
 }
-function portfolioKpis(p) {
-  const closed = p.trades.filter(t => t.status !== "OPEN");
+function dayChange(hist) {
+  if (hist.length < 2) return null;
+  const last = hist[hist.length - 1], prev = hist[hist.length - 2];
+  return {
+    tot: last.tot_nav / prev.tot_nav - 1,
+    a: (prev.a_nav ? last.a_nav / prev.a_nav - 1 : null),
+    raw: (prev.raw_nav ? last.raw_nav / prev.raw_nav - 1 : null),
+    nifty: (last.nifty_idx != null && prev.nifty_idx != null) ? last.nifty_idx / prev.nifty_idx - 1 : null,
+    pnl: NOTIONAL * last.tot_trades * (last.tot_nav / prev.tot_nav - 1),
+  };
+}
+function maxDrawdown(hist) {
+  let peak = -Infinity, maxDd = 0;
+  for (const h of hist) {
+    if (h.tot_nav > peak) peak = h.tot_nav;
+    maxDd = Math.min(maxDd, (h.tot_nav - peak) / peak);
+  }
+  const peakAll = Math.max(...hist.map(h => h.tot_nav));
+  const cur = (hist[hist.length - 1].tot_nav - peakAll) / peakAll;
+  return { max: maxDd, current: cur };
+}
+function tradeStats(trades) {
+  const closed = trades.filter(t => t.status !== "OPEN");
+  const open = trades.filter(t => t.status === "OPEN");
   const wins = closed.filter(t => t.return_pct > 0);
+  const losses = closed.filter(t => t.return_pct <= 0);
+  const grossWin = wins.reduce((s, t) => s + t.return_pct, 0);
+  const grossLoss = Math.abs(losses.reduce((s, t) => s + t.return_pct, 0));
+  const profitFactor = grossLoss > 0 ? grossWin / grossLoss : (grossWin > 0 ? null : 0);
+  const rets = closed.map(t => t.return_pct);
+  const best = rets.length ? Math.max(...rets) : null;
+  const worst = rets.length ? Math.min(...rets) : null;
+  const openRiskInr = open.reduce((s, t) =>
+    s + NOTIONAL * Math.max(0, (t.entry_price - t.stop) / t.entry_price), 0);
+  return { closed, open, wins, losses, profitFactor, best, worst, openRiskInr };
+}
+const PORT_MIN_DAYS = 20;
+function sampleWarning(p) {
+  const el = document.getElementById("portSampleWarn");
+  const days = p.nav_history.length;
+  const closed = p.trades.filter(t => t.status !== "OPEN").length;
+  if (days >= PORT_MIN_DAYS) { el.style.display = "none"; return; }
+  el.className = "warnbanner";
+  el.style.display = "";
+  el.textContent = `⚠ Only ${days} trading day${days === 1 ? "" : "s"} of live data so far` +
+    (closed ? ` (${closed} closed trade${closed === 1 ? "" : "s"})` : "") +
+    ` — too early to draw conclusions from this. Trust the backtest until this builds up to ${PORT_MIN_DAYS}+ trading days.`;
+}
+function fmtPnl(pnl, pct) {
+  return `${pnl >= 0 ? "+" : ""}₹${fmt(Math.round(pnl))} (${pct >= 0 ? "+" : ""}${pct.toFixed(1)}%)`;
+}
+function portfolioHero(p) {
   const open = p.trades.filter(t => t.status === "OPEN");
-  const avg = closed.length ? closed.reduce((s, t) => s + t.return_pct, 0) / closed.length : 0;
+  const closed = p.trades.filter(t => t.status !== "OPEN");
+  const invested = NOTIONAL * open.length;
+  const currentValue = open.reduce((s, t) => s + NOTIONAL * (t.last_price / t.entry_price), 0);
+  const unrealized = currentValue - invested;
+  const realized = closed.reduce((s, t) => s + NOTIONAL * (t.return_pct / 100), 0);
+  const totalPnl = unrealized + realized;
+  const everInvested = NOTIONAL * p.trades.length;
+  const totalPnlPct = everInvested ? (totalPnl / everInvested) * 100 : 0;
+  const dc = dayChange(p.nav_history);
+  const dayPnl = dc ? dc.pnl : 0, dayPct = dc ? dc.tot * 100 : 0;
+
+  document.getElementById("portHero").innerHTML = `
+    <div class="pf-card"><span>Invested</span><b>₹${fmt(Math.round(invested))}</b>
+      <div class="sub">${open.length} open position${open.length === 1 ? "" : "s"}</div></div>
+    <div class="pf-card"><span>Current Value</span><b>₹${fmt(Math.round(currentValue))}</b>
+      <div class="sub ${unrealized >= 0 ? "pos" : "neg"}">${unrealized >= 0 ? "+" : ""}₹${fmt(Math.round(unrealized))} unrealized</div></div>
+    <div class="pf-card"><span>Day's P&amp;L</span>
+      <b class="${dayPnl >= 0 ? "pos" : "neg"}">${dayPnl >= 0 ? "+" : ""}₹${fmt(Math.round(dayPnl))}</b>
+      <div class="sub ${dayPct >= 0 ? "pos" : "neg"}">${dayPct >= 0 ? "+" : ""}${dayPct.toFixed(2)}% today</div></div>
+    <div class="pf-card"><span>Total P&amp;L</span>
+      <b class="${totalPnl >= 0 ? "pos" : "neg"}">${totalPnl >= 0 ? "+" : ""}₹${fmt(Math.round(totalPnl))}</b>
+      <div class="sub ${totalPnl >= 0 ? "pos" : "neg"}">${totalPnlPct >= 0 ? "+" : ""}${totalPnlPct.toFixed(1)}% overall &middot; ₹${fmt(Math.round(realized))} realized (${closed.length})</div></div>
+  `;
+}
+function portfolioKpis(p) {
+  const st = tradeStats(p.trades);
+  const avg = st.closed.length ? st.closed.reduce((s, t) => s + t.return_pct, 0) / st.closed.length : 0;
   const last = p.nav_history[p.nav_history.length - 1] || {};
   const idxStr = v => v == null ? "—" : (v - 100 >= 0 ? "+" : "") + (v - 100).toFixed(1) + "%";
-  let totStr = "—";
+
+  let todayStr = "—", totStr = "—", ddStr = "—";
+  const dc = dayChange(p.nav_history);
+  if (dc) todayStr = fmtPnl(dc.pnl, dc.tot * 100);
   if (last.tot_nav != null && last.tot_trades) {
-    const pct = last.tot_nav - 100;
-    const pnl = NOTIONAL * last.tot_trades * (last.tot_nav / 100 - 1);
-    totStr = `${pnl >= 0 ? "+" : ""}₹${fmt(Math.round(pnl))} (${pct >= 0 ? "+" : ""}${pct.toFixed(1)}%)`;
+    totStr = fmtPnl(NOTIONAL * last.tot_trades * (last.tot_nav / 100 - 1), last.tot_nav - 100);
   }
+  if (p.nav_history.length) {
+    const dd = maxDrawdown(p.nav_history);
+    ddStr = `${(dd.current * 100).toFixed(1)}%` + (dd.max < dd.current - 1e-9 ? ` (max ${(dd.max * 100).toFixed(1)}%)` : "");
+  }
+  const pf = st.profitFactor == null ? "∞" : st.profitFactor.toFixed(2);
+
   document.getElementById("portKpis").innerHTML = [
-    [p.trades.length, "total trades", ""],
-    [open.length, "open now", ""],
-    [closed.length ? Math.round(100 * wins.length / closed.length) + "%" : "—", "win rate (closed)", ""],
-    [closed.length ? avg.toFixed(1) + "%" : "—", "avg return (closed)", ""],
-    [totStr, "total portfolio mtm", "hl"],
+    [todayStr, "today's mtm", dc && dc.tot >= 0 ? "hl" : "warn2"],
+    [totStr, "total p&l (inception)", ""],
+    [ddStr, "drawdown (from peak)", ""],
+    [`₹${fmt(Math.round(st.openRiskInr))}`, "open risk (if all stopped)", ""],
+    [`${p.trades.length} (${st.open.length} open)`, "trades", ""],
+    [st.closed.length ? Math.round(100 * st.wins.length / st.closed.length) + "%" : "—", "win rate (closed)", ""],
+    [st.closed.length ? pf : "—", "profit factor", ""],
+    [st.best != null ? "+" + st.best.toFixed(1) + "%" : "—", "best trade", ""],
+    [st.worst != null ? st.worst.toFixed(1) + "%" : "—", "worst trade", ""],
     [idxStr(last.a_nav), "★ a-grade index", ""],
     [idxStr(last.raw_nav), "raw index", ""],
     [idxStr(last.nifty_idx), "nifty 50", ""],
@@ -923,11 +1058,92 @@ function drawNav(p) {
     `<span><i style="display:inline-block;width:9px;height:9px;background:${col};
      border-radius:2px;margin-right:4px"></i>${label}</span>`).join("");
 }
+function drawDailyPnl(p) {
+  const h = p.nav_history;
+  const cv = document.getElementById("dailyPnlChart");
+  if (h.length < 2) { cv.style.display = "none"; return; }
+  cv.style.display = "";
+  const changes = [];
+  for (let i = 1; i < h.length; i++) {
+    const tot = h[i].tot_nav / h[i - 1].tot_nav - 1;
+    const nifty = (h[i].nifty_idx != null && h[i - 1].nifty_idx != null)
+      ? h[i].nifty_idx / h[i - 1].nifty_idx - 1 : null;
+    changes.push({ date: h[i].date, tot, nifty });
+  }
+  const dpr = window.devicePixelRatio || 1;
+  const W = Math.min(1200, innerWidth - 80), H = 220;
+  cv.width = W * dpr; cv.height = H * dpr;
+  cv.style.width = W + "px"; cv.style.height = H + "px";
+  const ctx = cv.getContext("2d"); ctx.scale(dpr, dpr);
+  const pad = 8, mid = H / 2;
+  const all = changes.flatMap(c => [c.tot, c.nifty]).filter(v => v != null);
+  const ext = Math.max(0.005, ...all.map(Math.abs)) * 1.25;
+  const Y = v => mid - (v / ext) * (mid - pad);
+  const bw = (W - 2 * pad) / changes.length;
+  ctx.clearRect(0, 0, W, H);
+  ctx.strokeStyle = "#232d3d"; ctx.lineWidth = 1;
+  ctx.beginPath(); ctx.moveTo(pad, mid); ctx.lineTo(W - pad, mid); ctx.stroke();
+  changes.forEach((c, i) => {
+    const x0 = pad + i * bw;
+    const barW = Math.max(2, bw * 0.34);
+    ctx.fillStyle = c.tot >= 0 ? "#16c784" : "#ea3943";
+    const y0 = Y(0), y1 = Y(c.tot);
+    ctx.fillRect(x0 + bw * 0.16, Math.min(y0, y1), barW, Math.max(1, Math.abs(y1 - y0)));
+    if (c.nifty != null) {
+      ctx.fillStyle = "#3d8bfd";
+      const ny1 = Y(c.nifty);
+      ctx.fillRect(x0 + bw * 0.16 + barW + 2, Math.min(y0, ny1), barW, Math.max(1, Math.abs(ny1 - y0)));
+    }
+  });
+  document.getElementById("dailyPnlLegend").innerHTML =
+    `<span><i style="display:inline-block;width:9px;height:9px;background:#16c784;border-radius:2px;margin-right:4px"></i>Portfolio up</span>
+     <span><i style="display:inline-block;width:9px;height:9px;background:#ea3943;border-radius:2px;margin-right:4px"></i>Portfolio down</span>
+     <span><i style="display:inline-block;width:9px;height:9px;background:#3d8bfd;border-radius:2px;margin-right:4px"></i>Nifty 50</span>`;
+}
+function sectorExposure(p) {
+  const el = document.getElementById("portSectors");
+  const open = p.trades.filter(t => t.status === "OPEN");
+  if (!open.length) { el.innerHTML = `<span class="hint" style="color:var(--faint)">No open positions.</span>`; return; }
+  const agg = {};
+  for (const t of open) {
+    const ind = t.industry && t.industry !== "—" ? t.industry : "Other / Unmapped";
+    agg[ind] = (agg[ind] || 0) + 1;
+  }
+  const entries = Object.entries(agg).sort((a, b) => b[1] - a[1]);
+  const max = entries[0][1];
+  el.innerHTML = entries.map(([ind, n]) => `
+    <div class="sectorbar">
+      <span class="sblabel" title="${ind}">${ind}</span>
+      <span class="sbtrack"><i style="width:${Math.round(100 * n / max)}%"></i></span>
+      <span class="sbval">${n}</span>
+    </div>`).join("");
+}
 function portRows() {
   let rows = pData.trades;
-  if (portGrade !== "ALL") rows = rows.filter(t => t.grade === portGrade);
-  if (portOpenOnly) rows = rows.filter(t => t.status === "OPEN");
+  if (portFilter === "A") rows = rows.filter(t => t.grade === "A");
+  else if (portFilter === "RAW") rows = rows.filter(t => t.grade === "RAW");
+  else if (portFilter === "OPEN") rows = rows.filter(t => t.status === "OPEN");
   return [...rows].sort((a, b) => b.entry_date.localeCompare(a.entry_date));
+}
+function filterStats() {
+  const rows = portRows();
+  const el = document.getElementById("portFilterStats");
+  if (!rows.length) {
+    el.innerHTML = `<span class="hint" style="color:var(--faint)">No trades in this view.</span>`;
+    return;
+  }
+  const closed = rows.filter(t => t.status !== "OPEN");
+  const open = rows.filter(t => t.status === "OPEN");
+  const wins = closed.filter(t => t.return_pct > 0);
+  const realized = closed.reduce((s, t) => s + NOTIONAL * (t.return_pct / 100), 0);
+  const unrealized = open.reduce((s, t) => s + NOTIONAL * (t.last_price / t.entry_price - 1), 0);
+  const totalPnl = realized + unrealized;
+  const everInvested = NOTIONAL * rows.length;
+  const pct = everInvested ? (totalPnl / everInvested) * 100 : 0;
+  const winRate = closed.length ? Math.round(100 * wins.length / closed.length) : null;
+  el.innerHTML = `<b class="${totalPnl >= 0 ? "pos" : "neg"}">${fmtPnl(totalPnl, pct)}</b>
+    <span class="hint">${rows.length} trades &middot; ${open.length} open &middot; ${closed.length} closed`
+    + `${winRate != null ? " &middot; " + winRate + "% win rate" : ""}</span>`;
 }
 function renderPortTable() {
   const rows = portRows();
@@ -946,27 +1162,32 @@ function renderPortTable() {
       <td class="pos">${fmt(t.target)}</td>
       <td>${fmt(nowPx)}</td>
       <td class="${ret >= 0 ? "pos" : "neg"}">${ret >= 0 ? "+" : ""}${ret.toFixed(1)}%</td>
+      <td class="${ret >= 0 ? "pos" : "neg"}">${ret >= 0 ? "+" : ""}₹${fmt(Math.round(NOTIONAL * ret / 100))}</td>
       <td>${STBADGE[t.status]}</td>
       <td>${days}</td>
     </tr>`;
-  }).join("") || `<tr><td colspan="12" class="l" style="color:var(--faint)">No trades yet.</td></tr>`;
+  }).join("") || `<tr><td colspan="13" class="l" style="color:var(--faint)">No trades yet.</td></tr>`;
+  filterStats();
 }
-function setPortChip(el) {
-  document.querySelectorAll("#portAll,#portA,#portRaw").forEach(x => x.classList.remove("on"));
-  el.classList.add("on"); renderPortTable();
-}
-document.getElementById("portAll").onclick = e => { portGrade = "ALL"; setPortChip(e.target); };
-document.getElementById("portA").onclick = e => { portGrade = "A"; setPortChip(e.target); };
-document.getElementById("portRaw").onclick = e => { portGrade = "RAW"; setPortChip(e.target); };
-document.getElementById("portOpen").onclick = e => {
-  portOpenOnly = !portOpenOnly; e.target.classList.toggle("on", portOpenOnly); renderPortTable();
+document.getElementById("portFilter").onchange = e => { portFilter = e.target.value; renderPortTable(); };
+document.getElementById("portCsv").onclick = () => {
+  const cols = ["symbol", "grade", "signal", "reason", "industry", "entry_date", "entry_price",
+                "stop", "target", "status", "exit_date", "exit_price", "last_price", "last_date", "return_pct"];
+  const lines = [cols.join(",")].concat(portRows().map(t =>
+    cols.map(c => { let v = t[c];
+      if (v == null) v = "";
+      return `"${String(v).replace(/"/g, '""')}"`; }).join(",")));
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([lines.join("\n")], { type: "text/csv" }));
+  a.download = `virtual_portfolio_${DATA.asOf}.csv`; a.click();
 };
 function virtualPortfolio() {
   const p = DATA.portfolio;
   if (!p || !p.trades || !p.trades.length) return;
   pData = p;
   document.getElementById("portSec").style.display = "";
-  portfolioKpis(p); perfTable(p); drawNav(p); renderPortTable();
+  sampleWarning(p); portfolioHero(p); portfolioKpis(p); perfTable(p); drawNav(p); drawDailyPnl(p);
+  sectorExposure(p); renderPortTable();
 }
 
 /* ---------------- wiring ---------------- */

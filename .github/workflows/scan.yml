@@ -2,7 +2,10 @@
 
 on:
   schedule:
-    - cron: "0 13 * * 1-5"   # 18:30 IST, Mon-Fri
+    - cron: "0 13 * * 1-5"    # 18:30 IST, Mon-Fri
+    - cron: "15 14 * * 1-5"   # 19:45 IST backup — GitHub's free-tier schedule trigger
+                               # has run 1.5-2h late on this repo before; this is a
+                               # harmless second attempt (job is idempotent per day)
   workflow_dispatch:
 
 permissions:

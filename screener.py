@@ -587,6 +587,7 @@ def update_paper_portfolio(rows, hist, regime, as_of):
         trades.append({
             "symbol": r["symbol"], "grade": "A" if is_agrade(r) else "RAW",
             "signal": fired[0], "reason": trade_reason(r),
+            "industry": r["industry"],
             "entry_date": as_of, "entry_price": r["close"],
             "stop": r["stop"], "target": r["target"],
             "status": "OPEN", "exit_date": None, "exit_price": None,
