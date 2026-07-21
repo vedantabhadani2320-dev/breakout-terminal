@@ -149,6 +149,14 @@
   .pf-card b { display: block; font-size: 25px; font-weight: 800; line-height: 1.15;
                font-variant-numeric: tabular-nums; }
   .pf-card .sub { color: var(--dim); font-size: 11.5px; font-weight: 600; margin-top: 5px; }
+  .pf-card.accent { border-color: rgba(22,199,132,.35); }
+  .pf-card.accent.warn2b { border-color: rgba(234,57,67,.35); }
+  .pf-breakdown { display: flex; gap: 14px; margin-top: 10px; padding-top: 9px;
+                  border-top: 1px solid var(--border); }
+  .pf-breakdown > div { flex: 1; }
+  .pf-breakdown span { display: block; color: var(--faint); font-size: 9.5px;
+                        text-transform: uppercase; letter-spacing: .4px; font-weight: 700; }
+  .pf-breakdown b { font-size: 14px; display: block; margin-top: 2px; }
   .warnbanner { background: rgba(240,185,11,.08); border: 1px solid rgba(240,185,11,.3);
                 border-radius: 10px; padding: 9px 14px; color: var(--amber); font-size: 11.5px;
                 font-weight: 600; margin-bottom: 14px; }
@@ -964,18 +972,23 @@ function portfolioHero(p) {
   const totalPnlPct = everInvested ? (totalPnl / everInvested) * 100 : 0;
   const dc = dayChange(p.nav_history);
   const dayPnl = dc ? dc.pnl : 0, dayPct = dc ? dc.tot * 100 : 0;
+  const vsInvested = currentValue - invested;   // same as unrealized, shown as an explicit delta
 
   document.getElementById("portHero").innerHTML = `
     <div class="pf-card"><span>Invested</span><b>₹${fmt(Math.round(invested))}</b>
-      <div class="sub">${open.length} open position${open.length === 1 ? "" : "s"}</div></div>
+      <div class="sub">${open.length} open position${open.length === 1 ? "" : "s"} &middot; ₹1L each (virtual)</div></div>
     <div class="pf-card"><span>Current Value</span><b>₹${fmt(Math.round(currentValue))}</b>
-      <div class="sub ${unrealized >= 0 ? "pos" : "neg"}">${unrealized >= 0 ? "+" : ""}₹${fmt(Math.round(unrealized))} unrealized</div></div>
+      <div class="sub ${vsInvested >= 0 ? "pos" : "neg"}">${vsInvested >= 0 ? "▲" : "▼"} ₹${fmt(Math.round(Math.abs(vsInvested)))} vs invested</div></div>
     <div class="pf-card"><span>Day's P&amp;L</span>
       <b class="${dayPnl >= 0 ? "pos" : "neg"}">${dayPnl >= 0 ? "+" : ""}₹${fmt(Math.round(dayPnl))}</b>
       <div class="sub ${dayPct >= 0 ? "pos" : "neg"}">${dayPct >= 0 ? "+" : ""}${dayPct.toFixed(2)}% today</div></div>
-    <div class="pf-card"><span>Total P&amp;L</span>
-      <b class="${totalPnl >= 0 ? "pos" : "neg"}">${totalPnl >= 0 ? "+" : ""}₹${fmt(Math.round(totalPnl))}</b>
-      <div class="sub ${totalPnl >= 0 ? "pos" : "neg"}">${totalPnlPct >= 0 ? "+" : ""}${totalPnlPct.toFixed(1)}% overall &middot; ₹${fmt(Math.round(realized))} realized (${closed.length})</div></div>
+    <div class="pf-card accent ${totalPnl >= 0 ? "" : "warn2b"}"><span>Total P&amp;L (overall)</span>
+      <b class="${totalPnl >= 0 ? "pos" : "neg"}">${totalPnl >= 0 ? "+" : ""}₹${fmt(Math.round(totalPnl))}
+        <span style="font-size:13px;font-weight:700">(${totalPnlPct >= 0 ? "+" : ""}${totalPnlPct.toFixed(2)}%)</span></b>
+      <div class="pf-breakdown">
+        <div><span>Unrealized (open)</span><b class="${unrealized >= 0 ? "pos" : "neg"}">${unrealized >= 0 ? "+" : ""}₹${fmt(Math.round(unrealized))}</b></div>
+        <div><span>Realized (${closed.length} closed)</span><b class="${realized >= 0 ? "pos" : "neg"}">${realized >= 0 ? "+" : ""}₹${fmt(Math.round(realized))}</b></div>
+      </div></div>
   `;
 }
 function portfolioKpis(p) {
