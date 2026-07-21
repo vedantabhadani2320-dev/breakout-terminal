@@ -6,112 +6,112 @@
   {
    "sym": "CUPID",
    "industry": "Fast Moving Consumer Goods",
-   "close": 211.25,
-   "chg_pct": 1.92,
+   "close": NaN,
+   "chg_pct": NaN,
    "mom_pct": 512.5,
    "status": "HOLD"
   },
   {
    "sym": "ATHERENERG",
    "industry": "Automobile and Auto Components",
-   "close": 1288.4,
-   "chg_pct": -0.64,
+   "close": NaN,
+   "chg_pct": NaN,
    "mom_pct": 181.5,
    "status": "HOLD"
   },
   {
    "sym": "THANGAMAYL",
    "industry": "Consumer Durables",
-   "close": 6453.0,
-   "chg_pct": 1.06,
+   "close": NaN,
+   "chg_pct": NaN,
    "mom_pct": 195.9,
    "status": "HOLD"
   },
   {
    "sym": "ACUTAAS",
    "industry": "Healthcare",
-   "close": 3677.0,
-   "chg_pct": 0.57,
+   "close": NaN,
+   "chg_pct": NaN,
    "mom_pct": 170.4,
    "status": "HOLD"
   },
   {
    "sym": "GVPIL",
    "industry": "\u2014",
-   "close": 811.3,
-   "chg_pct": -2.55,
+   "close": NaN,
+   "chg_pct": NaN,
    "mom_pct": 238.2,
    "status": "HOLD"
   },
   {
    "sym": "SBC",
    "industry": "\u2014",
-   "close": 41.88,
-   "chg_pct": -0.85,
+   "close": NaN,
+   "chg_pct": NaN,
    "mom_pct": 167.4,
    "status": "HOLD"
   },
   {
    "sym": "KMEW",
    "industry": "\u2014",
-   "close": 2451.8,
-   "chg_pct": 0.27,
+   "close": NaN,
+   "chg_pct": NaN,
    "mom_pct": 156.0,
    "status": "HOLD"
   },
   {
    "sym": "BAJAJCON",
    "industry": "\u2014",
-   "close": 525.25,
-   "chg_pct": -2.54,
+   "close": NaN,
+   "chg_pct": NaN,
    "mom_pct": 157.7,
    "status": "HOLD"
   },
   {
    "sym": "NETWEB",
    "industry": "Information Technology",
-   "close": 4257.3,
-   "chg_pct": 1.9,
+   "close": NaN,
+   "chg_pct": NaN,
    "mom_pct": 165.0,
    "status": "HOLD"
   },
   {
    "sym": "SAKAR",
    "industry": "\u2014",
-   "close": 878.75,
-   "chg_pct": -2.23,
+   "close": NaN,
+   "chg_pct": NaN,
    "mom_pct": 131.7,
    "status": "HOLD"
   },
   {
    "sym": "TDPOWERSYS",
    "industry": "Capital Goods",
-   "close": 1129.2,
-   "chg_pct": -1.04,
+   "close": NaN,
+   "chg_pct": NaN,
    "mom_pct": 167.7,
    "status": "HOLD"
   },
   {
    "sym": "IZMO",
    "industry": "\u2014",
-   "close": 1103.8,
-   "chg_pct": 2.17,
+   "close": NaN,
+   "chg_pct": NaN,
    "mom_pct": 147.4,
    "status": "HOLD"
   },
   {
    "sym": "JAYNECOIND",
    "industry": "Capital Goods",
-   "close": 88.13,
-   "chg_pct": 4.88,
+   "close": NaN,
+   "chg_pct": NaN,
    "mom_pct": 122.3,
    "status": "HOLD"
   },
   {
    "sym": "KIRLOSENG",
    "industry": "Capital Goods",
-   "close": 2221.7,
-   "chg_pct": 0.0,
+   "close": NaN,
+   "chg_pct": NaN,
    "mom_pct": 156.3,
    "status": "HOLD"
   }
