@@ -894,12 +894,22 @@ function periodReturn(hist, days) {
 function dayChange(hist) {
   if (hist.length < 2) return null;
   const last = hist[hist.length - 1], prev = hist[hist.length - 2];
+  let pnl, tot;
+  if (last.day_pnl_frac != null && last.day_base_trades) {
+    // exact: real ₹ change on positions that already existed yesterday
+    pnl = NOTIONAL * last.day_pnl_frac;
+    const startValue = NOTIONAL * last.day_base_trades * (prev.tot_nav / 100);
+    tot = startValue ? pnl / startValue : 0;
+  } else {
+    // fallback for nav_history rows recorded before this was tracked exactly
+    tot = last.tot_nav / prev.tot_nav - 1;
+    pnl = NOTIONAL * last.tot_trades * tot;
+  }
   return {
-    tot: last.tot_nav / prev.tot_nav - 1,
+    tot, pnl,
     a: (prev.a_nav ? last.a_nav / prev.a_nav - 1 : null),
     raw: (prev.raw_nav ? last.raw_nav / prev.raw_nav - 1 : null),
     nifty: (last.nifty_idx != null && prev.nifty_idx != null) ? last.nifty_idx / prev.nifty_idx - 1 : null,
-    pnl: NOTIONAL * last.tot_trades * (last.tot_nav / prev.tot_nav - 1),
   };
 }
 function maxDrawdown(hist) {

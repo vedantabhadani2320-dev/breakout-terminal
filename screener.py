@@ -569,6 +569,12 @@ def compute_nav_row(trades, as_of, nifty_close, nifty_base):
             "tot_nav": tot_nav, "tot_trades": tot_n, "nifty_idx": nifty_idx}
 
 
+def frac_return(t):
+    """Current fractional return: locked-in if closed, mark-to-market if open."""
+    return (t["return_pct"] / 100) if t["status"] != "OPEN" else \
+        (t["last_price"] / t["entry_price"] - 1)
+
+
 def update_paper_portfolio(rows, hist, regime, as_of):
     """Forward-tracked virtual portfolio: 1 position per fresh breakout signal,
     entered at the close it fired, held to the existing fixed stop / 2R target.
@@ -577,6 +583,12 @@ def update_paper_portfolio(rows, hist, regime, as_of):
         if PORTFOLIO_JSON.exists() else {"trades": [], "nav_history": [], "nifty_base": None}
     trades = data["trades"]
     open_syms = {t["symbol"] for t in trades if t["status"] == "OPEN"}
+
+    # snapshot of every trade's return *before* today's mutations — the only way
+    # to compute an exact day-over-day ₹ change; trades opened today aren't in
+    # this snapshot and correctly contribute ₹0 to today's P&L (bought at today's
+    # close, haven't had a chance to move yet)
+    prev_frac = {t["symbol"]: frac_return(t) for t in trades}
 
     for r in rows:
         if r["symbol"] in open_syms:
@@ -612,11 +624,18 @@ def update_paper_portfolio(rows, hist, regime, as_of):
         else:
             t["last_price"], t["last_date"] = round(cl, 2), as_of
 
+    # exact day P&L: sum of (today's return - yesterday's return) across trades
+    # that already existed before today; freshly-opened trades excluded (= 0 by definition)
+    day_pnl_frac = sum(frac_return(t) - prev_frac[t["symbol"]]
+                        for t in trades if t["symbol"] in prev_frac)
+
     nifty_close = regime.get("nifty") if regime else None
     if nifty_close is not None:
         if data["nifty_base"] is None:
             data["nifty_base"] = nifty_close
         row = compute_nav_row(trades, as_of, nifty_close, data["nifty_base"])
+        row["day_pnl_frac"] = round(day_pnl_frac, 6)
+        row["day_base_trades"] = len(prev_frac)
         if data["nav_history"] and data["nav_history"][-1]["date"] == as_of:
             data["nav_history"][-1] = row
         else:
