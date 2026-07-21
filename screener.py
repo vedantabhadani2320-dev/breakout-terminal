@@ -582,6 +582,15 @@ def update_paper_portfolio(rows, hist, regime, as_of):
     data = json.loads(PORTFOLIO_JSON.read_text(encoding="utf-8")) \
         if PORTFOLIO_JSON.exists() else {"trades": [], "nav_history": [], "nifty_base": None}
     trades = data["trades"]
+
+    # one-time repair: a prior run without the NaN guard below could have written a
+    # NaN last_price when yfinance returned a partial-NaN bar for that symbol. Reset
+    # any such trade to its entry price (0% unrealized) so it stops poisoning every
+    # average downstream; a clean data day will overwrite it with a real mark again.
+    for t in trades:
+        if isinstance(t.get("last_price"), float) and math.isnan(t["last_price"]):
+            t["last_price"], t["last_date"] = t["entry_price"], t["entry_date"]
+
     open_syms = {t["symbol"] for t in trades if t["status"] == "OPEN"}
 
     # snapshot of every trade's return *before* today's mutations — the only way
@@ -615,6 +624,8 @@ def update_paper_portfolio(rows, hist, regime, as_of):
         hi = float(df["High"].iloc[-1])
         lo = float(df["Low"].iloc[-1])
         cl = float(df["Close"].iloc[-1])
+        if math.isnan(hi) or math.isnan(lo) or math.isnan(cl):
+            continue          # bad bar from the data source — leave stale, don't poison
         if lo <= t["stop"]:                 # conservative: stop wins a same-day overlap
             t["status"], t["exit_date"], t["exit_price"] = "STOP", as_of, t["stop"]
             t["return_pct"] = round((t["stop"] / t["entry_price"] - 1) * 100, 2)
