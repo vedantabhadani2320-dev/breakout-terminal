@@ -3693,6 +3693,57 @@
    "return_pct": null,
    "last_price": 3229.7,
    "last_date": "2026-07-23"
+  },
+  {
+   "symbol": "GANDHAR",
+   "grade": "RAW",
+   "signal": "D20_BREAKOUT",
+   "reason": "fresh 52-week high \u2014 RS 98, Vol 9.36x, RSI 89.9, Dlv 29% \u2014 raw signal",
+   "industry": "\u2014",
+   "entry_date": "2026-07-23",
+   "entry_price": 281.95,
+   "stop": 256.27,
+   "target": 333.31,
+   "status": "OPEN",
+   "exit_date": null,
+   "exit_price": null,
+   "return_pct": null,
+   "last_price": 281.95,
+   "last_date": "2026-07-23"
+  },
+  {
+   "symbol": "BAJAJ-AUTO",
+   "grade": "RAW",
+   "signal": "D20_BREAKOUT",
+   "reason": "fresh 52-week high \u2014 RS 76, Vol 2.12x, RSI 75.5, Dlv 51% \u2014 raw signal",
+   "industry": "Automobile and Auto Components",
+   "entry_date": "2026-07-23",
+   "entry_price": 11283.5,
+   "stop": 10792.54,
+   "target": 12265.42,
+   "status": "OPEN",
+   "exit_date": null,
+   "exit_price": null,
+   "return_pct": null,
+   "last_price": 11283.5,
+   "last_date": "2026-07-23"
+  },
+  {
+   "symbol": "HEG",
+   "grade": "RAW",
+   "signal": "D20_BREAKOUT",
+   "reason": "20-day high breakout \u2014 RS 49, Vol 7.43x, RSI 69.2, Dlv 14% \u2014 raw signal",
+   "industry": "Capital Goods",
+   "entry_date": "2026-07-23",
+   "entry_price": 623.85,
+   "stop": 574.9,
+   "target": 721.75,
+   "status": "OPEN",
+   "exit_date": null,
+   "exit_price": null,
+   "return_pct": null,
+   "last_price": 623.85,
+   "last_date": "2026-07-23"
   }
  ],
  "nav_history": [
@@ -3774,13 +3825,13 @@
    "date": "2026-07-23",
    "a_nav": 98.436,
    "a_trades": 51,
-   "raw_nav": 99.845,
-   "raw_trades": 171,
-   "tot_nav": 99.521,
-   "tot_trades": 222,
+   "raw_nav": 99.847,
+   "raw_trades": 174,
+   "tot_nav": 99.527,
+   "tot_trades": 225,
    "nifty_idx": 99.173,
-   "day_pnl_frac": 1.309669,
-   "day_base_trades": 195
+   "day_pnl_frac": 1.80932,
+   "day_base_trades": 210
   }
  ],
  "nifty_base": 24068.6
