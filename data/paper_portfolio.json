@@ -4305,6 +4305,57 @@
    "return_pct": null,
    "last_price": 145.59,
    "last_date": "2026-07-27"
+  },
+  {
+   "symbol": "IDFCFIRSTB",
+   "grade": "RAW",
+   "signal": "D20_BREAKOUT",
+   "reason": "55-day channel breakout \u2014 RS 62, Vol 7.06x, RSI 68.8, Dlv 35% \u2014 raw signal",
+   "industry": "Financial Services",
+   "entry_date": "2026-07-27",
+   "entry_price": 84.88,
+   "stop": 80.55,
+   "target": 93.54,
+   "status": "OPEN",
+   "exit_date": null,
+   "exit_price": null,
+   "return_pct": null,
+   "last_price": 84.88,
+   "last_date": "2026-07-27"
+  },
+  {
+   "symbol": "MBAPL",
+   "grade": "A",
+   "signal": "D20_BREAKOUT",
+   "reason": "fresh 52-week high \u2014 RS 96, Vol 2.35x, RSI 76.6, Dlv 34% \u2014 A-grade (RS>=80, Vol>=1.5x, RSI<78)",
+   "industry": "\u2014",
+   "entry_date": "2026-07-27",
+   "entry_price": 163.95,
+   "stop": 147.87,
+   "target": 196.11,
+   "status": "OPEN",
+   "exit_date": null,
+   "exit_price": null,
+   "return_pct": null,
+   "last_price": 163.95,
+   "last_date": "2026-07-27"
+  },
+  {
+   "symbol": "LOTUSDEV",
+   "grade": "RAW",
+   "signal": "D20_BREAKOUT",
+   "reason": "55-day channel breakout \u2014 RS 82, Vol 2.23x, RSI 82.6, Dlv 39% \u2014 raw signal",
+   "industry": "Realty",
+   "entry_date": "2026-07-27",
+   "entry_price": 187.95,
+   "stop": 175.28,
+   "target": 213.29,
+   "status": "OPEN",
+   "exit_date": null,
+   "exit_price": null,
+   "return_pct": null,
+   "last_price": 187.95,
+   "last_date": "2026-07-27"
   }
  ],
  "nav_history": [
@@ -4408,15 +4459,15 @@
   },
   {
    "date": "2026-07-27",
-   "a_nav": 98.981,
-   "a_trades": 56,
-   "raw_nav": 100.696,
-   "raw_trades": 202,
-   "tot_nav": 100.324,
-   "tot_trades": 258,
+   "a_nav": 98.999,
+   "a_trades": 57,
+   "raw_nav": 100.69,
+   "raw_trades": 204,
+   "tot_nav": 100.32,
+   "tot_trades": 261,
    "nifty_idx": 99.698,
-   "day_pnl_frac": 4.306795,
-   "day_base_trades": 216
+   "day_pnl_frac": 1.815533,
+   "day_base_trades": 240
   }
  ],
  "nifty_base": 24068.6
