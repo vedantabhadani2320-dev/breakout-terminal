@@ -4764,6 +4764,40 @@
    "return_pct": null,
    "last_price": 5428.4,
    "last_date": "2026-07-28"
+  },
+  {
+   "symbol": "LAURUSLABS",
+   "grade": "RAW",
+   "signal": "D20_BREAKOUT",
+   "reason": "fresh 52-week high \u2014 RS 95, Vol 1.94x, RSI 78.8, Dlv 38% \u2014 raw signal",
+   "industry": "Healthcare",
+   "entry_date": "2026-07-28",
+   "entry_price": 1758.9,
+   "stop": 1665.74,
+   "target": 1945.22,
+   "status": "OPEN",
+   "exit_date": null,
+   "exit_price": null,
+   "return_pct": null,
+   "last_price": 1758.9,
+   "last_date": "2026-07-28"
+  },
+  {
+   "symbol": "DIACABS",
+   "grade": "RAW",
+   "signal": "D20_BREAKOUT",
+   "reason": "fresh 52-week high \u2014 RS 99, Vol 0.95x, RSI 85.3, Dlv 38% \u2014 raw signal",
+   "industry": "Capital Goods",
+   "entry_date": "2026-07-28",
+   "entry_price": 321.39,
+   "stop": 288.64,
+   "target": 386.89,
+   "status": "OPEN",
+   "exit_date": null,
+   "exit_price": null,
+   "return_pct": null,
+   "last_price": 321.39,
+   "last_date": "2026-07-28"
   }
  ],
  "nav_history": [
@@ -4881,13 +4915,13 @@
    "date": "2026-07-28",
    "a_nav": 98.252,
    "a_trades": 61,
-   "raw_nav": 100.19,
-   "raw_trades": 224,
-   "tot_nav": 99.776,
-   "tot_trades": 285,
+   "raw_nav": 100.189,
+   "raw_trades": 226,
+   "tot_nav": 99.777,
+   "tot_trades": 287,
    "nifty_idx": 99.654,
-   "day_pnl_frac": 1.317503,
-   "day_base_trades": 240
+   "day_pnl_frac": 2.552311,
+   "day_base_trades": 262
   }
  ],
  "nifty_base": 24068.6
