@@ -5954,6 +5954,57 @@
    "return_pct": null,
    "last_price": 4580.5,
    "last_date": "2026-07-31"
+  },
+  {
+   "symbol": "YASHO",
+   "grade": "RAW",
+   "signal": "D20_BREAKOUT",
+   "reason": "fresh 52-week high \u2014 RS 99, Vol 8.57x, RSI 78.9, Dlv 30% \u2014 raw signal",
+   "industry": "\u2014",
+   "entry_date": "2026-07-31",
+   "entry_price": 3858.7,
+   "stop": 3477.03,
+   "target": 4622.04,
+   "status": "OPEN",
+   "exit_date": null,
+   "exit_price": null,
+   "return_pct": null,
+   "last_price": 3858.7,
+   "last_date": "2026-07-31"
+  },
+  {
+   "symbol": "KRISHANA",
+   "grade": "A",
+   "signal": "D20_BREAKOUT",
+   "reason": "fresh 52-week high \u2014 RS 95, Vol 2.87x, RSI 77.1, Dlv 35% \u2014 A-grade (RS>=80, Vol>=1.5x, RSI<78)",
+   "industry": "\u2014",
+   "entry_date": "2026-07-31",
+   "entry_price": 182.95,
+   "stop": 164.21,
+   "target": 220.43,
+   "status": "OPEN",
+   "exit_date": null,
+   "exit_price": null,
+   "return_pct": null,
+   "last_price": 182.95,
+   "last_date": "2026-07-31"
+  },
+  {
+   "symbol": "SSWL",
+   "grade": "RAW",
+   "signal": "D20_BREAKOUT",
+   "reason": "fresh 52-week high \u2014 RS 93, Vol 0.69x, RSI 86.0, Dlv 47% \u2014 raw signal",
+   "industry": "\u2014",
+   "entry_date": "2026-07-31",
+   "entry_price": 310.36,
+   "stop": 287.06,
+   "target": 356.96,
+   "status": "OPEN",
+   "exit_date": null,
+   "exit_price": null,
+   "return_pct": null,
+   "last_price": 310.36,
+   "last_date": "2026-07-31"
   }
  ],
  "nav_history": [
@@ -6105,15 +6156,15 @@
   },
   {
    "date": "2026-07-31",
-   "a_nav": 98.859,
-   "a_trades": 71,
-   "raw_nav": 100.54,
-   "raw_trades": 284,
-   "tot_nav": 100.204,
-   "tot_trades": 355,
+   "a_nav": 98.874,
+   "a_trades": 72,
+   "raw_nav": 100.537,
+   "raw_trades": 286,
+   "tot_nav": 100.202,
+   "tot_trades": 358,
    "nifty_idx": 101.309,
-   "day_pnl_frac": 5.801863,
-   "day_base_trades": 295
+   "day_pnl_frac": 3.293566,
+   "day_base_trades": 318
   }
  ],
  "nifty_base": 24068.6
