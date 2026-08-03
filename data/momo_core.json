@@ -1,22 +1,22 @@
 {
  "month": "2026-08",
- "rebalanced_today": true,
+ "rebalanced_today": false,
  "exposure": 1.0,
  "holdings": [
   {
    "sym": "CUPID",
    "industry": "Fast Moving Consumer Goods",
    "close": 230.95,
-   "chg_pct": 0.14,
-   "mom_pct": 558.9,
+   "chg_pct": 0.88,
+   "mom_pct": 538.6,
    "status": "HOLD"
   },
   {
    "sym": "THANGAMAYL",
    "industry": "Consumer Durables",
    "close": 4965.5,
-   "chg_pct": -4.99,
-   "mom_pct": 225.8,
+   "chg_pct": -14.49,
+   "mom_pct": 229.4,
    "status": "HOLD"
   },
   {
@@ -31,16 +31,16 @@
    "sym": "HFCL",
    "industry": "Telecommunication",
    "close": 202.52,
-   "chg_pct": 4.43,
-   "mom_pct": 184.2,
-   "status": "ADD"
+   "chg_pct": 9.65,
+   "mom_pct": 166.1,
+   "status": "HOLD"
   },
   {
    "sym": "GVPIL",
    "industry": "\u2014",
    "close": 758.0,
-   "chg_pct": 4.99,
-   "mom_pct": 182.9,
+   "chg_pct": 3.46,
+   "mom_pct": 206.4,
    "status": "HOLD"
   },
   {
@@ -55,16 +55,16 @@
    "sym": "BAJAJCON",
    "industry": "\u2014",
    "close": 523.8,
-   "chg_pct": -0.06,
-   "mom_pct": 176.1,
+   "chg_pct": -2.66,
+   "mom_pct": 167.6,
    "status": "HOLD"
   },
   {
    "sym": "KMEW",
    "industry": "\u2014",
    "close": 2493.5,
-   "chg_pct": 1.23,
-   "mom_pct": 171.3,
+   "chg_pct": -1.4,
+   "mom_pct": 168.5,
    "status": "HOLD"
   },
   {
@@ -73,14 +73,14 @@
    "close": 883.65,
    "chg_pct": 6.01,
    "mom_pct": 166.2,
-   "status": "ADD"
+   "status": "HOLD"
   },
   {
    "sym": "IZMO",
    "industry": "\u2014",
    "close": 988.9,
-   "chg_pct": -0.4,
-   "mom_pct": 163.9,
+   "chg_pct": -1.39,
+   "mom_pct": 163.1,
    "status": "HOLD"
   },
   {
@@ -89,7 +89,7 @@
    "close": 397.35,
    "chg_pct": 1.91,
    "mom_pct": 159.4,
-   "status": "ADD"
+   "status": "HOLD"
   },
   {
    "sym": "SAKAR",
@@ -113,7 +113,7 @@
    "close": 3452.7,
    "chg_pct": 3.16,
    "mom_pct": 144.1,
-   "status": "ADD"
+   "status": "HOLD"
   },
   {
    "sym": "AEROFLEX",
@@ -121,13 +121,8 @@
    "close": 431.4,
    "chg_pct": -0.93,
    "mom_pct": 141.4,
-   "status": "ADD"
+   "status": "HOLD"
   }
  ],
- "exits": [
-  "JAYNECOIND",
-  "NETWEB",
-  "SBC",
-  "TDPOWERSYS"
- ]
+ "exits": []
 }
