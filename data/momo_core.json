@@ -39,8 +39,8 @@
    "sym": "GVPIL",
    "industry": "\u2014",
    "close": 758.65,
-   "chg_pct": 3.55,
-   "mom_pct": 206.4,
+   "chg_pct": 0.09,
+   "mom_pct": 182.9,
    "status": "HOLD"
   },
   {
@@ -55,16 +55,16 @@
    "sym": "BAJAJCON",
    "industry": "\u2014",
    "close": 544.2,
-   "chg_pct": 1.13,
-   "mom_pct": 167.6,
+   "chg_pct": 3.89,
+   "mom_pct": 176.1,
    "status": "HOLD"
   },
   {
    "sym": "KMEW",
    "industry": "\u2014",
    "close": 2532.2,
-   "chg_pct": 0.13,
-   "mom_pct": 168.5,
+   "chg_pct": 1.55,
+   "mom_pct": 171.3,
    "status": "HOLD"
   },
   {
@@ -79,8 +79,8 @@
    "sym": "IZMO",
    "industry": "\u2014",
    "close": 996.45,
-   "chg_pct": -0.63,
-   "mom_pct": 163.1,
+   "chg_pct": 0.76,
+   "mom_pct": 163.9,
    "status": "HOLD"
   },
   {
@@ -95,16 +95,16 @@
    "sym": "SAKAR",
    "industry": "\u2014",
    "close": 916.05,
-   "chg_pct": 3.48,
-   "mom_pct": 146.9,
+   "chg_pct": -0.7,
+   "mom_pct": 143.5,
    "status": "HOLD"
   },
   {
    "sym": "KIRLOSENG",
    "industry": "Capital Goods",
    "close": 2273.9,
-   "chg_pct": 3.84,
-   "mom_pct": 144.5,
+   "chg_pct": 2.19,
+   "mom_pct": 151.0,
    "status": "HOLD"
   },
   {
