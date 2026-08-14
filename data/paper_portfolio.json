@@ -12006,6 +12006,40 @@
    "return_pct": null,
    "last_price": 939.2,
    "last_date": "2026-08-14"
+  },
+  {
+   "symbol": "TIIL",
+   "grade": "RAW",
+   "signal": "D20_BREAKOUT",
+   "reason": "55-day channel breakout \u2014 RS 84, Vol 11.65x, RSI 78.4, Dlv 15% \u2014 raw signal",
+   "industry": "\u2014",
+   "entry_date": "2026-08-14",
+   "entry_price": 3088.7,
+   "stop": 2826.14,
+   "target": 3613.82,
+   "status": "OPEN",
+   "exit_date": null,
+   "exit_price": null,
+   "return_pct": null,
+   "last_price": 3088.7,
+   "last_date": "2026-08-14"
+  },
+  {
+   "symbol": "HAPPYFORGE",
+   "grade": "RAW",
+   "signal": "D20_BREAKOUT",
+   "reason": "fresh 52-week high \u2014 RS 93, Vol 1.8x, RSI 85.1, Dlv 49% \u2014 raw signal",
+   "industry": "\u2014",
+   "entry_date": "2026-08-14",
+   "entry_price": 2089.6,
+   "stop": 1946.83,
+   "target": 2375.14,
+   "status": "OPEN",
+   "exit_date": null,
+   "exit_price": null,
+   "return_pct": null,
+   "last_price": 2089.6,
+   "last_date": "2026-08-14"
   }
  ],
  "nav_history": [
@@ -12279,13 +12313,13 @@
    "date": "2026-08-14",
    "a_nav": 102.311,
    "a_trades": 131,
-   "raw_nav": 100.715,
-   "raw_trades": 580,
-   "tot_nav": 101.01,
-   "tot_trades": 711,
+   "raw_nav": 100.713,
+   "raw_trades": 582,
+   "tot_nav": 101.007,
+   "tot_trades": 713,
    "nifty_idx": 101.236,
-   "day_pnl_frac": 11.451711,
-   "day_base_trades": 556
+   "day_pnl_frac": 12.413421,
+   "day_base_trades": 575
   }
  ],
  "nifty_base": 24068.6
