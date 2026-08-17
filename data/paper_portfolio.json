@@ -73,10 +73,10 @@
    "entry_price": 1497.2,
    "stop": 1358.92,
    "target": 1773.76,
-   "status": "OPEN",
-   "exit_date": null,
-   "exit_price": null,
-   "return_pct": null,
+   "status": "TARGET",
+   "exit_date": "2026-08-17",
+   "exit_price": 1773.76,
+   "return_pct": 18.47,
    "last_price": 1619.1,
    "last_date": "2026-08-14"
   },
@@ -173,8 +173,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 251.35,
-   "last_date": "2026-08-14"
+   "last_price": 243.7,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "LANDMARK",
@@ -221,8 +221,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 79.46,
-   "last_date": "2026-08-14"
+   "last_price": 80.41,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "STYL",
@@ -265,10 +265,10 @@
    "entry_price": 437.65,
    "stop": 410.97,
    "target": 491.01,
-   "status": "OPEN",
-   "exit_date": null,
-   "exit_price": null,
-   "return_pct": null,
+   "status": "STOP",
+   "exit_date": "2026-08-17",
+   "exit_price": 410.97,
+   "return_pct": -6.1,
    "last_price": 417.0,
    "last_date": "2026-08-14"
   },
@@ -397,8 +397,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 416.35,
-   "last_date": "2026-08-14"
+   "last_price": 410.75,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "CHALET",
@@ -733,8 +733,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1256.0,
-   "last_date": "2026-08-14"
+   "last_price": 1258.6,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "SSWL",
@@ -877,8 +877,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 849.4,
-   "last_date": "2026-08-14"
+   "last_price": 843.7,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "RPGLIFE",
@@ -1181,8 +1181,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 11619.0,
-   "last_date": "2026-08-14"
+   "last_price": 11681.0,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "TIMETECHNO",
@@ -1197,8 +1197,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 193.27,
-   "last_date": "2026-08-14"
+   "last_price": 189.61,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "HEG",
@@ -1277,8 +1277,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 27060.0,
-   "last_date": "2026-08-14"
+   "last_price": 26905.0,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "CHENNPETRO",
@@ -1294,8 +1294,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1321.9,
-   "last_date": "2026-08-14"
+   "last_price": 1382.4,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "CPPLUS",
@@ -1362,8 +1362,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 118.15,
-   "last_date": "2026-08-14"
+   "last_price": 120.08,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "HUHTAMAKI",
@@ -1464,8 +1464,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 7649.0,
-   "last_date": "2026-08-14"
+   "last_price": 7660.0,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "DIXON",
@@ -1481,8 +1481,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 14130.0,
-   "last_date": "2026-08-14"
+   "last_price": 14025.0,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "JSFB",
@@ -1583,8 +1583,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 736.95,
-   "last_date": "2026-08-14"
+   "last_price": 732.8,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "JSWCEMENT",
@@ -1634,8 +1634,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1632.8,
-   "last_date": "2026-08-14"
+   "last_price": 1610.0,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "UNIMECH",
@@ -1736,8 +1736,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 781.05,
-   "last_date": "2026-08-14"
+   "last_price": 787.4,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "IRISDOREME",
@@ -1804,8 +1804,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 66.0,
-   "last_date": "2026-08-14"
+   "last_price": 66.29,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "RAJRATAN",
@@ -1821,8 +1821,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 515.8,
-   "last_date": "2026-08-14"
+   "last_price": 516.8,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "TTKPRESTIG",
@@ -1855,8 +1855,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 631.15,
-   "last_date": "2026-08-14"
+   "last_price": 630.05,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "SUNDRMFAST",
@@ -1923,8 +1923,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 582.05,
-   "last_date": "2026-08-14"
+   "last_price": 573.5,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "ERIS",
@@ -1953,10 +1953,10 @@
    "entry_price": 290.84,
    "stop": 263.33,
    "target": 345.86,
-   "status": "OPEN",
-   "exit_date": null,
-   "exit_price": null,
-   "return_pct": null,
+   "status": "STOP",
+   "exit_date": "2026-08-17",
+   "exit_price": 263.33,
+   "return_pct": -9.46,
    "last_price": 269.6,
    "last_date": "2026-08-14"
   },
@@ -1991,8 +1991,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 737.85,
-   "last_date": "2026-08-14"
+   "last_price": 744.0,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "FEDERALBNK",
@@ -2008,8 +2008,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 351.3,
-   "last_date": "2026-08-14"
+   "last_price": 354.1,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "ICICIBANK",
@@ -2025,8 +2025,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1417.0,
-   "last_date": "2026-08-14"
+   "last_price": 1415.3,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "BAJFINANCE",
@@ -2229,8 +2229,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 629.95,
-   "last_date": "2026-08-14"
+   "last_price": 627.55,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "ECLERX",
@@ -2399,8 +2399,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 118.0,
-   "last_date": "2026-08-14"
+   "last_price": 117.32,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "KABRAEXTRU",
@@ -2501,8 +2501,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 176.05,
-   "last_date": "2026-08-14"
+   "last_price": 179.66,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "LLOYDSENT",
@@ -2514,10 +2514,10 @@
    "entry_price": 82.23,
    "stop": 74.86,
    "target": 96.97,
-   "status": "OPEN",
-   "exit_date": null,
-   "exit_price": null,
-   "return_pct": null,
+   "status": "STOP",
+   "exit_date": "2026-08-17",
+   "exit_price": 74.86,
+   "return_pct": -8.96,
    "last_price": 76.49,
    "last_date": "2026-08-14"
   },
@@ -2586,8 +2586,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 468.5,
-   "last_date": "2026-08-14"
+   "last_price": 474.65,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "COLPAL",
@@ -2637,8 +2637,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1717.3,
-   "last_date": "2026-08-14"
+   "last_price": 1685.8,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "BEPL",
@@ -2688,8 +2688,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 349.0,
-   "last_date": "2026-08-14"
+   "last_price": 348.6,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "LAURUSLABS",
@@ -2824,8 +2824,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 331.75,
-   "last_date": "2026-08-14"
+   "last_price": 334.0,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "AJANTPHARM",
@@ -2943,8 +2943,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 624.85,
-   "last_date": "2026-08-14"
+   "last_price": 655.75,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "STALLION",
@@ -3011,8 +3011,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 409.95,
-   "last_date": "2026-08-11"
+   "last_price": 415.6,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "APCOTEXIND",
@@ -3096,8 +3096,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1538.5,
-   "last_date": "2026-08-14"
+   "last_price": 1525.3,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "FLUOROCHEM",
@@ -3113,8 +3113,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 4737.8,
-   "last_date": "2026-08-14"
+   "last_price": 4707.5,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "BLUESTONE",
@@ -3245,10 +3245,10 @@
    "entry_price": 490.7,
    "stop": 456.79,
    "target": 558.52,
-   "status": "OPEN",
-   "exit_date": null,
-   "exit_price": null,
-   "return_pct": null,
+   "status": "TARGET",
+   "exit_date": "2026-08-17",
+   "exit_price": 558.52,
+   "return_pct": 13.82,
    "last_price": 488.4,
    "last_date": "2026-08-14"
   },
@@ -3266,8 +3266,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 4475.9,
-   "last_date": "2026-08-14"
+   "last_price": 4488.3,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "GLAXO",
@@ -3283,8 +3283,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 2688.8,
-   "last_date": "2026-08-14"
+   "last_price": 2702.9,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "JKCEMENT",
@@ -3334,8 +3334,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 610.7,
-   "last_date": "2026-08-14"
+   "last_price": 610.4,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "E2E",
@@ -3368,8 +3368,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 3642.0,
-   "last_date": "2026-08-14"
+   "last_price": 3582.4,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "CYIENTDLM",
@@ -3385,8 +3385,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 696.65,
-   "last_date": "2026-08-14"
+   "last_price": 737.45,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "HUHTAMAKI",
@@ -3436,8 +3436,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 845.25,
-   "last_date": "2026-08-14"
+   "last_price": 834.65,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "UJJIVANSFB",
@@ -3453,8 +3453,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 72.47,
-   "last_date": "2026-08-14"
+   "last_price": 72.21,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "SOTL",
@@ -3538,8 +3538,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1422.6,
-   "last_date": "2026-08-14"
+   "last_price": 1415.1,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "KRISHANA",
@@ -3572,8 +3572,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 938.35,
-   "last_date": "2026-08-14"
+   "last_price": 964.85,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "RITCO",
@@ -3606,8 +3606,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 211.5,
-   "last_date": "2026-08-14"
+   "last_price": 211.72,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "PANAMAPET",
@@ -3657,8 +3657,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1717.4,
-   "last_date": "2026-08-14"
+   "last_price": 1707.0,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "HEROMOTOCO",
@@ -3725,8 +3725,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 11700.0,
-   "last_date": "2026-08-14"
+   "last_price": 11663.0,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "HEG",
@@ -3742,8 +3742,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 701.0,
-   "last_date": "2026-08-14"
+   "last_price": 698.3,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "ESAFSFB",
@@ -3776,8 +3776,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1536.0,
-   "last_date": "2026-08-14"
+   "last_price": 1545.0,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "SGMART",
@@ -3793,8 +3793,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 735.85,
-   "last_date": "2026-08-14"
+   "last_price": 752.3,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "MAXIND",
@@ -3844,8 +3844,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 698.2,
-   "last_date": "2026-08-14"
+   "last_price": 680.45,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "JLHL",
@@ -3912,8 +3912,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1916.3,
-   "last_date": "2026-08-14"
+   "last_price": 1877.3,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "MONARCH",
@@ -3946,8 +3946,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 611.35,
-   "last_date": "2026-08-14"
+   "last_price": 605.5,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "SUNPHARMA",
@@ -3959,10 +3959,10 @@
    "entry_price": 1973.7,
    "stop": 1911.54,
    "target": 2098.02,
-   "status": "OPEN",
-   "exit_date": null,
-   "exit_price": null,
-   "return_pct": null,
+   "status": "STOP",
+   "exit_date": "2026-08-17",
+   "exit_price": 1911.54,
+   "return_pct": -3.15,
    "last_price": 1930.0,
    "last_date": "2026-08-14"
   },
@@ -4031,8 +4031,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 2532.5,
-   "last_date": "2026-08-14"
+   "last_price": 2534.5,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "BLSE",
@@ -4048,8 +4048,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 314.25,
-   "last_date": "2026-08-14"
+   "last_price": 310.8,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "MANBA",
@@ -4082,8 +4082,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 611.85,
-   "last_date": "2026-08-14"
+   "last_price": 607.6,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "NH",
@@ -4184,8 +4184,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1860.0,
-   "last_date": "2026-08-14"
+   "last_price": 1810.0,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "SPLPETRO",
@@ -4218,8 +4218,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 42.28,
-   "last_date": "2026-08-14"
+   "last_price": 42.4,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "FIEMIND",
@@ -4252,8 +4252,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 527.0,
-   "last_date": "2026-08-14"
+   "last_price": 524.5,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "VRLLOG",
@@ -4320,8 +4320,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 85.69,
-   "last_date": "2026-08-14"
+   "last_price": 85.05,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "MBAPL",
@@ -4337,8 +4337,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 168.46,
-   "last_date": "2026-08-14"
+   "last_price": 164.73,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "LOTUSDEV",
@@ -4371,8 +4371,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 4650.0,
-   "last_date": "2026-08-14"
+   "last_price": 4693.4,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "GANESHBE",
@@ -4439,8 +4439,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 527.3,
-   "last_date": "2026-08-14"
+   "last_price": 523.4,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "CUB",
@@ -4490,8 +4490,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1812.0,
-   "last_date": "2026-08-14"
+   "last_price": 1806.0,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "HEXT",
@@ -4507,8 +4507,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 569.85,
-   "last_date": "2026-08-14"
+   "last_price": 561.0,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "GPTHEALTH",
@@ -4575,8 +4575,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1832.2,
-   "last_date": "2026-08-14"
+   "last_price": 1811.8,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "ETERNAL",
@@ -4592,8 +4592,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 318.5,
-   "last_date": "2026-08-14"
+   "last_price": 318.0,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "KFINTECH",
@@ -4609,8 +4609,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 940.0,
-   "last_date": "2026-08-14"
+   "last_price": 973.0,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "BAJAJFINSV",
@@ -4660,8 +4660,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1668.8,
-   "last_date": "2026-08-14"
+   "last_price": 1703.9,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "UNIVCABLES",
@@ -4711,8 +4711,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1360.0,
-   "last_date": "2026-08-14"
+   "last_price": 1325.0,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "PRUDENT",
@@ -4728,8 +4728,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 3257.1,
-   "last_date": "2026-08-14"
+   "last_price": 3338.0,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "ARIS",
@@ -4745,8 +4745,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 134.09,
-   "last_date": "2026-08-14"
+   "last_price": 136.25,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "PERSISTENT",
@@ -4762,8 +4762,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 5580.0,
-   "last_date": "2026-08-14"
+   "last_price": 5570.0,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "LAURUSLABS",
@@ -4779,8 +4779,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1787.3,
-   "last_date": "2026-08-14"
+   "last_price": 1809.7,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "DIACABS",
@@ -4813,8 +4813,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 314.75,
-   "last_date": "2026-08-14"
+   "last_price": 314.4,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "KMEW",
@@ -4915,8 +4915,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 10251.0,
-   "last_date": "2026-08-14"
+   "last_price": 10480.0,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "BHARTIARTL",
@@ -4932,8 +4932,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1992.1,
-   "last_date": "2026-08-14"
+   "last_price": 1969.3,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "SHK",
@@ -4949,8 +4949,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 170.72,
-   "last_date": "2026-08-14"
+   "last_price": 164.25,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "RECLTD",
@@ -5034,8 +5034,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1180.0,
-   "last_date": "2026-08-14"
+   "last_price": 1173.0,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "EXPLEOSOL",
@@ -5068,8 +5068,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 696.7,
-   "last_date": "2026-08-14"
+   "last_price": 694.65,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "APLAPOLLO",
@@ -5238,8 +5238,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 36.13,
-   "last_date": "2026-08-14"
+   "last_price": 35.85,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "ALKEM",
@@ -5268,10 +5268,10 @@
    "entry_price": 847.35,
    "stop": 770.71,
    "target": 1000.63,
-   "status": "OPEN",
-   "exit_date": null,
-   "exit_price": null,
-   "return_pct": null,
+   "status": "STOP",
+   "exit_date": "2026-08-17",
+   "exit_price": 770.71,
+   "return_pct": -9.04,
    "last_price": 786.25,
    "last_date": "2026-08-14"
   },
@@ -5306,8 +5306,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 172.81,
-   "last_date": "2026-08-14"
+   "last_price": 172.75,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "LTFOODS",
@@ -5323,8 +5323,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 419.8,
-   "last_date": "2026-08-14"
+   "last_price": 417.15,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "BALKRISIND",
@@ -5340,8 +5340,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 2363.6,
-   "last_date": "2026-08-14"
+   "last_price": 2407.2,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "ENDURANCE",
@@ -5357,8 +5357,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 2899.0,
-   "last_date": "2026-08-14"
+   "last_price": 2978.2,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "ATULAUTO",
@@ -5391,8 +5391,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 231.65,
-   "last_date": "2026-08-14"
+   "last_price": 231.66,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "DREDGECORP",
@@ -5459,8 +5459,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 5134.5,
-   "last_date": "2026-08-14"
+   "last_price": 5321.0,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "SONACOMS",
@@ -5476,8 +5476,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 792.0,
-   "last_date": "2026-08-14"
+   "last_price": 805.1,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "TVSMOTOR",
@@ -5493,8 +5493,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 4307.0,
-   "last_date": "2026-08-14"
+   "last_price": 4385.9,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "SHREEJISPG",
@@ -5506,10 +5506,10 @@
    "entry_price": 643.45,
    "stop": 608.34,
    "target": 713.67,
-   "status": "OPEN",
-   "exit_date": null,
-   "exit_price": null,
-   "return_pct": null,
+   "status": "STOP",
+   "exit_date": "2026-08-17",
+   "exit_price": 608.34,
+   "return_pct": -5.46,
    "last_price": 653.4,
    "last_date": "2026-08-14"
   },
@@ -5544,8 +5544,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1024.6,
-   "last_date": "2026-08-14"
+   "last_price": 1081.5,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "GAIL",
@@ -5595,8 +5595,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 653.05,
-   "last_date": "2026-08-14"
+   "last_price": 657.95,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "AETHER",
@@ -5612,8 +5612,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1625.1,
-   "last_date": "2026-08-14"
+   "last_price": 1605.7,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "NAZARA",
@@ -5629,8 +5629,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 355.9,
-   "last_date": "2026-08-14"
+   "last_price": 350.1,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "PAUSHAKLTD",
@@ -5680,8 +5680,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1932.3,
-   "last_date": "2026-08-14"
+   "last_price": 1873.9,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "CONCORDBIO",
@@ -5697,8 +5697,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1451.3,
-   "last_date": "2026-08-14"
+   "last_price": 1515.0,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "HYUNDAI",
@@ -5714,8 +5714,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 2199.0,
-   "last_date": "2026-08-14"
+   "last_price": 2190.0,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "SIGMA",
@@ -5782,8 +5782,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 249.05,
-   "last_date": "2026-08-14"
+   "last_price": 249.75,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "VOLTAMP",
@@ -5799,8 +5799,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 10141.0,
-   "last_date": "2026-08-14"
+   "last_price": 10001.0,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "RADHIKAJWE",
@@ -5833,8 +5833,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 11475.0,
-   "last_date": "2026-08-14"
+   "last_price": 11379.0,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "JPPOWER",
@@ -5851,7 +5851,7 @@
    "exit_price": null,
    "return_pct": null,
    "last_price": 17.39,
-   "last_date": "2026-08-14"
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "MOTHERSON",
@@ -5884,8 +5884,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1404.5,
-   "last_date": "2026-08-14"
+   "last_price": 1398.7,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "ANTHEM",
@@ -5969,8 +5969,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 4215.7,
-   "last_date": "2026-08-14"
+   "last_price": 4362.3,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "KRISHANA",
@@ -5986,8 +5986,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 190.68,
-   "last_date": "2026-08-14"
+   "last_price": 187.27,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "SSWL",
@@ -6003,8 +6003,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 312.9,
-   "last_date": "2026-08-14"
+   "last_price": 309.5,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "RANEHOLDIN",
@@ -6054,8 +6054,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 720.05,
-   "last_date": "2026-08-14"
+   "last_price": 725.15,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "KDDL",
@@ -6118,10 +6118,10 @@
    "entry_price": 2962.7,
    "stop": 2723.0,
    "target": 3442.1,
-   "status": "OPEN",
-   "exit_date": null,
-   "exit_price": null,
-   "return_pct": null,
+   "status": "STOP",
+   "exit_date": "2026-08-17",
+   "exit_price": 2723.0,
+   "return_pct": -8.09,
    "last_price": 2747.4,
    "last_date": "2026-08-14"
   },
@@ -6139,8 +6139,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 588.4,
-   "last_date": "2026-08-14"
+   "last_price": 522.7,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "DALMIASUG",
@@ -6207,8 +6207,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1894.4,
-   "last_date": "2026-08-14"
+   "last_price": 1884.7,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "ASIANENE",
@@ -6258,8 +6258,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 144.39,
-   "last_date": "2026-08-14"
+   "last_price": 144.6,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "PIDILITIND",
@@ -6275,8 +6275,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1693.0,
-   "last_date": "2026-08-14"
+   "last_price": 1669.0,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "GRASIM",
@@ -6309,8 +6309,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1873.3,
-   "last_date": "2026-08-14"
+   "last_price": 1882.0,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "SHALPAINTS",
@@ -6343,8 +6343,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 474.3,
-   "last_date": "2026-08-14"
+   "last_price": 470.4,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "SHRIRAMFIN",
@@ -6361,7 +6361,7 @@
    "exit_price": null,
    "return_pct": null,
    "last_price": 1122.0,
-   "last_date": "2026-08-14"
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "M&MFIN",
@@ -6377,8 +6377,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 390.1,
-   "last_date": "2026-08-14"
+   "last_price": 388.9,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "ROSSTECH",
@@ -6394,8 +6394,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1073.45,
-   "last_date": "2026-08-14"
+   "last_price": 1108.9,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "TBOTEK",
@@ -6411,8 +6411,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1633.3,
-   "last_date": "2026-08-14"
+   "last_price": 1700.0,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "ASHOKLEY",
@@ -6428,8 +6428,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 171.64,
-   "last_date": "2026-08-14"
+   "last_price": 177.1,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "ARE&M",
@@ -6445,8 +6445,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 945.95,
-   "last_date": "2026-08-14"
+   "last_price": 945.7,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "SUNDARMFIN",
@@ -6547,8 +6547,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 325.9,
-   "last_date": "2026-08-14"
+   "last_price": 320.4,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "VINDHYATEL",
@@ -6564,8 +6564,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 2401.6,
-   "last_date": "2026-08-14"
+   "last_price": 2486.6,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "ACE",
@@ -6581,8 +6581,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1085.6,
-   "last_date": "2026-08-14"
+   "last_price": 1113.7,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "COROMANDEL",
@@ -6598,8 +6598,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 2095.3,
-   "last_date": "2026-08-14"
+   "last_price": 2097.9,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "GULFOILLUB",
@@ -6615,8 +6615,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1159.3,
-   "last_date": "2026-08-14"
+   "last_price": 1174.6,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "EICHERMOT",
@@ -6632,8 +6632,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 8066.5,
-   "last_date": "2026-08-14"
+   "last_price": 8050.0,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "UNOMINDA",
@@ -6649,8 +6649,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1240.0,
-   "last_date": "2026-08-14"
+   "last_price": 1269.9,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "LUMAXIND",
@@ -6666,8 +6666,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 5796.5,
-   "last_date": "2026-08-14"
+   "last_price": 5792.0,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "BRITANNIA",
@@ -6683,8 +6683,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 5558.0,
-   "last_date": "2026-08-14"
+   "last_price": 5521.0,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "BPCL",
@@ -6717,8 +6717,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 555.8,
-   "last_date": "2026-08-14"
+   "last_price": 561.75,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "LTM",
@@ -6734,8 +6734,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 4715.0,
-   "last_date": "2026-08-14"
+   "last_price": 4700.0,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "PETRONET",
@@ -6751,8 +6751,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 282.6,
-   "last_date": "2026-08-14"
+   "last_price": 281.8,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "IGIL",
@@ -6768,8 +6768,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 345.9,
-   "last_date": "2026-08-14"
+   "last_price": 355.15,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "SIEMENS",
@@ -6785,8 +6785,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 3940.0,
-   "last_date": "2026-08-14"
+   "last_price": 3943.0,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "PTC",
@@ -6853,8 +6853,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 391.15,
-   "last_date": "2026-08-14"
+   "last_price": 392.7,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "PFIZER",
@@ -6870,8 +6870,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 4874.8,
-   "last_date": "2026-08-14"
+   "last_price": 4829.1,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "SIRCA",
@@ -6887,8 +6887,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 426.9,
-   "last_date": "2026-08-14"
+   "last_price": 439.45,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "POLICYBZR",
@@ -6904,8 +6904,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1741.0,
-   "last_date": "2026-08-14"
+   "last_price": 1728.1,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "SPORTKING",
@@ -6938,8 +6938,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 668.7,
-   "last_date": "2026-08-14"
+   "last_price": 680.7,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "KABRAEXTRU",
@@ -6972,8 +6972,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 8477.0,
-   "last_date": "2026-08-14"
+   "last_price": 8481.5,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "ASKAUTOLTD",
@@ -7053,10 +7053,10 @@
    "entry_price": 615.05,
    "stop": 559.36,
    "target": 726.43,
-   "status": "OPEN",
-   "exit_date": null,
-   "exit_price": null,
-   "return_pct": null,
+   "status": "TARGET",
+   "exit_date": "2026-08-17",
+   "exit_price": 726.43,
+   "return_pct": 18.11,
    "last_price": 653.15,
    "last_date": "2026-08-14"
   },
@@ -7091,8 +7091,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1522.6,
-   "last_date": "2026-08-14"
+   "last_price": 1511.3,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "APOLLOHOSP",
@@ -7172,10 +7172,10 @@
    "entry_price": 151.38,
    "stop": 140.48,
    "target": 173.18,
-   "status": "OPEN",
-   "exit_date": null,
-   "exit_price": null,
-   "return_pct": null,
+   "status": "TARGET",
+   "exit_date": "2026-08-17",
+   "exit_price": 173.18,
+   "return_pct": 14.4,
    "last_price": 160.93,
    "last_date": "2026-08-14"
   },
@@ -7227,8 +7227,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 351.85,
-   "last_date": "2026-08-14"
+   "last_price": 352.1,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "KEI",
@@ -7244,8 +7244,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 5700.0,
-   "last_date": "2026-08-14"
+   "last_price": 5873.0,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "APOLLOPIPE",
@@ -7261,8 +7261,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 510.85,
-   "last_date": "2026-08-14"
+   "last_price": 545.3,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "BASF",
@@ -7278,8 +7278,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 4077.9,
-   "last_date": "2026-08-14"
+   "last_price": 4041.2,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "MANYAVAR",
@@ -7295,8 +7295,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 528.75,
-   "last_date": "2026-08-14"
+   "last_price": 541.85,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "UTTAMSUGAR",
@@ -7312,8 +7312,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 264.29,
-   "last_date": "2026-08-14"
+   "last_price": 283.0,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "3IINFOLTD",
@@ -7346,8 +7346,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 588.75,
-   "last_date": "2026-08-13"
+   "last_price": 579.6,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "GRAPHITE",
@@ -7363,8 +7363,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 721.6,
-   "last_date": "2026-08-14"
+   "last_price": 729.5,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "VIMTALABS",
@@ -7380,8 +7380,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 617.0,
-   "last_date": "2026-08-14"
+   "last_price": 623.45,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "BERGEPAINT",
@@ -7397,8 +7397,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 545.1,
-   "last_date": "2026-08-14"
+   "last_price": 549.35,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "APARINDS",
@@ -7448,8 +7448,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 5007.2,
-   "last_date": "2026-08-14"
+   "last_price": 5212.4,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "ZFCVINDIA",
@@ -7465,8 +7465,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 2636.7,
-   "last_date": "2026-08-14"
+   "last_price": 2623.7,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "SCI",
@@ -7482,8 +7482,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 292.25,
-   "last_date": "2026-08-14"
+   "last_price": 286.4,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "VENKEYS",
@@ -7516,8 +7516,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1029.5,
-   "last_date": "2026-08-14"
+   "last_price": 1049.9,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "HINDZINC",
@@ -7533,8 +7533,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 561.9,
-   "last_date": "2026-08-14"
+   "last_price": 567.5,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "ORISSAMINE",
@@ -7618,8 +7618,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 732.6,
-   "last_date": "2026-08-14"
+   "last_price": 755.0,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "PRICOLLTD",
@@ -7635,8 +7635,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 792.05,
-   "last_date": "2026-08-14"
+   "last_price": 806.55,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "DIFFNKG",
@@ -7669,8 +7669,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1174.0,
-   "last_date": "2026-08-14"
+   "last_price": 1192.0,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "HEROMOTOCO",
@@ -7686,8 +7686,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 5790.0,
-   "last_date": "2026-08-14"
+   "last_price": 5745.0,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "SUDEEPPHRM",
@@ -7720,8 +7720,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 822.0,
-   "last_date": "2026-08-14"
+   "last_price": 809.3,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "TALBROAUTO",
@@ -7805,8 +7805,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 822.35,
-   "last_date": "2026-08-14"
+   "last_price": 819.75,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "AGARWALEYE",
@@ -7822,8 +7822,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 506.5,
-   "last_date": "2026-08-14"
+   "last_price": 501.6,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "UFBL",
@@ -7856,8 +7856,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 489.05,
-   "last_date": "2026-08-14"
+   "last_price": 506.95,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "ATULAUTO",
@@ -7958,8 +7958,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 353.35,
-   "last_date": "2026-08-14"
+   "last_price": 361.55,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "RRKABEL",
@@ -7975,8 +7975,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 2785.6,
-   "last_date": "2026-08-14"
+   "last_price": 2748.6,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "RBLBANK",
@@ -7992,8 +7992,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 385.0,
-   "last_date": "2026-08-14"
+   "last_price": 381.5,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "LAOPALA",
@@ -8009,8 +8009,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 192.51,
-   "last_date": "2026-08-14"
+   "last_price": 191.22,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "CNL",
@@ -8026,8 +8026,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1243.0,
-   "last_date": "2026-08-14"
+   "last_price": 1252.1,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "CASTROLIND",
@@ -8077,8 +8077,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 458.35,
-   "last_date": "2026-08-14"
+   "last_price": 457.75,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "NRBBEARING",
@@ -8094,8 +8094,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 458.9,
-   "last_date": "2026-08-14"
+   "last_price": 484.05,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "AUROPHARMA",
@@ -8111,8 +8111,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1622.1,
-   "last_date": "2026-08-14"
+   "last_price": 1627.2,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "RGL",
@@ -8179,8 +8179,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 529.5,
-   "last_date": "2026-08-13"
+   "last_price": 518.75,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "GNFC",
@@ -8192,10 +8192,10 @@
    "entry_price": 538.3,
    "stop": 509.98,
    "target": 594.94,
-   "status": "OPEN",
-   "exit_date": null,
-   "exit_price": null,
-   "return_pct": null,
+   "status": "TARGET",
+   "exit_date": "2026-08-17",
+   "exit_price": 594.94,
+   "return_pct": 10.52,
    "last_price": 568.95,
    "last_date": "2026-08-14"
   },
@@ -8213,8 +8213,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 529.05,
-   "last_date": "2026-08-14"
+   "last_price": 572.65,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "VMART",
@@ -8230,8 +8230,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 807.5,
-   "last_date": "2026-08-14"
+   "last_price": 792.3,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "SUPRIYA",
@@ -8264,8 +8264,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 481.6,
-   "last_date": "2026-08-14"
+   "last_price": 479.25,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "ASHAPURMIN",
@@ -8298,8 +8298,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 3275.8,
-   "last_date": "2026-08-14"
+   "last_price": 3290.5,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "LT",
@@ -8315,8 +8315,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 4057.0,
-   "last_date": "2026-08-14"
+   "last_price": 4086.7,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "NSLNISP",
@@ -8328,10 +8328,10 @@
    "entry_price": 44.77,
    "stop": 42.73,
    "target": 48.85,
-   "status": "OPEN",
-   "exit_date": null,
-   "exit_price": null,
-   "return_pct": null,
+   "status": "STOP",
+   "exit_date": "2026-08-17",
+   "exit_price": 42.73,
+   "return_pct": -4.56,
    "last_price": 44.5,
    "last_date": "2026-08-14"
   },
@@ -8349,8 +8349,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 834.05,
-   "last_date": "2026-08-14"
+   "last_price": 871.85,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "ASKAUTOLTD",
@@ -8366,8 +8366,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 644.7,
-   "last_date": "2026-08-14"
+   "last_price": 649.2,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "HAPPYFORGE",
@@ -8434,8 +8434,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 23320.0,
-   "last_date": "2026-08-14"
+   "last_price": 23661.0,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "PGIL",
@@ -8451,8 +8451,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 2474.6,
-   "last_date": "2026-08-14"
+   "last_price": 2378.0,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "NAVINFLUOR",
@@ -8468,8 +8468,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 8235.0,
-   "last_date": "2026-08-14"
+   "last_price": 8151.0,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "TATATECH",
@@ -8485,8 +8485,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 867.9,
-   "last_date": "2026-08-14"
+   "last_price": 841.65,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "RACLGEAR",
@@ -8519,8 +8519,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 524.6,
-   "last_date": "2026-08-14"
+   "last_price": 520.75,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "DDEVPLSTIK",
@@ -8566,10 +8566,10 @@
    "entry_price": 382.7,
    "stop": 361.06,
    "target": 425.98,
-   "status": "OPEN",
-   "exit_date": null,
-   "exit_price": null,
-   "return_pct": null,
+   "status": "STOP",
+   "exit_date": "2026-08-17",
+   "exit_price": 361.06,
+   "return_pct": -5.65,
    "last_price": 364.2,
    "last_date": "2026-08-14"
   },
@@ -8638,8 +8638,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1148.7,
-   "last_date": "2026-08-14"
+   "last_price": 1161.0,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "SBIN",
@@ -8655,8 +8655,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1067.7,
-   "last_date": "2026-08-14"
+   "last_price": 1061.2,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "SHARDAMOTR",
@@ -8689,8 +8689,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1048.25,
-   "last_date": "2026-08-14"
+   "last_price": 1056.55,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "BIRLANU",
@@ -8757,8 +8757,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 187.38,
-   "last_date": "2026-08-14"
+   "last_price": 188.9,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "YATHARTH",
@@ -8791,8 +8791,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 243.68,
-   "last_date": "2026-08-14"
+   "last_price": 240.18,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "SUNFLAG",
@@ -8859,8 +8859,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 221.06,
-   "last_date": "2026-08-14"
+   "last_price": 221.72,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "BAJEL",
@@ -8910,8 +8910,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1081.9,
-   "last_date": "2026-08-14"
+   "last_price": 1072.2,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "MAZDOCK",
@@ -8927,8 +8927,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 2580.0,
-   "last_date": "2026-08-14"
+   "last_price": 2569.7,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "INDIANB",
@@ -8944,8 +8944,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 894.95,
-   "last_date": "2026-08-14"
+   "last_price": 881.2,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "IMAGICAA",
@@ -8978,8 +8978,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 131.25,
-   "last_date": "2026-08-14"
+   "last_price": 131.1,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "SAIL",
@@ -9012,8 +9012,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 93.53,
-   "last_date": "2026-08-14"
+   "last_price": 91.21,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "BHARATFORG",
@@ -9063,8 +9063,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1940.8,
-   "last_date": "2026-08-14"
+   "last_price": 2059.4,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "VISAKAIND",
@@ -9080,8 +9080,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 98.76,
-   "last_date": "2026-08-12"
+   "last_price": 92.0,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "TRAVELFOOD",
@@ -9097,8 +9097,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1364.9,
-   "last_date": "2026-08-14"
+   "last_price": 1358.2,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "GRASIM",
@@ -9114,8 +9114,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 3248.7,
-   "last_date": "2026-08-14"
+   "last_price": 3250.5,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "DIVGIITTS",
@@ -9148,8 +9148,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 36.67,
-   "last_date": "2026-08-13"
+   "last_price": 37.01,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "EXIDEIND",
@@ -9165,8 +9165,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 476.1,
-   "last_date": "2026-08-14"
+   "last_price": 475.7,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "FINEORG",
@@ -9199,8 +9199,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 143.76,
-   "last_date": "2026-08-14"
+   "last_price": 143.65,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "NESTLEIND",
@@ -9212,10 +9212,10 @@
    "entry_price": 1540.0,
    "stop": 1469.49,
    "target": 1681.02,
-   "status": "OPEN",
-   "exit_date": null,
-   "exit_price": null,
-   "return_pct": null,
+   "status": "STOP",
+   "exit_date": "2026-08-17",
+   "exit_price": 1469.49,
+   "return_pct": -4.58,
    "last_price": 1499.1,
    "last_date": "2026-08-14"
   },
@@ -9250,8 +9250,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 234.72,
-   "last_date": "2026-08-14"
+   "last_price": 234.68,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "STYL",
@@ -9267,8 +9267,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 408.3,
-   "last_date": "2026-08-14"
+   "last_price": 398.3,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "KINGFA",
@@ -9284,8 +9284,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 5870.0,
-   "last_date": "2026-08-14"
+   "last_price": 6087.5,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "BOSCH-HCIL",
@@ -9301,8 +9301,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1654.2,
-   "last_date": "2026-08-14"
+   "last_price": 1700.4,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "ENRIN",
@@ -9318,8 +9318,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 3536.3,
-   "last_date": "2026-08-14"
+   "last_price": 3605.7,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "ARVSMART",
@@ -9335,8 +9335,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 655.6,
-   "last_date": "2026-08-14"
+   "last_price": 670.35,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "BECTORFOOD",
@@ -9352,8 +9352,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 240.37,
-   "last_date": "2026-08-14"
+   "last_price": 255.3,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "GOCLCORP",
@@ -9386,8 +9386,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 422.2,
-   "last_date": "2026-08-14"
+   "last_price": 418.2,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "WEL",
@@ -9403,8 +9403,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 145.05,
-   "last_date": "2026-08-14"
+   "last_price": 145.74,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "ARVIND",
@@ -9420,8 +9420,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 571.85,
-   "last_date": "2026-08-14"
+   "last_price": 552.3,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "PTCIL",
@@ -9437,8 +9437,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 19050.0,
-   "last_date": "2026-08-14"
+   "last_price": 20584.0,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "BELRISE",
@@ -9450,10 +9450,10 @@
    "entry_price": 248.21,
    "stop": 234.49,
    "target": 275.65,
-   "status": "OPEN",
-   "exit_date": null,
-   "exit_price": null,
-   "return_pct": null,
+   "status": "STOP",
+   "exit_date": "2026-08-17",
+   "exit_price": 234.49,
+   "return_pct": -5.53,
    "last_price": 255.35,
    "last_date": "2026-08-14"
   },
@@ -9505,8 +9505,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 58.38,
-   "last_date": "2026-08-14"
+   "last_price": 57.21,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "MUFIN",
@@ -9522,8 +9522,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 135.54,
-   "last_date": "2026-08-14"
+   "last_price": 135.87,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "REDTAPE",
@@ -9573,8 +9573,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 168.3,
-   "last_date": "2026-08-14"
+   "last_price": 168.06,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "FIEMIND",
@@ -9607,8 +9607,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 847.9,
-   "last_date": "2026-08-14"
+   "last_price": 847.75,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "TFCILTD",
@@ -9624,8 +9624,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 117.44,
-   "last_date": "2026-08-14"
+   "last_price": 120.28,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "AKUMS",
@@ -9641,8 +9641,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 726.6,
-   "last_date": "2026-08-14"
+   "last_price": 744.0,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "PIXTRANS",
@@ -9658,8 +9658,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1896.8,
-   "last_date": "2026-08-14"
+   "last_price": 1938.8,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "JINDALSAW",
@@ -9675,8 +9675,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 267.1,
-   "last_date": "2026-08-14"
+   "last_price": 270.4,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "TITAN",
@@ -9692,8 +9692,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 5056.2,
-   "last_date": "2026-08-14"
+   "last_price": 5068.5,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "COMSYN",
@@ -9709,8 +9709,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 288.33,
-   "last_date": "2026-08-14"
+   "last_price": 281.69,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "PANAMAPET",
@@ -9739,10 +9739,10 @@
    "entry_price": 2549.7,
    "stop": 2340.04,
    "target": 2969.02,
-   "status": "OPEN",
-   "exit_date": null,
-   "exit_price": null,
-   "return_pct": null,
+   "status": "TARGET",
+   "exit_date": "2026-08-17",
+   "exit_price": 2969.02,
+   "return_pct": 16.45,
    "last_price": 2717.8,
    "last_date": "2026-08-14"
   },
@@ -9760,8 +9760,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 851.2,
-   "last_date": "2026-08-14"
+   "last_price": 861.95,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "GLAND",
@@ -9794,8 +9794,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 714.3,
-   "last_date": "2026-08-14"
+   "last_price": 712.35,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "THYROCARE",
@@ -9811,8 +9811,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 624.05,
-   "last_date": "2026-08-14"
+   "last_price": 618.6,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "THOMASCOTT",
@@ -9824,10 +9824,10 @@
    "entry_price": 349.05,
    "stop": 308.61,
    "target": 429.93,
-   "status": "OPEN",
-   "exit_date": null,
-   "exit_price": null,
-   "return_pct": null,
+   "status": "STOP",
+   "exit_date": "2026-08-17",
+   "exit_price": 308.61,
+   "return_pct": -11.59,
    "last_price": 346.9,
    "last_date": "2026-08-14"
   },
@@ -9845,8 +9845,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 564.95,
-   "last_date": "2026-08-14"
+   "last_price": 559.8,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "DMCC",
@@ -9879,8 +9879,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 101.88,
-   "last_date": "2026-08-14"
+   "last_price": 101.98,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "PPLPHARMA",
@@ -9896,8 +9896,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 206.64,
-   "last_date": "2026-08-14"
+   "last_price": 204.73,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "SUNDRMFAST",
@@ -9930,8 +9930,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 35700.0,
-   "last_date": "2026-08-14"
+   "last_price": 35450.0,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "CHOICEIN",
@@ -9964,8 +9964,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 591.55,
-   "last_date": "2026-08-14"
+   "last_price": 593.7,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "MAHSEAMLES",
@@ -9981,8 +9981,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 612.45,
-   "last_date": "2026-08-14"
+   "last_price": 622.0,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "HATSUN",
@@ -9998,8 +9998,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 980.8,
-   "last_date": "2026-08-14"
+   "last_price": 968.8,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "MPHASIS",
@@ -10015,8 +10015,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 2545.0,
-   "last_date": "2026-08-14"
+   "last_price": 2510.0,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "SYRMA",
@@ -10032,8 +10032,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1465.2,
-   "last_date": "2026-08-14"
+   "last_price": 1467.9,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "GARUDA",
@@ -10066,8 +10066,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1151.6,
-   "last_date": "2026-08-14"
+   "last_price": 1122.7,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "JSWENERGY",
@@ -10134,8 +10134,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 773.4,
-   "last_date": "2026-08-14"
+   "last_price": 776.4,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "IRISDOREME",
@@ -10151,8 +10151,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 57.93,
-   "last_date": "2026-08-14"
+   "last_price": 58.3,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "JGCHEM",
@@ -10168,8 +10168,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 606.15,
-   "last_date": "2026-08-14"
+   "last_price": 600.8,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "EMIL",
@@ -10185,8 +10185,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 189.44,
-   "last_date": "2026-08-14"
+   "last_price": 192.42,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "SBCL",
@@ -10219,8 +10219,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1644.4,
-   "last_date": "2026-08-14"
+   "last_price": 1724.6,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "PAYTM",
@@ -10236,8 +10236,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1603.0,
-   "last_date": "2026-08-14"
+   "last_price": 1580.2,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "UNIPARTS",
@@ -10253,8 +10253,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 816.0,
-   "last_date": "2026-08-14"
+   "last_price": 801.15,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "MACPOWER",
@@ -10270,8 +10270,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1749.3,
-   "last_date": "2026-08-14"
+   "last_price": 1781.4,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "M&M",
@@ -10287,8 +10287,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 3428.3,
-   "last_date": "2026-08-14"
+   "last_price": 3390.4,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "APLAPOLLO",
@@ -10304,8 +10304,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 2083.3,
-   "last_date": "2026-08-14"
+   "last_price": 2081.3,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "FINCABLES",
@@ -10321,8 +10321,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1246.85,
-   "last_date": "2026-08-14"
+   "last_price": 1320.85,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "ZYDUSLIFE",
@@ -10355,8 +10355,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 304.18,
-   "last_date": "2026-08-14"
+   "last_price": 313.02,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "KSHINTL",
@@ -10372,8 +10372,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1028.6,
-   "last_date": "2026-08-14"
+   "last_price": 1022.35,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "WINDLAS",
@@ -10389,8 +10389,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 949.45,
-   "last_date": "2026-08-14"
+   "last_price": 933.4,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "ROLEXRINGS",
@@ -10406,8 +10406,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 176.3,
-   "last_date": "2026-08-14"
+   "last_price": 179.46,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "POLYMED",
@@ -10419,10 +10419,10 @@
    "entry_price": 1863.9,
    "stop": 1734.41,
    "target": 2122.88,
-   "status": "OPEN",
-   "exit_date": null,
-   "exit_price": null,
-   "return_pct": null,
+   "status": "STOP",
+   "exit_date": "2026-08-17",
+   "exit_price": 1734.41,
+   "return_pct": -6.95,
    "last_price": 1786.2,
    "last_date": "2026-08-14"
   },
@@ -10457,8 +10457,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1386.7,
-   "last_date": "2026-08-14"
+   "last_price": 1394.4,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "ATHERENERG",
@@ -10474,8 +10474,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1511.5,
-   "last_date": "2026-08-14"
+   "last_price": 1485.2,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "ANANDRATHI",
@@ -10491,8 +10491,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 2174.7,
-   "last_date": "2026-08-14"
+   "last_price": 2176.0,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "STYLEBAAZA",
@@ -10508,8 +10508,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 365.25,
-   "last_date": "2026-08-14"
+   "last_price": 383.5,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "JSWDULUX",
@@ -10525,8 +10525,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 3167.4,
-   "last_date": "2026-08-14"
+   "last_price": 3139.8,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "TCPLPACK",
@@ -10559,8 +10559,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 2025.7,
-   "last_date": "2026-08-14"
+   "last_price": 2049.0,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "GLAND",
@@ -10576,8 +10576,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 2970.2,
-   "last_date": "2026-08-14"
+   "last_price": 2910.2,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "NAUKRI",
@@ -10593,8 +10593,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1343.0,
-   "last_date": "2026-08-14"
+   "last_price": 1355.8,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "KOLTEPATIL",
@@ -10610,8 +10610,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 477.7,
-   "last_date": "2026-08-14"
+   "last_price": 471.65,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "SHAILY",
@@ -10627,8 +10627,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 3365.0,
-   "last_date": "2026-08-14"
+   "last_price": 3396.3,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "SUDEEPPHRM",
@@ -10644,8 +10644,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1105.55,
-   "last_date": "2026-08-14"
+   "last_price": 1101.55,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "VRLLOG",
@@ -10661,8 +10661,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 296.3,
-   "last_date": "2026-08-14"
+   "last_price": 296.2,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "ANTHEM",
@@ -10678,8 +10678,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 890.1,
-   "last_date": "2026-08-14"
+   "last_price": 898.0,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "CUPID",
@@ -10691,10 +10691,10 @@
    "entry_price": 276.65,
    "stop": 253.49,
    "target": 322.97,
-   "status": "OPEN",
-   "exit_date": null,
-   "exit_price": null,
-   "return_pct": null,
+   "status": "STOP",
+   "exit_date": "2026-08-17",
+   "exit_price": 253.49,
+   "return_pct": -8.37,
    "last_price": 293.88,
    "last_date": "2026-08-14"
   },
@@ -10729,8 +10729,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 568.75,
-   "last_date": "2026-08-14"
+   "last_price": 580.55,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "VIJAYA",
@@ -10746,8 +10746,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1474.1,
-   "last_date": "2026-08-14"
+   "last_price": 1506.6,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "PITTIENG",
@@ -10763,8 +10763,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1059.8,
-   "last_date": "2026-08-14"
+   "last_price": 1046.55,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "HNDFDS",
@@ -10780,8 +10780,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 591.4,
-   "last_date": "2026-08-14"
+   "last_price": 608.45,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "AARTIIND",
@@ -10797,8 +10797,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 534.1,
-   "last_date": "2026-08-14"
+   "last_price": 526.7,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "MARKSANS",
@@ -10814,8 +10814,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 333.0,
-   "last_date": "2026-08-14"
+   "last_price": 331.45,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "KRN",
@@ -10827,10 +10827,10 @@
    "entry_price": 1331.9,
    "stop": 1240.36,
    "target": 1514.98,
-   "status": "OPEN",
-   "exit_date": null,
-   "exit_price": null,
-   "return_pct": null,
+   "status": "TARGET",
+   "exit_date": "2026-08-17",
+   "exit_price": 1514.98,
+   "return_pct": 13.75,
    "last_price": 1468.3,
    "last_date": "2026-08-14"
   },
@@ -10865,8 +10865,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 110.93,
-   "last_date": "2026-08-14"
+   "last_price": 114.16,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "HAL",
@@ -10882,8 +10882,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 5029.9,
-   "last_date": "2026-08-14"
+   "last_price": 5059.0,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "YATRA",
@@ -10916,8 +10916,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 332.6,
-   "last_date": "2026-08-14"
+   "last_price": 328.3,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "EPL",
@@ -10933,8 +10933,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 244.6,
-   "last_date": "2026-08-14"
+   "last_price": 242.99,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "SETL",
@@ -10950,8 +10950,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 298.4,
-   "last_date": "2026-08-14"
+   "last_price": 308.7,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "QPOWER",
@@ -10967,8 +10967,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1249.3,
-   "last_date": "2026-08-14"
+   "last_price": 1302.6,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "KPIL",
@@ -10984,8 +10984,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1352.2,
-   "last_date": "2026-08-14"
+   "last_price": 1404.2,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "GIPCL",
@@ -11001,8 +11001,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 175.77,
-   "last_date": "2026-08-14"
+   "last_price": 174.44,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "MANINDS",
@@ -11018,8 +11018,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 599.45,
-   "last_date": "2026-08-14"
+   "last_price": 630.35,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "FINEORG",
@@ -11035,8 +11035,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 5143.8,
-   "last_date": "2026-08-14"
+   "last_price": 5110.4,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "MCX",
@@ -11052,8 +11052,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 2911.5,
-   "last_date": "2026-08-14"
+   "last_price": 2933.1,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "RAMRAT",
@@ -11069,8 +11069,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 475.05,
-   "last_date": "2026-08-14"
+   "last_price": 467.5,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "SYNCOMF",
@@ -11086,8 +11086,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 14.92,
-   "last_date": "2026-08-14"
+   "last_price": 15.22,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "ESABINDIA",
@@ -11103,8 +11103,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 6232.0,
-   "last_date": "2026-08-14"
+   "last_price": 6289.0,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "FORCEMOT",
@@ -11120,8 +11120,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 18361.0,
-   "last_date": "2026-08-14"
+   "last_price": 18605.0,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "TDPOWERSYS",
@@ -11137,8 +11137,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1484.6,
-   "last_date": "2026-08-14"
+   "last_price": 1548.8,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "TCPLPACK",
@@ -11150,10 +11150,10 @@
    "entry_price": 4394.9,
    "stop": 3973.7,
    "target": 5237.3,
-   "status": "OPEN",
-   "exit_date": null,
-   "exit_price": null,
-   "return_pct": null,
+   "status": "STOP",
+   "exit_date": "2026-08-17",
+   "exit_price": 3973.7,
+   "return_pct": -9.58,
    "last_price": 4088.8,
    "last_date": "2026-08-14"
   },
@@ -11171,8 +11171,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1301.05,
-   "last_date": "2026-08-14"
+   "last_price": 1284.45,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "APARINDS",
@@ -11184,10 +11184,10 @@
    "entry_price": 18000.0,
    "stop": 16527.8,
    "target": 20944.4,
-   "status": "OPEN",
-   "exit_date": null,
-   "exit_price": null,
-   "return_pct": null,
+   "status": "STOP",
+   "exit_date": "2026-08-17",
+   "exit_price": 16527.8,
+   "return_pct": -8.18,
    "last_price": 16691.0,
    "last_date": "2026-08-14"
   },
@@ -11205,8 +11205,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 4883.1,
-   "last_date": "2026-08-14"
+   "last_price": 4871.1,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "NATIONALUM",
@@ -11239,8 +11239,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 120.53,
-   "last_date": "2026-08-14"
+   "last_price": 119.72,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "SOLARINDS",
@@ -11256,8 +11256,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 19969.0,
-   "last_date": "2026-08-14"
+   "last_price": 20000.0,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "RPEL",
@@ -11273,8 +11273,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1433.9,
-   "last_date": "2026-08-14"
+   "last_price": 1430.1,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "LMW",
@@ -11290,8 +11290,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 18921.0,
-   "last_date": "2026-08-14"
+   "last_price": 20047.0,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "AJANTPHARM",
@@ -11307,8 +11307,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 3672.8,
-   "last_date": "2026-08-14"
+   "last_price": 3718.2,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "MARINE",
@@ -11324,8 +11324,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 370.7,
-   "last_date": "2026-08-14"
+   "last_price": 367.1,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "JUBLCPL",
@@ -11341,8 +11341,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 2407.5,
-   "last_date": "2026-08-14"
+   "last_price": 2342.4,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "RATNAVEER",
@@ -11358,8 +11358,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 230.16,
-   "last_date": "2026-08-14"
+   "last_price": 244.87,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "POONAWALLA",
@@ -11375,8 +11375,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 497.9,
-   "last_date": "2026-08-14"
+   "last_price": 497.45,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "SURAKSHA",
@@ -11392,8 +11392,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 304.9,
-   "last_date": "2026-08-14"
+   "last_price": 308.45,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "MIDHANI",
@@ -11409,8 +11409,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 416.7,
-   "last_date": "2026-08-14"
+   "last_price": 428.6,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "PARAS",
@@ -11426,8 +11426,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1377.5,
-   "last_date": "2026-08-14"
+   "last_price": 1388.5,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "ASTRAL",
@@ -11443,8 +11443,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1556.3,
-   "last_date": "2026-08-14"
+   "last_price": 1538.3,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "EDELWEISS",
@@ -11460,8 +11460,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 121.98,
-   "last_date": "2026-08-14"
+   "last_price": 122.67,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "KAJARIACER",
@@ -11477,8 +11477,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1253.4,
-   "last_date": "2026-08-14"
+   "last_price": 1251.6,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "GLENMARK",
@@ -11494,8 +11494,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 2318.4,
-   "last_date": "2026-08-14"
+   "last_price": 2329.0,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "BDL",
@@ -11511,8 +11511,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1398.0,
-   "last_date": "2026-08-14"
+   "last_price": 1380.0,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "RAYMOND",
@@ -11528,8 +11528,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 635.45,
-   "last_date": "2026-08-14"
+   "last_price": 647.85,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "MAXESTATES",
@@ -11545,8 +11545,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 441.95,
-   "last_date": "2026-08-14"
+   "last_price": 474.35,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "VADILALIND",
@@ -11558,10 +11558,10 @@
    "entry_price": 7781.0,
    "stop": 7179.37,
    "target": 8984.26,
-   "status": "OPEN",
-   "exit_date": null,
-   "exit_price": null,
-   "return_pct": null,
+   "status": "STOP",
+   "exit_date": "2026-08-17",
+   "exit_price": 7179.37,
+   "return_pct": -7.73,
    "last_price": 7749.0,
    "last_date": "2026-08-14"
   },
@@ -11596,8 +11596,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 99.08,
-   "last_date": "2026-08-14"
+   "last_price": 99.59,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "BOSCHLTD",
@@ -11613,8 +11613,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 47100.0,
-   "last_date": "2026-08-14"
+   "last_price": 46970.0,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "SUNDRMFAST",
@@ -11630,8 +11630,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1217.6,
-   "last_date": "2026-08-14"
+   "last_price": 1214.75,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "GALAXYSURF",
@@ -11647,8 +11647,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 2508.4,
-   "last_date": "2026-08-14"
+   "last_price": 2403.7,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "MANORAMA",
@@ -11660,10 +11660,10 @@
    "entry_price": 1737.1,
    "stop": 1604.12,
    "target": 2003.06,
-   "status": "OPEN",
-   "exit_date": null,
-   "exit_price": null,
-   "return_pct": null,
+   "status": "TARGET",
+   "exit_date": "2026-08-17",
+   "exit_price": 2003.06,
+   "return_pct": 15.31,
    "last_price": 1737.1,
    "last_date": "2026-08-14"
   },
@@ -11681,8 +11681,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 502.8,
-   "last_date": "2026-08-14"
+   "last_price": 481.65,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "TVSSRICHAK",
@@ -11698,8 +11698,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 4478.1,
-   "last_date": "2026-08-14"
+   "last_price": 4868.9,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "MOTISONS",
@@ -11715,8 +11715,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 16.75,
-   "last_date": "2026-08-14"
+   "last_price": 16.54,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "TASTYBITE",
@@ -11732,8 +11732,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 10005.0,
-   "last_date": "2026-08-14"
+   "last_price": 10014.5,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "LGEINDIA",
@@ -11749,8 +11749,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1729.7,
-   "last_date": "2026-08-14"
+   "last_price": 1667.6,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "TARSONS",
@@ -11766,8 +11766,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 360.3,
-   "last_date": "2026-08-14"
+   "last_price": 361.5,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "MOREPENLAB",
@@ -11783,8 +11783,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 84.19,
-   "last_date": "2026-08-14"
+   "last_price": 89.82,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "HAPPSTMNDS",
@@ -11800,8 +11800,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 420.2,
-   "last_date": "2026-08-14"
+   "last_price": 426.8,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "SHANTIGOLD",
@@ -11817,8 +11817,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 247.66,
-   "last_date": "2026-08-14"
+   "last_price": 266.84,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "ZEEMEDIA",
@@ -11834,8 +11834,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 9.63,
-   "last_date": "2026-08-14"
+   "last_price": 9.7,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "ELGIEQUIP",
@@ -11851,8 +11851,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 609.5,
-   "last_date": "2026-08-14"
+   "last_price": 624.2,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "OMAXE",
@@ -11868,8 +11868,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 99.14,
-   "last_date": "2026-08-14"
+   "last_price": 100.83,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "MOL",
@@ -11885,8 +11885,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 63.23,
-   "last_date": "2026-08-14"
+   "last_price": 62.97,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "EIMCOELECO",
@@ -11902,8 +11902,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 2005.5,
-   "last_date": "2026-08-14"
+   "last_price": 2189.1,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "DREDGECORP",
@@ -11919,8 +11919,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 1166.4,
-   "last_date": "2026-08-14"
+   "last_price": 1160.5,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "IDEA",
@@ -11936,8 +11936,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 14.11,
-   "last_date": "2026-08-14"
+   "last_price": 13.71,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "KRBL",
@@ -11953,8 +11953,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 386.4,
-   "last_date": "2026-08-14"
+   "last_price": 395.7,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "APEX",
@@ -11970,8 +11970,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 426.35,
-   "last_date": "2026-08-14"
+   "last_price": 422.55,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "GPPL",
@@ -11987,8 +11987,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 158.68,
-   "last_date": "2026-08-14"
+   "last_price": 159.57,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "ASAHIINDIA",
@@ -12004,8 +12004,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 939.2,
-   "last_date": "2026-08-14"
+   "last_price": 931.2,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "TIIL",
@@ -12021,8 +12021,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 3088.7,
-   "last_date": "2026-08-14"
+   "last_price": 3097.2,
+   "last_date": "2026-08-17"
   },
   {
    "symbol": "HAPPYFORGE",
@@ -12038,8 +12038,263 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 2089.6,
-   "last_date": "2026-08-14"
+   "last_price": 2198.1,
+   "last_date": "2026-08-17"
+  },
+  {
+   "symbol": "RISHABH",
+   "grade": "A",
+   "signal": "D20_BREAKOUT",
+   "reason": "fresh 52-week high \u2014 RS 86, Vol 4.9x, RSI 65.3, Dlv 44% \u2014 A-grade (RS>=80, Vol>=1.5x, RSI<78)",
+   "industry": "\u2014",
+   "entry_date": "2026-08-17",
+   "entry_price": 694.6,
+   "stop": 631.63,
+   "target": 820.54,
+   "status": "OPEN",
+   "exit_date": null,
+   "exit_price": null,
+   "return_pct": null,
+   "last_price": 694.6,
+   "last_date": "2026-08-17"
+  },
+  {
+   "symbol": "ASIANENE",
+   "grade": "A",
+   "signal": "D20_BREAKOUT",
+   "reason": "fresh 52-week high \u2014 RS 82, Vol 3.35x, RSI 62.4, Dlv 28% \u2014 A-grade (RS>=80, Vol>=1.5x, RSI<78)",
+   "industry": "\u2014",
+   "entry_date": "2026-08-17",
+   "entry_price": 425.25,
+   "stop": 382.24,
+   "target": 511.27,
+   "status": "OPEN",
+   "exit_date": null,
+   "exit_price": null,
+   "return_pct": null,
+   "last_price": 425.25,
+   "last_date": "2026-08-17"
+  },
+  {
+   "symbol": "GKSL",
+   "grade": "RAW",
+   "signal": "D20_BREAKOUT",
+   "reason": "fresh 52-week high \u2014 RS 70, Vol 7.7x, RSI 83.5, Dlv 30% \u2014 raw signal",
+   "industry": "\u2014",
+   "entry_date": "2026-08-17",
+   "entry_price": 151.36,
+   "stop": 140.92,
+   "target": 172.24,
+   "status": "OPEN",
+   "exit_date": null,
+   "exit_price": null,
+   "return_pct": null,
+   "last_price": 151.36,
+   "last_date": "2026-08-17"
+  },
+  {
+   "symbol": "UTLSOLAR",
+   "grade": "A",
+   "signal": "D20_BREAKOUT",
+   "reason": "fresh 52-week high \u2014 RS 98, Vol 3.69x, RSI 77.5, Dlv 36% \u2014 A-grade (RS>=80, Vol>=1.5x, RSI<78)",
+   "industry": "Capital Goods",
+   "entry_date": "2026-08-17",
+   "entry_price": 464.4,
+   "stop": 422.45,
+   "target": 548.3,
+   "status": "OPEN",
+   "exit_date": null,
+   "exit_price": null,
+   "return_pct": null,
+   "last_price": 464.4,
+   "last_date": "2026-08-17"
+  },
+  {
+   "symbol": "SENORES",
+   "grade": "RAW",
+   "signal": "D20_BREAKOUT",
+   "reason": "fresh 52-week high \u2014 RS 93, Vol 1.22x, RSI 70.6, Dlv 48% \u2014 raw signal",
+   "industry": "\u2014",
+   "entry_date": "2026-08-17",
+   "entry_price": 1545.7,
+   "stop": 1430.5,
+   "target": 1776.1,
+   "status": "OPEN",
+   "exit_date": null,
+   "exit_price": null,
+   "return_pct": null,
+   "last_price": 1545.7,
+   "last_date": "2026-08-17"
+  },
+  {
+   "symbol": "EXPLEOSOL",
+   "grade": "RAW",
+   "signal": "D20_BREAKOUT",
+   "reason": "55-day channel breakout \u2014 RS 71, Vol 14.5x, RSI 78.7, Dlv 5% \u2014 raw signal",
+   "industry": "\u2014",
+   "entry_date": "2026-08-17",
+   "entry_price": 923.05,
+   "stop": 854.41,
+   "target": 1060.33,
+   "status": "OPEN",
+   "exit_date": null,
+   "exit_price": null,
+   "return_pct": null,
+   "last_price": 923.05,
+   "last_date": "2026-08-17"
+  },
+  {
+   "symbol": "DALMIASUG",
+   "grade": "A",
+   "signal": "D20_BREAKOUT",
+   "reason": "fresh 52-week high \u2014 RS 89, Vol 1.51x, RSI 74.3, Dlv 31% \u2014 A-grade (RS>=80, Vol>=1.5x, RSI<78)",
+   "industry": "\u2014",
+   "entry_date": "2026-08-17",
+   "entry_price": 459.6,
+   "stop": 414.69,
+   "target": 549.42,
+   "status": "OPEN",
+   "exit_date": null,
+   "exit_price": null,
+   "return_pct": null,
+   "last_price": 459.6,
+   "last_date": "2026-08-17"
+  },
+  {
+   "symbol": "DOLPHIN",
+   "grade": "RAW",
+   "signal": "D20_BREAKOUT",
+   "reason": "fresh 52-week high \u2014 RS 90, Vol 2.85x, RSI 86.8, Dlv 35% \u2014 raw signal",
+   "industry": "\u2014",
+   "entry_date": "2026-08-17",
+   "entry_price": 576.85,
+   "stop": 519.08,
+   "target": 692.39,
+   "status": "OPEN",
+   "exit_date": null,
+   "exit_price": null,
+   "return_pct": null,
+   "last_price": 576.85,
+   "last_date": "2026-08-17"
+  },
+  {
+   "symbol": "OBEROIRLTY",
+   "grade": "RAW",
+   "signal": "D20_BREAKOUT",
+   "reason": "20-day high breakout \u2014 RS 68, Vol 4.96x, RSI 66.0, Dlv 29% \u2014 raw signal",
+   "industry": "Realty",
+   "entry_date": "2026-08-17",
+   "entry_price": 1931.0,
+   "stop": 1833.48,
+   "target": 2126.04,
+   "status": "OPEN",
+   "exit_date": null,
+   "exit_price": null,
+   "return_pct": null,
+   "last_price": 1931.0,
+   "last_date": "2026-08-17"
+  },
+  {
+   "symbol": "GODREJAGRO",
+   "grade": "RAW",
+   "signal": "D20_BREAKOUT",
+   "reason": "55-day channel breakout \u2014 RS 40, Vol 2.38x, RSI 66.9, Dlv 50% \u2014 raw signal",
+   "industry": "Fast Moving Consumer Goods",
+   "entry_date": "2026-08-17",
+   "entry_price": 597.0,
+   "stop": 568.42,
+   "target": 654.16,
+   "status": "OPEN",
+   "exit_date": null,
+   "exit_price": null,
+   "return_pct": null,
+   "last_price": 597.0,
+   "last_date": "2026-08-17"
+  },
+  {
+   "symbol": "BALUFORGE",
+   "grade": "RAW",
+   "signal": "D20_BREAKOUT",
+   "reason": "55-day channel breakout \u2014 RS 51, Vol 3.88x, RSI 68.7, Dlv 23% \u2014 raw signal",
+   "industry": "Capital Goods",
+   "entry_date": "2026-08-17",
+   "entry_price": 513.35,
+   "stop": 472.66,
+   "target": 594.73,
+   "status": "OPEN",
+   "exit_date": null,
+   "exit_price": null,
+   "return_pct": null,
+   "last_price": 513.35,
+   "last_date": "2026-08-17"
+  },
+  {
+   "symbol": "MSTCLTD",
+   "grade": "RAW",
+   "signal": "D20_BREAKOUT",
+   "reason": "20-day high breakout \u2014 RS 91, Vol 3.29x, RSI 60.6, Dlv 48% \u2014 raw signal",
+   "industry": "Services",
+   "entry_date": "2026-08-17",
+   "entry_price": 653.2,
+   "stop": 600.62,
+   "target": 758.36,
+   "status": "OPEN",
+   "exit_date": null,
+   "exit_price": null,
+   "return_pct": null,
+   "last_price": 653.2,
+   "last_date": "2026-08-17"
+  },
+  {
+   "symbol": "NEOGEN",
+   "grade": "RAW",
+   "signal": "D20_BREAKOUT",
+   "reason": "20-day high breakout \u2014 RS 90, Vol 1.41x, RSI 63.9, Dlv 43% \u2014 raw signal",
+   "industry": "Chemicals",
+   "entry_date": "2026-08-17",
+   "entry_price": 2270.1,
+   "stop": 2065.65,
+   "target": 2679.0,
+   "status": "OPEN",
+   "exit_date": null,
+   "exit_price": null,
+   "return_pct": null,
+   "last_price": 2270.1,
+   "last_date": "2026-08-17"
+  },
+  {
+   "symbol": "DWARKESH",
+   "grade": "RAW",
+   "signal": "D20_BREAKOUT",
+   "reason": "20-day high breakout \u2014 RS 55, Vol 2.04x, RSI 62.6, Dlv 42% \u2014 raw signal",
+   "industry": "\u2014",
+   "entry_date": "2026-08-17",
+   "entry_price": 44.94,
+   "stop": 41.27,
+   "target": 52.28,
+   "status": "OPEN",
+   "exit_date": null,
+   "exit_price": null,
+   "return_pct": null,
+   "last_price": 44.94,
+   "last_date": "2026-08-17"
+  },
+  {
+   "symbol": "TEGA",
+   "grade": "RAW",
+   "signal": "D20_BREAKOUT",
+   "reason": "20-day high breakout \u2014 RS 47, Vol 0.98x, RSI 67.3, Dlv 63% \u2014 raw signal",
+   "industry": "Capital Goods",
+   "entry_date": "2026-08-17",
+   "entry_price": 1744.0,
+   "stop": 1623.5,
+   "target": 1985.0,
+   "status": "OPEN",
+   "exit_date": null,
+   "exit_price": null,
+   "return_pct": null,
+   "last_price": 1744.0,
+   "last_date": "2026-08-17"
   }
  ],
  "nav_history": [
@@ -12319,6 +12574,18 @@
    "tot_trades": 713,
    "nifty_idx": 101.236,
    "day_pnl_frac": 12.413421,
+   "day_base_trades": 575
+  },
+  {
+   "date": "2026-08-17",
+   "a_nav": 102.648,
+   "a_trades": 135,
+   "raw_nav": 100.907,
+   "raw_trades": 593,
+   "tot_nav": 101.23,
+   "tot_trades": 728,
+   "nifty_idx": 100.91,
+   "day_pnl_frac": 15.204037,
    "day_base_trades": 575
   }
  ],
