@@ -8,7 +8,7 @@
    "industry": "Fast Moving Consumer Goods",
    "close": 284.03,
    "chg_pct": 6.25,
-   "mom_pct": 539.5,
+   "mom_pct": 534.7,
    "status": "HOLD"
   },
   {
@@ -16,7 +16,7 @@
    "industry": "Consumer Durables",
    "close": 5481.5,
    "chg_pct": 2.72,
-   "mom_pct": 221.2,
+   "mom_pct": 220.1,
    "status": "HOLD"
   },
   {
@@ -32,7 +32,7 @@
    "industry": "Telecommunication",
    "close": 230.03,
    "chg_pct": 4.8,
-   "mom_pct": 200.3,
+   "mom_pct": 213.8,
    "status": "HOLD"
   },
   {
@@ -40,7 +40,7 @@
    "industry": "\u2014",
    "close": 705.05,
    "chg_pct": -3.57,
-   "mom_pct": 135.6,
+   "mom_pct": 144.8,
    "status": "HOLD"
   },
   {
@@ -48,7 +48,7 @@
    "industry": "Healthcare",
    "close": 3391.4,
    "chg_pct": 6.04,
-   "mom_pct": 175.1,
+   "mom_pct": 178.7,
    "status": "HOLD"
   },
   {
@@ -64,7 +64,7 @@
    "industry": "\u2014",
    "close": 2706.2,
    "chg_pct": -1.82,
-   "mom_pct": 188.2,
+   "mom_pct": 187.0,
    "status": "HOLD"
   },
   {
@@ -80,7 +80,7 @@
    "industry": "\u2014",
    "close": 903.9,
    "chg_pct": -1.35,
-   "mom_pct": 174.2,
+   "mom_pct": 176.0,
    "status": "HOLD"
   },
   {
@@ -88,7 +88,7 @@
    "industry": "Capital Goods",
    "close": 387.85,
    "chg_pct": 0.21,
-   "mom_pct": 100.6,
+   "mom_pct": 109.7,
    "status": "HOLD"
   },
   {
@@ -96,7 +96,7 @@
    "industry": "\u2014",
    "close": 893.7,
    "chg_pct": -1.29,
-   "mom_pct": 178.1,
+   "mom_pct": 169.5,
    "status": "HOLD"
   },
   {
@@ -104,7 +104,7 @@
    "industry": "Capital Goods",
    "close": 2125.7,
    "chg_pct": 1.15,
-   "mom_pct": 146.6,
+   "mom_pct": 149.7,
    "status": "HOLD"
   },
   {
@@ -120,7 +120,7 @@
    "industry": "\u2014",
    "close": 485.85,
    "chg_pct": 6.58,
-   "mom_pct": 122.4,
+   "mom_pct": 122.9,
    "status": "HOLD"
   }
  ],
