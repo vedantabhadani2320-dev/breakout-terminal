@@ -15066,6 +15066,40 @@
    "return_pct": null,
    "last_price": 537.35,
    "last_date": "2026-08-25"
+  },
+  {
+   "symbol": "PVP",
+   "grade": "RAW",
+   "signal": "D20_BREAKOUT",
+   "reason": "fresh 52-week high \u2014 RS 98, Vol 2.32x, RSI 86.8, Dlv 31% \u2014 raw signal",
+   "industry": "\u2014",
+   "entry_date": "2026-08-25",
+   "entry_price": 51.35,
+   "stop": 45.64,
+   "target": 62.77,
+   "status": "OPEN",
+   "exit_date": null,
+   "exit_price": null,
+   "return_pct": null,
+   "last_price": 51.35,
+   "last_date": "2026-08-25"
+  },
+  {
+   "symbol": "SGMART",
+   "grade": "RAW",
+   "signal": "D20_BREAKOUT",
+   "reason": "fresh 52-week high \u2014 RS 93, Vol 0.76x, RSI 80.9, Dlv 40% \u2014 raw signal",
+   "industry": "\u2014",
+   "entry_date": "2026-08-25",
+   "entry_price": 837.4,
+   "stop": 775.55,
+   "target": 961.1,
+   "status": "OPEN",
+   "exit_date": null,
+   "exit_price": null,
+   "return_pct": null,
+   "last_price": 837.4,
+   "last_date": "2026-08-25"
   }
  ],
  "nav_history": [
@@ -15423,13 +15457,13 @@
    "date": "2026-08-25",
    "a_nav": 101.882,
    "a_trades": 163,
-   "raw_nav": 100.986,
-   "raw_trades": 728,
-   "tot_nav": 101.149,
-   "tot_trades": 891,
+   "raw_nav": 100.983,
+   "raw_trades": 730,
+   "tot_nav": 101.147,
+   "tot_trades": 893,
    "nifty_idx": 101.105,
-   "day_pnl_frac": 17.805748,
-   "day_base_trades": 676
+   "day_pnl_frac": 19.580829,
+   "day_base_trades": 684
   }
  ],
  "nifty_base": 24068.6
