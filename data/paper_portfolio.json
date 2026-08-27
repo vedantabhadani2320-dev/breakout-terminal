@@ -4813,8 +4813,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 323.5,
-   "last_date": "2026-08-26"
+   "last_price": 316.95,
+   "last_date": "2026-08-27"
   },
   {
    "symbol": "KMEW",
@@ -15900,6 +15900,18 @@
    "tot_trades": 918,
    "nifty_idx": 100.578,
    "day_pnl_frac": 17.742694,
+   "day_base_trades": 698
+  },
+  {
+   "date": "2026-08-27",
+   "a_nav": 102.139,
+   "a_trades": 167,
+   "raw_nav": 101.322,
+   "raw_trades": 751,
+   "tot_nav": 101.47,
+   "tot_trades": 918,
+   "nifty_idx": 100.578,
+   "day_pnl_frac": 19.772558,
    "day_base_trades": 698
   }
  ],
