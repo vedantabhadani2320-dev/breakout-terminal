@@ -6,49 +6,49 @@
   {
    "sym": "CUPID",
    "industry": "Fast Moving Consumer Goods",
-   "close": 276.65,
-   "chg_pct": -2.58,
-   "mom_pct": 579.6,
+   "close": NaN,
+   "chg_pct": NaN,
+   "mom_pct": 564.4,
    "status": "HOLD"
   },
   {
    "sym": "THANGAMAYL",
    "industry": "Consumer Durables",
-   "close": 5502.0,
-   "chg_pct": 0.12,
-   "mom_pct": 188.7,
+   "close": NaN,
+   "chg_pct": NaN,
+   "mom_pct": 158.2,
    "status": "HOLD"
   },
   {
    "sym": "ATHERENERG",
    "industry": "Automobile and Auto Components",
-   "close": 1495.3,
-   "chg_pct": 0.05,
-   "mom_pct": 189.7,
+   "close": NaN,
+   "chg_pct": NaN,
+   "mom_pct": 175.7,
    "status": "HOLD"
   },
   {
    "sym": "HFCL",
    "industry": "Telecommunication",
-   "close": 245.84,
-   "chg_pct": 4.22,
-   "mom_pct": 178.1,
+   "close": NaN,
+   "chg_pct": NaN,
+   "mom_pct": 163.4,
    "status": "HOLD"
   },
   {
    "sym": "GVPIL",
    "industry": "\u2014",
-   "close": 661.75,
-   "chg_pct": 2.82,
-   "mom_pct": 115.8,
+   "close": NaN,
+   "chg_pct": NaN,
+   "mom_pct": 118.4,
    "status": "HOLD"
   },
   {
    "sym": "ACUTAAS",
    "industry": "Healthcare",
-   "close": 3329.2,
-   "chg_pct": 2.19,
-   "mom_pct": 136.1,
+   "close": NaN,
+   "chg_pct": NaN,
+   "mom_pct": 130.2,
    "status": "HOLD"
   },
   {
@@ -56,15 +56,15 @@
    "industry": "\u2014",
    "close": NaN,
    "chg_pct": NaN,
-   "mom_pct": 128.9,
+   "mom_pct": 129.5,
    "status": "HOLD"
   },
   {
    "sym": "KMEW",
    "industry": "\u2014",
-   "close": 2969.0,
-   "chg_pct": 6.88,
-   "mom_pct": 186.9,
+   "close": NaN,
+   "chg_pct": NaN,
+   "mom_pct": 169.0,
    "status": "HOLD"
   },
   {
@@ -72,7 +72,7 @@
    "industry": "\u2014",
    "close": NaN,
    "chg_pct": NaN,
-   "mom_pct": 173.4,
+   "mom_pct": 187.5,
    "status": "HOLD"
   },
   {
@@ -80,15 +80,15 @@
    "industry": "\u2014",
    "close": NaN,
    "chg_pct": NaN,
-   "mom_pct": 50.8,
+   "mom_pct": 42.0,
    "status": "HOLD"
   },
   {
    "sym": "APOLLO",
    "industry": "Capital Goods",
-   "close": 386.35,
-   "chg_pct": -0.43,
-   "mom_pct": 58.1,
+   "close": NaN,
+   "chg_pct": NaN,
+   "mom_pct": 44.0,
    "status": "HOLD"
   },
   {
@@ -96,31 +96,31 @@
    "industry": "\u2014",
    "close": NaN,
    "chg_pct": NaN,
-   "mom_pct": 157.0,
+   "mom_pct": 156.4,
    "status": "HOLD"
   },
   {
    "sym": "KIRLOSENG",
    "industry": "Capital Goods",
-   "close": 2100.2,
-   "chg_pct": 3.12,
-   "mom_pct": 136.5,
+   "close": NaN,
+   "chg_pct": NaN,
+   "mom_pct": 137.4,
    "status": "HOLD"
   },
   {
    "sym": "SANSERA",
    "industry": "Automobile and Auto Components",
-   "close": 3842.8,
-   "chg_pct": 0.16,
-   "mom_pct": 157.3,
+   "close": NaN,
+   "chg_pct": NaN,
+   "mom_pct": 155.2,
    "status": "HOLD"
   },
   {
    "sym": "AEROFLEX",
    "industry": "\u2014",
-   "close": 522.1,
-   "chg_pct": -2.66,
-   "mom_pct": 161.0,
+   "close": NaN,
+   "chg_pct": NaN,
+   "mom_pct": 150.6,
    "status": "HOLD"
   }
  ],
