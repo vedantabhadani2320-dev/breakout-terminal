@@ -1,128 +1,135 @@
 {
- "month": "2026-08",
- "rebalanced_today": false,
+ "month": "2026-09",
+ "rebalanced_today": true,
  "exposure": 0.5,
  "holdings": [
   {
    "sym": "CUPID",
    "industry": "Fast Moving Consumer Goods",
-   "close": NaN,
-   "chg_pct": NaN,
-   "mom_pct": 568.0,
+   "close": 275.05,
+   "chg_pct": -1.93,
+   "mom_pct": 537.9,
    "status": "HOLD"
   },
   {
-   "sym": "THANGAMAYL",
-   "industry": "Consumer Durables",
-   "close": NaN,
-   "chg_pct": NaN,
-   "mom_pct": 133.7,
-   "status": "HOLD"
+   "sym": "BHAGYANGR",
+   "industry": "\u2014",
+   "close": 380.0,
+   "chg_pct": -1.22,
+   "mom_pct": 325.0,
+   "status": "ADD"
   },
   {
-   "sym": "ATHERENERG",
-   "industry": "Automobile and Auto Components",
-   "close": NaN,
-   "chg_pct": NaN,
-   "mom_pct": 158.9,
+   "sym": "SALSTEEL",
+   "industry": "\u2014",
+   "close": 82.43,
+   "chg_pct": 4.61,
+   "mom_pct": 221.8,
+   "status": "ADD"
+  },
+  {
+   "sym": "RPTECH",
+   "industry": "\u2014",
+   "close": 809.1,
+   "chg_pct": -0.86,
+   "mom_pct": 214.7,
    "status": "HOLD"
   },
   {
    "sym": "HFCL",
    "industry": "Telecommunication",
-   "close": NaN,
-   "chg_pct": NaN,
-   "mom_pct": 172.3,
-   "status": "HOLD"
-  },
-  {
-   "sym": "GVPIL",
-   "industry": "\u2014",
-   "close": NaN,
-   "chg_pct": NaN,
-   "mom_pct": 118.5,
-   "status": "HOLD"
-  },
-  {
-   "sym": "ACUTAAS",
-   "industry": "Healthcare",
-   "close": NaN,
-   "chg_pct": NaN,
-   "mom_pct": 119.9,
-   "status": "HOLD"
-  },
-  {
-   "sym": "BAJAJCON",
-   "industry": "\u2014",
-   "close": NaN,
-   "chg_pct": NaN,
-   "mom_pct": 119.8,
-   "status": "HOLD"
-  },
-  {
-   "sym": "KMEW",
-   "industry": "\u2014",
-   "close": NaN,
-   "chg_pct": NaN,
-   "mom_pct": 162.6,
-   "status": "HOLD"
-  },
-  {
-   "sym": "RPTECH",
-   "industry": "\u2014",
-   "close": NaN,
-   "chg_pct": NaN,
-   "mom_pct": 198.9,
-   "status": "HOLD"
-  },
-  {
-   "sym": "IZMO",
-   "industry": "\u2014",
-   "close": NaN,
-   "chg_pct": NaN,
-   "mom_pct": 47.9,
-   "status": "HOLD"
-  },
-  {
-   "sym": "APOLLO",
-   "industry": "Capital Goods",
-   "close": NaN,
-   "chg_pct": NaN,
-   "mom_pct": 46.4,
+   "close": 236.64,
+   "chg_pct": -5.0,
+   "mom_pct": 188.6,
    "status": "HOLD"
   },
   {
    "sym": "SAKAR",
    "industry": "\u2014",
-   "close": NaN,
-   "chg_pct": NaN,
-   "mom_pct": 166.3,
+   "close": 965.75,
+   "chg_pct": 11.86,
+   "mom_pct": 173.8,
    "status": "HOLD"
   },
   {
-   "sym": "KIRLOSENG",
-   "industry": "Capital Goods",
-   "close": NaN,
-   "chg_pct": NaN,
-   "mom_pct": 144.7,
+   "sym": "KMEW",
+   "industry": "\u2014",
+   "close": 2936.0,
+   "chg_pct": 0.4,
+   "mom_pct": 172.7,
    "status": "HOLD"
   },
   {
    "sym": "SANSERA",
    "industry": "Automobile and Auto Components",
-   "close": NaN,
-   "chg_pct": NaN,
-   "mom_pct": 162.7,
+   "close": 3903.0,
+   "chg_pct": -2.86,
+   "mom_pct": 168.2,
    "status": "HOLD"
+  },
+  {
+   "sym": "CPPLUS",
+   "industry": "Capital Goods",
+   "close": 3726.9,
+   "chg_pct": 4.51,
+   "mom_pct": 161.7,
+   "status": "ADD"
+  },
+  {
+   "sym": "ARFIN",
+   "industry": "\u2014",
+   "close": 85.5,
+   "chg_pct": -1.98,
+   "mom_pct": 160.7,
+   "status": "ADD"
+  },
+  {
+   "sym": "DEEDEV",
+   "industry": "\u2014",
+   "close": 619.8,
+   "chg_pct": 5.0,
+   "mom_pct": 158.5,
+   "status": "ADD"
+  },
+  {
+   "sym": "ATHERENERG",
+   "industry": "Automobile and Auto Components",
+   "close": 1725.6,
+   "chg_pct": 0.46,
+   "mom_pct": 156.2,
+   "status": "HOLD"
+  },
+  {
+   "sym": "GRWRHITECH",
+   "industry": "Capital Goods",
+   "close": 7209.5,
+   "chg_pct": 1.01,
+   "mom_pct": 152.2,
+   "status": "ADD"
   },
   {
    "sym": "AEROFLEX",
    "industry": "\u2014",
-   "close": NaN,
-   "chg_pct": NaN,
-   "mom_pct": 149.4,
+   "close": 552.05,
+   "chg_pct": 5.07,
+   "mom_pct": 147.3,
+   "status": "HOLD"
+  },
+  {
+   "sym": "KIRLOSENG",
+   "industry": "Capital Goods",
+   "close": 2138.3,
+   "chg_pct": 1.85,
+   "mom_pct": 143.8,
    "status": "HOLD"
   }
  ],
- "exits": []
+ "exits": [
+  "ACUTAAS",
+  "APOLLO",
+  "BAJAJCON",
+  "GVPIL",
+  "IZMO",
+  "THANGAMAYL"
+ ]
 }
