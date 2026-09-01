@@ -1,6 +1,6 @@
 {
  "month": "2026-09",
- "rebalanced_today": true,
+ "rebalanced_today": false,
  "exposure": 0.5,
  "holdings": [
   {
@@ -17,7 +17,7 @@
    "close": 380.0,
    "chg_pct": -1.22,
    "mom_pct": 325.0,
-   "status": "ADD"
+   "status": "HOLD"
   },
   {
    "sym": "SALSTEEL",
@@ -25,7 +25,7 @@
    "close": 82.43,
    "chg_pct": 4.61,
    "mom_pct": 221.8,
-   "status": "ADD"
+   "status": "HOLD"
   },
   {
    "sym": "RPTECH",
@@ -73,7 +73,7 @@
    "close": 3726.9,
    "chg_pct": 4.51,
    "mom_pct": 161.7,
-   "status": "ADD"
+   "status": "HOLD"
   },
   {
    "sym": "ARFIN",
@@ -81,7 +81,7 @@
    "close": 85.5,
    "chg_pct": -1.98,
    "mom_pct": 160.7,
-   "status": "ADD"
+   "status": "HOLD"
   },
   {
    "sym": "DEEDEV",
@@ -89,7 +89,7 @@
    "close": 619.8,
    "chg_pct": 5.0,
    "mom_pct": 158.5,
-   "status": "ADD"
+   "status": "HOLD"
   },
   {
    "sym": "ATHERENERG",
@@ -105,7 +105,7 @@
    "close": 7209.5,
    "chg_pct": 1.01,
    "mom_pct": 152.2,
-   "status": "ADD"
+   "status": "HOLD"
   },
   {
    "sym": "AEROFLEX",
@@ -124,12 +124,5 @@
    "status": "HOLD"
   }
  ],
- "exits": [
-  "ACUTAAS",
-  "APOLLO",
-  "BAJAJCON",
-  "GVPIL",
-  "IZMO",
-  "THANGAMAYL"
- ]
+ "exits": []
 }
