@@ -6,104 +6,104 @@
   {
    "sym": "CUPID",
    "industry": "Fast Moving Consumer Goods",
-   "close": 280.95,
-   "chg_pct": -0.78,
+   "close": NaN,
+   "chg_pct": NaN,
    "mom_pct": 597.1,
    "status": "HOLD"
   },
   {
    "sym": "BHAGYANGR",
    "industry": "\u2014",
-   "close": 373.4,
-   "chg_pct": 0.8,
+   "close": NaN,
+   "chg_pct": NaN,
    "mom_pct": 344.7,
    "status": "HOLD"
   },
   {
    "sym": "RPTECH",
    "industry": "\u2014",
-   "close": 853.4,
-   "chg_pct": 3.61,
+   "close": NaN,
+   "chg_pct": NaN,
    "mom_pct": 197.0,
    "status": "HOLD"
   },
   {
    "sym": "SAKAR",
    "industry": "\u2014",
-   "close": 1109.2,
-   "chg_pct": 9.4,
+   "close": NaN,
+   "chg_pct": NaN,
    "mom_pct": 180.7,
    "status": "HOLD"
   },
   {
    "sym": "KMEW",
    "industry": "\u2014",
-   "close": 2961.6,
-   "chg_pct": -2.37,
+   "close": NaN,
+   "chg_pct": NaN,
    "mom_pct": 191.7,
    "status": "HOLD"
   },
   {
    "sym": "SANSERA",
    "industry": "Automobile and Auto Components",
-   "close": 3896.3,
-   "chg_pct": 3.01,
+   "close": NaN,
+   "chg_pct": NaN,
    "mom_pct": 177.0,
    "status": "HOLD"
   },
   {
    "sym": "CPPLUS",
    "industry": "Capital Goods",
-   "close": 3752.9,
-   "chg_pct": 1.3,
+   "close": NaN,
+   "chg_pct": NaN,
    "mom_pct": 173.5,
    "status": "HOLD"
   },
   {
    "sym": "ARFIN",
    "industry": "\u2014",
-   "close": 95.27,
-   "chg_pct": 9.2,
+   "close": NaN,
+   "chg_pct": NaN,
    "mom_pct": 132.5,
    "status": "HOLD"
   },
   {
    "sym": "DEEDEV",
    "industry": "\u2014",
-   "close": 677.05,
-   "chg_pct": 2.86,
+   "close": NaN,
+   "chg_pct": NaN,
    "mom_pct": 129.8,
    "status": "HOLD"
   },
   {
    "sym": "ATHERENERG",
    "industry": "Automobile and Auto Components",
-   "close": 1599.3,
-   "chg_pct": 0.97,
+   "close": NaN,
+   "chg_pct": NaN,
    "mom_pct": 184.8,
    "status": "HOLD"
   },
   {
    "sym": "GRWRHITECH",
    "industry": "Capital Goods",
-   "close": 6951.5,
-   "chg_pct": -1.91,
+   "close": NaN,
+   "chg_pct": NaN,
    "mom_pct": 131.3,
    "status": "HOLD"
   },
   {
    "sym": "AEROFLEX",
    "industry": "\u2014",
-   "close": 558.15,
-   "chg_pct": 3.85,
+   "close": NaN,
+   "chg_pct": NaN,
    "mom_pct": 139.0,
    "status": "HOLD"
   },
   {
    "sym": "KIRLOSENG",
    "industry": "Capital Goods",
-   "close": 2174.8,
-   "chg_pct": -1.23,
+   "close": NaN,
+   "chg_pct": NaN,
    "mom_pct": 150.4,
    "status": "HOLD"
   }
