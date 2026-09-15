@@ -19316,6 +19316,40 @@
    "return_pct": null,
    "last_price": 302.0,
    "last_date": "2026-09-15"
+  },
+  {
+   "symbol": "ROSSTECH",
+   "grade": "A",
+   "signal": "D20_BREAKOUT",
+   "reason": "fresh 52-week high \u2014 RS 91, Vol 4.09x, RSI 74.3, Dlv 19% \u2014 A-grade (RS>=80, Vol>=1.5x, RSI<78)",
+   "industry": "\u2014",
+   "entry_date": "2026-09-15",
+   "entry_price": 1265.4,
+   "stop": 1157.78,
+   "target": 1480.64,
+   "status": "OPEN",
+   "exit_date": null,
+   "exit_price": null,
+   "return_pct": null,
+   "last_price": 1265.4,
+   "last_date": "2026-09-15"
+  },
+  {
+   "symbol": "AHCL",
+   "grade": "RAW",
+   "signal": "D20_BREAKOUT",
+   "reason": "fresh 52-week high \u2014 RS 91, Vol 7.81x, RSI 84.8, Dlv 11% \u2014 raw signal",
+   "industry": "\u2014",
+   "entry_date": "2026-09-15",
+   "entry_price": 20.18,
+   "stop": 18.15,
+   "target": 24.24,
+   "status": "OPEN",
+   "exit_date": null,
+   "exit_price": null,
+   "return_pct": null,
+   "last_price": 20.18,
+   "last_date": "2026-09-15"
   }
  ],
  "nav_history": [
@@ -19839,15 +19873,15 @@
   },
   {
    "date": "2026-09-15",
-   "a_nav": 100.592,
-   "a_trades": 217,
+   "a_nav": 100.589,
+   "a_trades": 218,
    "raw_nav": 100.586,
-   "raw_trades": 924,
-   "tot_nav": 100.587,
-   "tot_trades": 1141,
+   "raw_trades": 925,
+   "tot_nav": 100.586,
+   "tot_trades": 1143,
    "nifty_idx": 96.053,
-   "day_pnl_frac": 23.269642,
-   "day_base_trades": 793
+   "day_pnl_frac": 40.957529,
+   "day_base_trades": 797
   }
  ],
  "nifty_base": 24068.6
