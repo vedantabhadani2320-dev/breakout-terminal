@@ -19435,6 +19435,40 @@
    "return_pct": null,
    "last_price": 742.4,
    "last_date": "2026-09-16"
+  },
+  {
+   "symbol": "FOSECOIND",
+   "grade": "A",
+   "signal": "D20_BREAKOUT",
+   "reason": "fresh 52-week high \u2014 RS 86, Vol 6.73x, RSI 75.0, Dlv 16% \u2014 A-grade (RS>=80, Vol>=1.5x, RSI<78)",
+   "industry": "\u2014",
+   "entry_date": "2026-09-16",
+   "entry_price": 6846.5,
+   "stop": 6256.96,
+   "target": 8025.58,
+   "status": "OPEN",
+   "exit_date": null,
+   "exit_price": null,
+   "return_pct": null,
+   "last_price": 6846.5,
+   "last_date": "2026-09-16"
+  },
+  {
+   "symbol": "EMUDHRA",
+   "grade": "A",
+   "signal": "D20_BREAKOUT",
+   "reason": "55-day channel breakout \u2014 RS 90, Vol 17.43x, RSI 74.5, Dlv 6% \u2014 A-grade (RS>=80, Vol>=1.5x, RSI<78)",
+   "industry": "\u2014",
+   "entry_date": "2026-09-16",
+   "entry_price": 642.3,
+   "stop": 584.52,
+   "target": 757.86,
+   "status": "OPEN",
+   "exit_date": null,
+   "exit_price": null,
+   "return_pct": null,
+   "last_price": 642.3,
+   "last_date": "2026-09-16"
   }
  ],
  "nav_history": [
@@ -19970,15 +20004,15 @@
   },
   {
    "date": "2026-09-16",
-   "a_nav": 100.371,
-   "a_trades": 221,
+   "a_nav": 100.368,
+   "a_trades": 223,
    "raw_nav": 100.449,
    "raw_trades": 927,
-   "tot_nav": 100.434,
-   "tot_trades": 1148,
+   "tot_nav": 100.433,
+   "tot_trades": 1150,
    "nifty_idx": 96.464,
-   "day_pnl_frac": 39.981045,
-   "day_base_trades": 797
+   "day_pnl_frac": 42.548401,
+   "day_base_trades": 802
   }
  ],
  "nifty_base": 24068.6
