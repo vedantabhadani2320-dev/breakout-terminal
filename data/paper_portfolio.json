@@ -21815,6 +21815,40 @@
    "return_pct": null,
    "last_price": 75.58,
    "last_date": "2026-09-24"
+  },
+  {
+   "symbol": "PREMIERPOL",
+   "grade": "A",
+   "signal": "D20_BREAKOUT",
+   "reason": "fresh 52-week high \u2014 RS 92, Vol 7.32x, RSI 69.1, Dlv 12% \u2014 A-grade (RS>=80, Vol>=1.5x, RSI<78)",
+   "industry": "\u2014",
+   "entry_date": "2026-09-24",
+   "entry_price": 100.51,
+   "stop": 88.66,
+   "target": 124.21,
+   "status": "OPEN",
+   "exit_date": null,
+   "exit_price": null,
+   "return_pct": null,
+   "last_price": 100.51,
+   "last_date": "2026-09-24"
+  },
+  {
+   "symbol": "RAYMOND",
+   "grade": "RAW",
+   "signal": "D20_BREAKOUT",
+   "reason": "fresh 52-week high \u2014 RS 99, Vol 1.17x, RSI 86.4, Dlv 12% \u2014 raw signal",
+   "industry": "\u2014",
+   "entry_date": "2026-09-24",
+   "entry_price": 1203.85,
+   "stop": 1064.64,
+   "target": 1482.27,
+   "status": "OPEN",
+   "exit_date": null,
+   "exit_price": null,
+   "return_pct": null,
+   "last_price": 1203.85,
+   "last_date": "2026-09-24"
   }
  ],
  "nav_history": [
@@ -22422,15 +22456,15 @@
   },
   {
    "date": "2026-09-24",
-   "a_nav": 100.438,
-   "a_trades": 263,
+   "a_nav": 100.437,
+   "a_trades": 264,
    "raw_nav": 100.853,
-   "raw_trades": 1025,
-   "tot_nav": 100.769,
-   "tot_trades": 1288,
+   "raw_trades": 1026,
+   "tot_nav": 100.768,
+   "tot_trades": 1290,
    "nifty_idx": 95.822,
-   "day_pnl_frac": 37.691862,
-   "day_base_trades": 844
+   "day_pnl_frac": 42.307275,
+   "day_base_trades": 847
   }
  ],
  "nifty_base": 24068.6
