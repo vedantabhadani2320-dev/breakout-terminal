@@ -22698,6 +22698,18 @@
    "nifty_idx": 95.822,
    "day_pnl_frac": 40.957681,
    "day_base_trades": 854
+  },
+  {
+   "date": "2026-09-28",
+   "a_nav": 100.648,
+   "a_trades": 268,
+   "raw_nav": 100.949,
+   "raw_trades": 1035,
+   "tot_nav": 100.887,
+   "tot_trades": 1303,
+   "nifty_idx": 96.144,
+   "day_pnl_frac": 40.957681,
+   "day_base_trades": 854
   }
  ],
  "nifty_base": 24068.6
