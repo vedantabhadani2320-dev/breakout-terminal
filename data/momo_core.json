@@ -1,6 +1,6 @@
 {
  "month": "2026-10",
- "rebalanced_today": true,
+ "rebalanced_today": false,
  "exposure": 0.5,
  "holdings": [
   {
@@ -25,7 +25,7 @@
    "close": NaN,
    "chg_pct": NaN,
    "mom_pct": 276.8,
-   "status": "ADD"
+   "status": "HOLD"
   },
   {
    "sym": "VENUSREM",
@@ -33,7 +33,7 @@
    "close": NaN,
    "chg_pct": NaN,
    "mom_pct": 272.7,
-   "status": "ADD"
+   "status": "HOLD"
   },
   {
    "sym": "AEROFLEX",
@@ -49,7 +49,7 @@
    "close": NaN,
    "chg_pct": NaN,
    "mom_pct": 193.0,
-   "status": "ADD"
+   "status": "HOLD"
   },
   {
    "sym": "WELCORP",
@@ -57,7 +57,7 @@
    "close": NaN,
    "chg_pct": NaN,
    "mom_pct": 193.0,
-   "status": "ADD"
+   "status": "HOLD"
   },
   {
    "sym": "ATHERENERG",
@@ -81,7 +81,7 @@
    "close": NaN,
    "chg_pct": NaN,
    "mom_pct": 173.7,
-   "status": "ADD"
+   "status": "HOLD"
   },
   {
    "sym": "SANSERA",
@@ -105,7 +105,7 @@
    "close": NaN,
    "chg_pct": NaN,
    "mom_pct": 167.2,
-   "status": "ADD"
+   "status": "HOLD"
   },
   {
    "sym": "SKYGOLD",
@@ -113,7 +113,7 @@
    "close": NaN,
    "chg_pct": NaN,
    "mom_pct": 164.8,
-   "status": "ADD"
+   "status": "HOLD"
   },
   {
    "sym": "RPTECH",
@@ -124,11 +124,5 @@
    "status": "HOLD"
   }
  ],
- "exits": [
-  "ARFIN",
-  "DEEDEV",
-  "GRWRHITECH",
-  "KIRLOSENG",
-  "KMEW"
- ]
+ "exits": []
 }
