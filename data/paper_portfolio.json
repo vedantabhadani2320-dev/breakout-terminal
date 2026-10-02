@@ -22716,6 +22716,23 @@
    "return_pct": null,
    "last_price": 300.2,
    "last_date": "2026-10-01"
+  },
+  {
+   "symbol": "GKSL",
+   "grade": "A",
+   "signal": "D20_BREAKOUT",
+   "reason": "fresh 52-week high \u2014 RS 95, Vol 15.17x, RSI 71.8, Dlv 5% \u2014 A-grade (RS>=80, Vol>=1.5x, RSI<78)",
+   "industry": "\u2014",
+   "entry_date": "2026-10-01",
+   "entry_price": 194.27,
+   "stop": 174.9,
+   "target": 233.01,
+   "status": "OPEN",
+   "exit_date": null,
+   "exit_price": null,
+   "return_pct": null,
+   "last_price": 194.27,
+   "last_date": "2026-10-01"
   }
  ],
  "nav_history": [
@@ -23383,15 +23400,15 @@
   },
   {
    "date": "2026-10-01",
-   "a_nav": 99.888,
-   "a_trades": 278,
+   "a_nav": 99.889,
+   "a_trades": 279,
    "raw_nav": 100.453,
    "raw_trades": 1063,
    "tot_nav": 100.336,
-   "tot_trades": 1341,
+   "tot_trades": 1342,
    "nifty_idx": 93.158,
-   "day_pnl_frac": 40.236646,
-   "day_base_trades": 865
+   "day_pnl_frac": 46.672715,
+   "day_base_trades": 868
   }
  ],
  "nifty_base": 24068.6
