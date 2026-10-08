@@ -8,15 +8,7 @@
    "industry": "Fast Moving Consumer Goods",
    "close": NaN,
    "chg_pct": NaN,
-   "mom_pct": 471.8,
-   "status": "HOLD"
-  },
-  {
-   "sym": "BHAGYANGR",
-   "industry": "\u2014",
-   "close": NaN,
-   "chg_pct": NaN,
-   "mom_pct": 280.7,
+   "mom_pct": 467.9,
    "status": "HOLD"
   },
   {
@@ -24,7 +16,7 @@
    "industry": "\u2014",
    "close": NaN,
    "chg_pct": NaN,
-   "mom_pct": 282.7,
+   "mom_pct": 279.0,
    "status": "HOLD"
   },
   {
@@ -32,7 +24,7 @@
    "industry": "\u2014",
    "close": NaN,
    "chg_pct": NaN,
-   "mom_pct": 231.7,
+   "mom_pct": 224.7,
    "status": "HOLD"
   },
   {
@@ -40,7 +32,7 @@
    "industry": "\u2014",
    "close": NaN,
    "chg_pct": NaN,
-   "mom_pct": 179.1,
+   "mom_pct": 187.3,
    "status": "HOLD"
   },
   {
@@ -48,7 +40,7 @@
    "industry": "Capital Goods",
    "close": NaN,
    "chg_pct": NaN,
-   "mom_pct": 206.1,
+   "mom_pct": 208.5,
    "status": "HOLD"
   },
   {
@@ -56,7 +48,7 @@
    "industry": "Automobile and Auto Components",
    "close": NaN,
    "chg_pct": NaN,
-   "mom_pct": 152.9,
+   "mom_pct": 165.6,
    "status": "HOLD"
   },
   {
@@ -64,7 +56,7 @@
    "industry": "Capital Goods",
    "close": NaN,
    "chg_pct": NaN,
-   "mom_pct": 181.5,
+   "mom_pct": 169.4,
    "status": "HOLD"
   },
   {
@@ -72,7 +64,7 @@
    "industry": "\u2014",
    "close": NaN,
    "chg_pct": NaN,
-   "mom_pct": 134.6,
+   "mom_pct": 132.6,
    "status": "HOLD"
   },
   {
@@ -80,7 +72,7 @@
    "industry": "Automobile and Auto Components",
    "close": NaN,
    "chg_pct": NaN,
-   "mom_pct": 184.4,
+   "mom_pct": 186.6,
    "status": "HOLD"
   },
   {
@@ -88,7 +80,7 @@
    "industry": "\u2014",
    "close": NaN,
    "chg_pct": NaN,
-   "mom_pct": 205.3,
+   "mom_pct": 227.6,
    "status": "HOLD"
   },
   {
@@ -96,7 +88,7 @@
    "industry": "\u2014",
    "close": NaN,
    "chg_pct": NaN,
-   "mom_pct": 184.8,
+   "mom_pct": 183.4,
    "status": "HOLD"
   },
   {
@@ -104,7 +96,7 @@
    "industry": "Consumer Durables",
    "close": NaN,
    "chg_pct": NaN,
-   "mom_pct": 143.3,
+   "mom_pct": 142.9,
    "status": "HOLD"
   },
   {
@@ -112,7 +104,7 @@
    "industry": "\u2014",
    "close": NaN,
    "chg_pct": NaN,
-   "mom_pct": 159.6,
+   "mom_pct": 144.8,
    "status": "HOLD"
   }
  ],
