@@ -6,104 +6,104 @@
   {
    "sym": "CUPID",
    "industry": "Fast Moving Consumer Goods",
-   "close": NaN,
-   "chg_pct": NaN,
-   "mom_pct": 545.8,
+   "close": 354.6,
+   "chg_pct": 0.42,
+   "mom_pct": 482.6,
    "status": "HOLD"
   },
   {
    "sym": "INDSWFTLAB",
    "industry": "\u2014",
-   "close": NaN,
-   "chg_pct": NaN,
-   "mom_pct": 273.3,
+   "close": 369.7,
+   "chg_pct": 2.31,
+   "mom_pct": 279.8,
    "status": "HOLD"
   },
   {
    "sym": "AEROFLEX",
    "industry": "\u2014",
-   "close": NaN,
-   "chg_pct": NaN,
-   "mom_pct": 224.0,
+   "close": 568.7,
+   "chg_pct": 1.99,
+   "mom_pct": 226.2,
    "status": "HOLD"
   },
   {
    "sym": "SALSTEEL",
    "industry": "\u2014",
-   "close": NaN,
-   "chg_pct": NaN,
-   "mom_pct": 178.5,
+   "close": 84.82,
+   "chg_pct": -0.67,
+   "mom_pct": 174.6,
    "status": "HOLD"
   },
   {
    "sym": "WELCORP",
    "industry": "Capital Goods",
-   "close": NaN,
-   "chg_pct": NaN,
-   "mom_pct": 225.9,
+   "close": 2633.8,
+   "chg_pct": -3.52,
+   "mom_pct": 215.2,
    "status": "HOLD"
   },
   {
    "sym": "ATHERENERG",
    "industry": "Automobile and Auto Components",
-   "close": NaN,
-   "chg_pct": NaN,
-   "mom_pct": 159.5,
+   "close": 1467.0,
+   "chg_pct": -1.87,
+   "mom_pct": 165.4,
    "status": "HOLD"
   },
   {
    "sym": "CPPLUS",
    "industry": "Capital Goods",
-   "close": NaN,
-   "chg_pct": NaN,
-   "mom_pct": 173.3,
+   "close": 4440.3,
+   "chg_pct": 1.46,
+   "mom_pct": 181.2,
    "status": "HOLD"
   },
   {
    "sym": "RPEL",
    "industry": "\u2014",
-   "close": NaN,
-   "chg_pct": NaN,
-   "mom_pct": 143.5,
+   "close": 1865.5,
+   "chg_pct": 0.56,
+   "mom_pct": 156.9,
    "status": "HOLD"
   },
   {
    "sym": "SANSERA",
    "industry": "Automobile and Auto Components",
-   "close": NaN,
-   "chg_pct": NaN,
-   "mom_pct": 185.5,
+   "close": 4198.8,
+   "chg_pct": -1.32,
+   "mom_pct": 191.2,
    "status": "HOLD"
   },
   {
    "sym": "SAKAR",
    "industry": "\u2014",
-   "close": NaN,
-   "chg_pct": NaN,
-   "mom_pct": 207.5,
+   "close": 1020.8,
+   "chg_pct": 7.27,
+   "mom_pct": 227.8,
    "status": "HOLD"
   },
   {
    "sym": "SHREEJISPG",
    "industry": "\u2014",
-   "close": NaN,
-   "chg_pct": NaN,
-   "mom_pct": 219.9,
+   "close": 826.45,
+   "chg_pct": 0.2,
+   "mom_pct": 182.2,
    "status": "HOLD"
   },
   {
    "sym": "SKYGOLD",
    "industry": "Consumer Durables",
-   "close": NaN,
-   "chg_pct": NaN,
-   "mom_pct": 165.2,
+   "close": 967.7,
+   "chg_pct": -1.08,
+   "mom_pct": 145.5,
    "status": "HOLD"
   },
   {
    "sym": "RPTECH",
    "industry": "\u2014",
-   "close": NaN,
-   "chg_pct": NaN,
+   "close": 906.7,
+   "chg_pct": 1.84,
    "mom_pct": 145.3,
    "status": "HOLD"
   }
