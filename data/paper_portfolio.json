@@ -23532,6 +23532,40 @@
    "return_pct": null,
    "last_price": 3428.0,
    "last_date": "2026-10-15"
+  },
+  {
+   "symbol": "OAL",
+   "grade": "A",
+   "signal": "D20_BREAKOUT",
+   "reason": "fresh 52-week high \u2014 RS 97, Vol 16.54x, RSI 69.5, Dlv 8% \u2014 A-grade (RS>=80, Vol>=1.5x, RSI<78)",
+   "industry": "\u2014",
+   "entry_date": "2026-10-15",
+   "entry_price": 579.15,
+   "stop": 514.07,
+   "target": 709.31,
+   "status": "OPEN",
+   "exit_date": null,
+   "exit_price": null,
+   "return_pct": null,
+   "last_price": 579.15,
+   "last_date": "2026-10-15"
+  },
+  {
+   "symbol": "BLUSPRING",
+   "grade": "A",
+   "signal": "D20_BREAKOUT",
+   "reason": "fresh 52-week high \u2014 RS 98, Vol 3.11x, RSI 72.2, Dlv 19% \u2014 A-grade (RS>=80, Vol>=1.5x, RSI<78)",
+   "industry": "\u2014",
+   "entry_date": "2026-10-15",
+   "entry_price": 172.68,
+   "stop": 149.4,
+   "target": 219.24,
+   "status": "OPEN",
+   "exit_date": null,
+   "exit_price": null,
+   "return_pct": null,
+   "last_price": 172.68,
+   "last_date": "2026-10-15"
   }
  ],
  "nav_history": [
@@ -24307,15 +24341,15 @@
   },
   {
    "date": "2026-10-15",
-   "a_nav": 99.556,
-   "a_trades": 286,
+   "a_nav": 99.559,
+   "a_trades": 288,
    "raw_nav": 100.355,
    "raw_trades": 1103,
    "tot_nav": 100.19,
-   "tot_trades": 1389,
+   "tot_trades": 1391,
    "nifty_idx": 95.549,
-   "day_pnl_frac": 42.902747,
-   "day_base_trades": 878
+   "day_pnl_frac": 48.741697,
+   "day_base_trades": 887
   }
  ],
  "nifty_base": 24068.6
