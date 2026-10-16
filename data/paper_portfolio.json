@@ -23838,6 +23838,40 @@
    "return_pct": null,
    "last_price": 200.85,
    "last_date": "2026-10-16"
+  },
+  {
+   "symbol": "ONWARDTEC",
+   "grade": "RAW",
+   "signal": "D20_BREAKOUT",
+   "reason": "fresh 52-week high \u2014 RS 96, Vol 11.38x, RSI 87.9, Dlv 31% \u2014 raw signal",
+   "industry": "\u2014",
+   "entry_date": "2026-10-16",
+   "entry_price": 427.4,
+   "stop": 388.61,
+   "target": 504.98,
+   "status": "OPEN",
+   "exit_date": null,
+   "exit_price": null,
+   "return_pct": null,
+   "last_price": 427.4,
+   "last_date": "2026-10-16"
+  },
+  {
+   "symbol": "TECHM",
+   "grade": "RAW",
+   "signal": "D20_BREAKOUT",
+   "reason": "55-day channel breakout \u2014 RS 77, Vol 5.97x, RSI 75.6, Dlv 28% \u2014 raw signal",
+   "industry": "Information Technology",
+   "entry_date": "2026-10-16",
+   "entry_price": 1790.0,
+   "stop": 1683.87,
+   "target": 2002.26,
+   "status": "OPEN",
+   "exit_date": null,
+   "exit_price": null,
+   "return_pct": null,
+   "last_price": 1790.0,
+   "last_date": "2026-10-16"
   }
  ],
  "nav_history": [
@@ -24627,13 +24661,13 @@
    "date": "2026-10-16",
    "a_nav": 99.56,
    "a_trades": 291,
-   "raw_nav": 100.349,
-   "raw_trades": 1116,
-   "tot_nav": 100.186,
-   "tot_trades": 1407,
+   "raw_nav": 100.348,
+   "raw_trades": 1118,
+   "tot_nav": 100.185,
+   "tot_trades": 1409,
    "nifty_idx": 96.168,
-   "day_pnl_frac": 50.333329,
-   "day_base_trades": 887
+   "day_pnl_frac": 48.935683,
+   "day_base_trades": 891
   }
  ],
  "nifty_base": 24068.6
