@@ -23872,6 +23872,23 @@
    "return_pct": null,
    "last_price": 1790.0,
    "last_date": "2026-10-16"
+  },
+  {
+   "symbol": "SINGERIND",
+   "grade": "RAW",
+   "signal": "D20_BREAKOUT",
+   "reason": "fresh 52-week high \u2014 RS 1, Vol 5.45x, RSI 77.5, Dlv 33% \u2014 raw signal",
+   "industry": "\u2014",
+   "entry_date": "2026-10-19",
+   "entry_price": 92.53,
+   "stop": 83.58,
+   "target": 110.43,
+   "status": "OPEN",
+   "exit_date": null,
+   "exit_price": null,
+   "return_pct": null,
+   "last_price": 92.53,
+   "last_date": "2026-10-19"
   }
  ],
  "nav_history": [
@@ -24667,6 +24684,18 @@
    "tot_trades": 1409,
    "nifty_idx": 96.168,
    "day_pnl_frac": 48.935683,
+   "day_base_trades": 891
+  },
+  {
+   "date": "2026-10-19",
+   "a_nav": 99.56,
+   "a_trades": 291,
+   "raw_nav": 100.348,
+   "raw_trades": 1119,
+   "tot_nav": 100.185,
+   "tot_trades": 1410,
+   "nifty_idx": 96.168,
+   "day_pnl_frac": 49.492883,
    "day_base_trades": 891
   }
  ],
