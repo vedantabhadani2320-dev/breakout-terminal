@@ -24008,6 +24008,23 @@
    "return_pct": null,
    "last_price": 348.85,
    "last_date": "2026-10-19"
+  },
+  {
+   "symbol": "PNB",
+   "grade": "RAW",
+   "signal": "D20_BREAKOUT",
+   "reason": "55-day channel breakout \u2014 RS 70, Vol 4.58x, RSI 63.1, Dlv 28% \u2014 raw signal",
+   "industry": "Financial Services",
+   "entry_date": "2026-10-19",
+   "entry_price": 121.9,
+   "stop": 115.25,
+   "target": 135.2,
+   "status": "OPEN",
+   "exit_date": null,
+   "exit_price": null,
+   "return_pct": null,
+   "last_price": 121.9,
+   "last_date": "2026-10-19"
   }
  ],
  "nav_history": [
@@ -24810,12 +24827,12 @@
    "a_nav": 99.295,
    "a_trades": 295,
    "raw_nav": 100.172,
-   "raw_trades": 1122,
+   "raw_trades": 1123,
    "tot_nav": 99.989,
-   "tot_trades": 1417,
+   "tot_trades": 1418,
    "nifty_idx": 95.099,
-   "day_pnl_frac": 47.129139,
-   "day_base_trades": 892
+   "day_pnl_frac": 50.742126,
+   "day_base_trades": 894
   }
  ],
  "nifty_base": 24068.6
