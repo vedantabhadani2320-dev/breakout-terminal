@@ -1,6 +1,6 @@
 {
  "month": "2026-11",
- "rebalanced_today": true,
+ "rebalanced_today": false,
  "exposure": 0.5,
  "holdings": [
   {
@@ -17,7 +17,7 @@
    "close": NaN,
    "chg_pct": NaN,
    "mom_pct": 312.9,
-   "status": "ADD"
+   "status": "HOLD"
   },
   {
    "sym": "INDSWFTLAB",
@@ -33,7 +33,7 @@
    "close": NaN,
    "chg_pct": NaN,
    "mom_pct": 241.9,
-   "status": "ADD"
+   "status": "HOLD"
   },
   {
    "sym": "SHREEJISPG",
@@ -73,7 +73,7 @@
    "close": NaN,
    "chg_pct": NaN,
    "mom_pct": 194.8,
-   "status": "ADD"
+   "status": "HOLD"
   },
   {
    "sym": "AEROFLEX",
@@ -89,7 +89,7 @@
    "close": NaN,
    "chg_pct": NaN,
    "mom_pct": 190.2,
-   "status": "ADD"
+   "status": "HOLD"
   },
   {
    "sym": "RPTECH",
@@ -113,7 +113,7 @@
    "close": NaN,
    "chg_pct": NaN,
    "mom_pct": 178.9,
-   "status": "ADD"
+   "status": "HOLD"
   },
   {
    "sym": "DEEDEV",
@@ -121,12 +121,8 @@
    "close": NaN,
    "chg_pct": NaN,
    "mom_pct": 161.1,
-   "status": "ADD"
+   "status": "HOLD"
   }
  ],
- "exits": [
-  "ATHERENERG",
-  "RPEL",
-  "SKYGOLD"
- ]
+ "exits": []
 }
