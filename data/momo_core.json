@@ -1,6 +1,6 @@
 {
- "month": "2026-10",
- "rebalanced_today": false,
+ "month": "2026-11",
+ "rebalanced_today": true,
  "exposure": 0.5,
  "holdings": [
   {
@@ -8,55 +8,39 @@
    "industry": "Fast Moving Consumer Goods",
    "close": NaN,
    "chg_pct": NaN,
-   "mom_pct": 506.5,
+   "mom_pct": 535.8,
    "status": "HOLD"
+  },
+  {
+   "sym": "VENUSREM",
+   "industry": "\u2014",
+   "close": NaN,
+   "chg_pct": NaN,
+   "mom_pct": 312.9,
+   "status": "ADD"
   },
   {
    "sym": "INDSWFTLAB",
    "industry": "\u2014",
    "close": NaN,
    "chg_pct": NaN,
-   "mom_pct": 305.2,
+   "mom_pct": 274.7,
    "status": "HOLD"
   },
   {
-   "sym": "AEROFLEX",
-   "industry": "\u2014",
-   "close": NaN,
-   "chg_pct": NaN,
-   "mom_pct": 211.9,
-   "status": "HOLD"
-  },
-  {
-   "sym": "WELCORP",
+   "sym": "MTARTECH",
    "industry": "Capital Goods",
    "close": NaN,
    "chg_pct": NaN,
-   "mom_pct": 226.6,
-   "status": "HOLD"
+   "mom_pct": 241.9,
+   "status": "ADD"
   },
   {
-   "sym": "ATHERENERG",
-   "industry": "Automobile and Auto Components",
-   "close": NaN,
-   "chg_pct": NaN,
-   "mom_pct": 91.6,
-   "status": "HOLD"
-  },
-  {
-   "sym": "CPPLUS",
-   "industry": "Capital Goods",
-   "close": NaN,
-   "chg_pct": NaN,
-   "mom_pct": 176.3,
-   "status": "HOLD"
-  },
-  {
-   "sym": "RPEL",
+   "sym": "SHREEJISPG",
    "industry": "\u2014",
    "close": NaN,
    "chg_pct": NaN,
-   "mom_pct": 137.6,
+   "mom_pct": 215.6,
    "status": "HOLD"
   },
   {
@@ -64,7 +48,7 @@
    "industry": "Automobile and Auto Components",
    "close": NaN,
    "chg_pct": NaN,
-   "mom_pct": 195.4,
+   "mom_pct": 208.5,
    "status": "HOLD"
   },
   {
@@ -72,33 +56,77 @@
    "industry": "\u2014",
    "close": NaN,
    "chg_pct": NaN,
-   "mom_pct": 212.6,
+   "mom_pct": 208.4,
    "status": "HOLD"
   },
   {
-   "sym": "SHREEJISPG",
+   "sym": "WELCORP",
+   "industry": "Capital Goods",
+   "close": NaN,
+   "chg_pct": NaN,
+   "mom_pct": 207.5,
+   "status": "HOLD"
+  },
+  {
+   "sym": "GCSL",
    "industry": "\u2014",
    "close": NaN,
    "chg_pct": NaN,
-   "mom_pct": 217.3,
+   "mom_pct": 194.8,
+   "status": "ADD"
+  },
+  {
+   "sym": "AEROFLEX",
+   "industry": "\u2014",
+   "close": NaN,
+   "chg_pct": NaN,
+   "mom_pct": 191.1,
    "status": "HOLD"
   },
   {
-   "sym": "SKYGOLD",
-   "industry": "Consumer Durables",
+   "sym": "SHILPAMED",
+   "industry": "Healthcare",
    "close": NaN,
    "chg_pct": NaN,
-   "mom_pct": 128.6,
-   "status": "HOLD"
+   "mom_pct": 190.2,
+   "status": "ADD"
   },
   {
    "sym": "RPTECH",
    "industry": "\u2014",
    "close": NaN,
    "chg_pct": NaN,
-   "mom_pct": 179.1,
+   "mom_pct": 181.9,
    "status": "HOLD"
+  },
+  {
+   "sym": "CPPLUS",
+   "industry": "Capital Goods",
+   "close": NaN,
+   "chg_pct": NaN,
+   "mom_pct": 180.2,
+   "status": "HOLD"
+  },
+  {
+   "sym": "AHCL",
+   "industry": "\u2014",
+   "close": NaN,
+   "chg_pct": NaN,
+   "mom_pct": 178.9,
+   "status": "ADD"
+  },
+  {
+   "sym": "DEEDEV",
+   "industry": "\u2014",
+   "close": NaN,
+   "chg_pct": NaN,
+   "mom_pct": 161.1,
+   "status": "ADD"
   }
  ],
- "exits": []
+ "exits": [
+  "ATHERENERG",
+  "RPEL",
+  "SKYGOLD"
+ ]
 }
