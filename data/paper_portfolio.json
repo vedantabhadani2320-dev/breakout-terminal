@@ -25434,6 +25434,18 @@
    "nifty_idx": 95.781,
    "day_pnl_frac": 53.928031,
    "day_base_trades": 902
+  },
+  {
+   "date": "2026-11-03",
+   "a_nav": 98.74,
+   "a_trades": 305,
+   "raw_nav": 99.826,
+   "raw_trades": 1142,
+   "tot_nav": 99.597,
+   "tot_trades": 1447,
+   "nifty_idx": 97.392,
+   "day_pnl_frac": 53.928031,
+   "day_base_trades": 902
   }
  ],
  "nifty_base": 24068.6
