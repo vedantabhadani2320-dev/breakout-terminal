@@ -1,22 +1,14 @@
 {
  "month": "2026-11",
  "rebalanced_today": false,
- "exposure": 0.5,
+ "exposure": 1.0,
  "holdings": [
   {
    "sym": "CUPID",
    "industry": "Fast Moving Consumer Goods",
    "close": NaN,
    "chg_pct": NaN,
-   "mom_pct": 556.3,
-   "status": "HOLD"
-  },
-  {
-   "sym": "VENUSREM",
-   "industry": "\u2014",
-   "close": NaN,
-   "chg_pct": NaN,
-   "mom_pct": 308.7,
+   "mom_pct": 594.0,
    "status": "HOLD"
   },
   {
@@ -24,7 +16,7 @@
    "industry": "\u2014",
    "close": NaN,
    "chg_pct": NaN,
-   "mom_pct": 274.4,
+   "mom_pct": 284.1,
    "status": "HOLD"
   },
   {
@@ -32,7 +24,7 @@
    "industry": "Capital Goods",
    "close": NaN,
    "chg_pct": NaN,
-   "mom_pct": 210.2,
+   "mom_pct": 202.9,
    "status": "HOLD"
   },
   {
@@ -40,7 +32,7 @@
    "industry": "\u2014",
    "close": NaN,
    "chg_pct": NaN,
-   "mom_pct": 194.9,
+   "mom_pct": 199.7,
    "status": "HOLD"
   },
   {
@@ -48,7 +40,7 @@
    "industry": "Automobile and Auto Components",
    "close": NaN,
    "chg_pct": NaN,
-   "mom_pct": 184.1,
+   "mom_pct": 179.9,
    "status": "HOLD"
   },
   {
@@ -56,7 +48,7 @@
    "industry": "\u2014",
    "close": NaN,
    "chg_pct": NaN,
-   "mom_pct": 178.4,
+   "mom_pct": 190.3,
    "status": "HOLD"
   },
   {
@@ -64,7 +56,7 @@
    "industry": "Capital Goods",
    "close": NaN,
    "chg_pct": NaN,
-   "mom_pct": 170.6,
+   "mom_pct": 176.4,
    "status": "HOLD"
   },
   {
@@ -72,7 +64,7 @@
    "industry": "\u2014",
    "close": NaN,
    "chg_pct": NaN,
-   "mom_pct": 199.0,
+   "mom_pct": 202.7,
    "status": "HOLD"
   },
   {
@@ -80,7 +72,7 @@
    "industry": "\u2014",
    "close": NaN,
    "chg_pct": NaN,
-   "mom_pct": 203.8,
+   "mom_pct": 199.9,
    "status": "HOLD"
   },
   {
@@ -88,7 +80,7 @@
    "industry": "Healthcare",
    "close": NaN,
    "chg_pct": NaN,
-   "mom_pct": 185.9,
+   "mom_pct": 204.5,
    "status": "HOLD"
   },
   {
@@ -96,7 +88,7 @@
    "industry": "\u2014",
    "close": NaN,
    "chg_pct": NaN,
-   "mom_pct": 186.7,
+   "mom_pct": 192.5,
    "status": "HOLD"
   },
   {
@@ -104,7 +96,7 @@
    "industry": "Capital Goods",
    "close": NaN,
    "chg_pct": NaN,
-   "mom_pct": 193.2,
+   "mom_pct": 202.7,
    "status": "HOLD"
   },
   {
@@ -112,7 +104,7 @@
    "industry": "\u2014",
    "close": NaN,
    "chg_pct": NaN,
-   "mom_pct": 143.1,
+   "mom_pct": 130.6,
    "status": "HOLD"
   },
   {
@@ -120,7 +112,7 @@
    "industry": "\u2014",
    "close": NaN,
    "chg_pct": NaN,
-   "mom_pct": 158.4,
+   "mom_pct": 154.1,
    "status": "HOLD"
   }
  ],
