@@ -25912,6 +25912,23 @@
    "return_pct": null,
    "last_price": 363.45,
    "last_date": "2026-11-09"
+  },
+  {
+   "symbol": "ARTEMISMED",
+   "grade": "RAW",
+   "signal": "D20_BREAKOUT",
+   "reason": "20-day high breakout \u2014 RS 1, Vol 0.69x, RSI 57.0, Dlv 59% \u2014 raw signal",
+   "industry": "\u2014",
+   "entry_date": "2026-11-12",
+   "entry_price": 316.75,
+   "stop": 293.19,
+   "target": 363.87,
+   "status": "OPEN",
+   "exit_date": null,
+   "exit_price": null,
+   "return_pct": null,
+   "last_price": 316.75,
+   "last_date": "2026-11-12"
   }
  ],
  "nav_history": [
@@ -26899,6 +26916,18 @@
    "tot_trades": 1529,
    "nifty_idx": 104.055,
    "day_pnl_frac": 50.48589,
+   "day_base_trades": 911
+  },
+  {
+   "date": "2026-11-12",
+   "a_nav": 99.026,
+   "a_trades": 311,
+   "raw_nav": 99.975,
+   "raw_trades": 1219,
+   "tot_nav": 99.782,
+   "tot_trades": 1530,
+   "nifty_idx": 104.93,
+   "day_pnl_frac": 50.55019,
    "day_base_trades": 911
   }
  ],
