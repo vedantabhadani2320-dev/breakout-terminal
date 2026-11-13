@@ -23887,8 +23887,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 94.27,
-   "last_date": "2026-10-29"
+   "last_price": 92.63,
+   "last_date": "2026-11-13"
   },
   {
    "symbol": "KROSS",
@@ -25927,8 +25927,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 316.75,
-   "last_date": "2026-11-12"
+   "last_price": 321.8,
+   "last_date": "2026-11-13"
   }
  ],
  "nav_history": [
@@ -26928,6 +26928,18 @@
    "tot_trades": 1530,
    "nifty_idx": 104.93,
    "day_pnl_frac": 50.35729,
+   "day_base_trades": 911
+  },
+  {
+   "date": "2026-11-13",
+   "a_nav": 99.026,
+   "a_trades": 311,
+   "raw_nav": 99.975,
+   "raw_trades": 1219,
+   "tot_nav": 99.782,
+   "tot_trades": 1530,
+   "nifty_idx": 105.113,
+   "day_pnl_frac": 50.355509,
    "day_base_trades": 911
   }
  ],
