@@ -26320,6 +26320,23 @@
    "return_pct": null,
    "last_price": 770.5,
    "last_date": "2026-11-23"
+  },
+  {
+   "symbol": "PERSISTENT",
+   "grade": "A",
+   "signal": "D20_BREAKOUT",
+   "reason": "55-day channel breakout \u2014 RS 81, Vol 2.09x, RSI 67.9, Dlv 44% \u2014 A-grade (RS>=80, Vol>=1.5x, RSI<78)",
+   "industry": "Information Technology",
+   "entry_date": "2026-11-23",
+   "entry_price": 6282.5,
+   "stop": 5933.73,
+   "target": 6980.04,
+   "status": "OPEN",
+   "exit_date": null,
+   "exit_price": null,
+   "return_pct": null,
+   "last_price": 6282.5,
+   "last_date": "2026-11-23"
   }
  ],
  "nav_history": [
@@ -27395,15 +27412,15 @@
   },
   {
    "date": "2026-11-23",
-   "a_nav": 99.037,
-   "a_trades": 314,
+   "a_nav": 99.04,
+   "a_trades": 315,
    "raw_nav": 99.989,
    "raw_trades": 1239,
-   "tot_nav": 99.796,
-   "tot_trades": 1553,
+   "tot_nav": 99.797,
+   "tot_trades": 1554,
    "nifty_idx": 105.323,
-   "day_pnl_frac": 51.560701,
-   "day_base_trades": 911
+   "day_pnl_frac": 49.033411,
+   "day_base_trades": 918
   }
  ],
  "nifty_base": 24068.6
