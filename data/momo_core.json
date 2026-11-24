@@ -6,113 +6,113 @@
   {
    "sym": "CUPID",
    "industry": "Fast Moving Consumer Goods",
-   "close": NaN,
-   "chg_pct": NaN,
+   "close": 362.15,
+   "chg_pct": -0.96,
    "mom_pct": 410.2,
    "status": "HOLD"
   },
   {
    "sym": "INDSWFTLAB",
    "industry": "\u2014",
-   "close": NaN,
-   "chg_pct": NaN,
+   "close": 314.65,
+   "chg_pct": -0.76,
    "mom_pct": 246.8,
    "status": "HOLD"
   },
   {
    "sym": "MTARTECH",
    "industry": "Capital Goods",
-   "close": NaN,
-   "chg_pct": NaN,
-   "mom_pct": 163.2,
+   "close": 5659.0,
+   "chg_pct": 0.79,
+   "mom_pct": 0,
    "status": "HOLD"
   },
   {
    "sym": "SHREEJISPG",
    "industry": "\u2014",
-   "close": NaN,
-   "chg_pct": NaN,
+   "close": 910.0,
+   "chg_pct": -0.42,
    "mom_pct": 152.9,
    "status": "HOLD"
   },
   {
    "sym": "SANSERA",
    "industry": "Automobile and Auto Components",
-   "close": NaN,
-   "chg_pct": NaN,
+   "close": 4619.3,
+   "chg_pct": -3.73,
    "mom_pct": 157.4,
    "status": "HOLD"
   },
   {
    "sym": "SAKAR",
    "industry": "\u2014",
-   "close": NaN,
-   "chg_pct": NaN,
+   "close": 997.15,
+   "chg_pct": -2.56,
    "mom_pct": 136.1,
    "status": "HOLD"
   },
   {
    "sym": "WELCORP",
    "industry": "Capital Goods",
-   "close": NaN,
-   "chg_pct": NaN,
+   "close": 2152.8,
+   "chg_pct": -1.47,
    "mom_pct": 171.5,
    "status": "HOLD"
   },
   {
    "sym": "GCSL",
    "industry": "\u2014",
-   "close": NaN,
-   "chg_pct": NaN,
+   "close": 849.3,
+   "chg_pct": 0.12,
    "mom_pct": 96.4,
    "status": "HOLD"
   },
   {
    "sym": "AEROFLEX",
    "industry": "\u2014",
-   "close": NaN,
-   "chg_pct": NaN,
+   "close": 464.05,
+   "chg_pct": -1.9,
    "mom_pct": 164.0,
    "status": "HOLD"
   },
   {
    "sym": "SHILPAMED",
    "industry": "Healthcare",
-   "close": NaN,
-   "chg_pct": NaN,
+   "close": 857.2,
+   "chg_pct": 0.95,
    "mom_pct": 135.8,
    "status": "HOLD"
   },
   {
    "sym": "RPTECH",
    "industry": "\u2014",
-   "close": NaN,
-   "chg_pct": NaN,
-   "mom_pct": 144.0,
+   "close": 647.05,
+   "chg_pct": -0.48,
+   "mom_pct": 0,
    "status": "HOLD"
   },
   {
    "sym": "CPPLUS",
    "industry": "Capital Goods",
-   "close": NaN,
-   "chg_pct": NaN,
+   "close": 4074.1,
+   "chg_pct": 1.19,
    "mom_pct": 132.4,
    "status": "HOLD"
   },
   {
    "sym": "AHCL",
    "industry": "\u2014",
-   "close": NaN,
-   "chg_pct": NaN,
+   "close": 24.62,
+   "chg_pct": -2.19,
    "mom_pct": 54.5,
    "status": "HOLD"
   },
   {
    "sym": "DEEDEV",
    "industry": "\u2014",
-   "close": NaN,
-   "chg_pct": NaN,
-   "mom_pct": 126.5,
+   "close": 513.85,
+   "chg_pct": 0.03,
+   "mom_pct": 0,
    "status": "HOLD"
   }
  ],
