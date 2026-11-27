@@ -25927,8 +25927,8 @@
    "exit_date": null,
    "exit_price": null,
    "return_pct": null,
-   "last_price": 318.7,
-   "last_date": "2026-11-26"
+   "last_price": 326.4,
+   "last_date": "2026-11-27"
   },
   {
    "symbol": "HMAAGRO",
@@ -27444,6 +27444,18 @@
    "tot_trades": 1554,
    "nifty_idx": 107.273,
    "day_pnl_frac": 49.339966,
+   "day_base_trades": 918
+  },
+  {
+   "date": "2026-11-27",
+   "a_nav": 99.04,
+   "a_trades": 315,
+   "raw_nav": 99.985,
+   "raw_trades": 1239,
+   "tot_nav": 99.794,
+   "tot_trades": 1554,
+   "nifty_idx": 107.545,
+   "day_pnl_frac": 49.364275,
    "day_base_trades": 918
   }
  ],
