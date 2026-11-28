@@ -632,7 +632,7 @@ def update_paper_portfolio(rows, hist, regime, as_of):
     # to compute an exact day-over-day ₹ change; trades opened today aren't in
     # this snapshot and correctly contribute ₹0 to today's P&L (bought at today's
     # close, haven't had a chance to move yet)
-    prev_frac = {t["symbol"]: frac_return(t) for t in trades}
+    prev_frac = {id(t): frac_return(t) for t in trades}
 
     for r in rows:
         if r["symbol"] in open_syms:
@@ -672,8 +672,8 @@ def update_paper_portfolio(rows, hist, regime, as_of):
 
     # exact day P&L: sum of (today's return - yesterday's return) across trades
     # that already existed before today; freshly-opened trades excluded (= 0 by definition)
-    day_pnl_frac = sum(frac_return(t) - prev_frac[t["symbol"]]
-                        for t in trades if t["symbol"] in prev_frac)
+    day_pnl_frac = sum(frac_return(t) - prev_frac[id(t)]
+                        for t in trades if id(t) in prev_frac)
 
     nifty_close = regime.get("nifty") if regime else None
     if nifty_close is not None:
@@ -683,6 +683,9 @@ def update_paper_portfolio(rows, hist, regime, as_of):
         row["day_pnl_frac"] = round(day_pnl_frac, 6)
         row["day_base_trades"] = len(prev_frac)
         if data["nav_history"] and data["nav_history"][-1]["date"] == as_of:
+            first = data["nav_history"][-1]
+            row["day_pnl_frac"] = round(day_pnl_frac + first.get("day_pnl_frac", 0), 6)
+            row["day_base_trades"] = first.get("day_base_trades", len(prev_frac))
             data["nav_history"][-1] = row
         else:
             data["nav_history"].append(row)
