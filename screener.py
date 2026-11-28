@@ -94,8 +94,42 @@ def load_universe():
     return uni
 
 
+def load_bhav_bars():
+    """Latest-session OHLCV per EQ symbol from the official NSE bhavcopy."""
+    bhav = pd.read_csv(BHAVCOPY, skipinitialspace=True)
+    bhav.columns = [c.strip() for c in bhav.columns]
+    bhav = bhav[bhav["SERIES"].str.strip() == "EQ"]
+    cols = {"prev_close": "PREV_CLOSE", "Open": "OPEN_PRICE", "High": "HIGH_PRICE",
+            "Low": "LOW_PRICE", "Close": "CLOSE_PRICE", "Volume": "TTL_TRD_QNTY"}
+    bars = {}
+    for _, r in bhav.iterrows():
+        bar = {k: float(r[v]) for k, v in cols.items()}
+        bar["date"] = pd.to_datetime(r["DATE1"].strip(), format="%d-%b-%Y")
+        bars[r["SYMBOL"].strip()] = bar
+    return bars
+
+
+def fill_last_bar(df, bar):
+    """Fill a price-less latest Yahoo bar from the bhavcopy. Skipped when the
+    dates differ, or the previous close disagrees by over 2% (corporate action:
+    Yahoo's adjusted history and the raw bar would not line up)."""
+    prices = ["Open", "High", "Low", "Close"]
+    if bar is None or len(df) < 2 or df.index[-1] != bar["date"]:
+        return df
+    if not df[prices].iloc[-1].isna().any():
+        return df
+    prev = df["Close"].iloc[:-1].dropna()
+    if prev.empty or abs(bar["prev_close"] / prev.iloc[-1] - 1) > 0.02:
+        return df
+    df = df.copy()
+    for k in prices + ["Volume"]:
+        df.loc[df.index[-1], k] = bar[k]
+    return df
+
+
 def download_history(symbols):
     out = {}
+    bars = load_bhav_bars()
     tickers = {s: f"{s}.NS" for s in symbols}
     names = list(tickers.values())
     rev = {v: k for k, v in tickers.items()}
@@ -106,7 +140,8 @@ def download_history(symbols):
                            auto_adjust=True, threads=True, progress=False)
         for tkr in batch:
             try:
-                df = data[tkr].dropna(how="all")
+                df = fill_last_bar(data[tkr].dropna(how="all"), bars.get(rev[tkr]))
+                df = df.dropna(subset=["Open", "High", "Low", "Close"])
             except KeyError:
                 continue
             if len(df) >= 130:
